@@ -29,3 +29,6 @@ nav a{
     border-radius: 5px;
     cursor: pointer;
 }
+.boton-autenticacion:hover{
+    background-color: #FF7043;
+}
