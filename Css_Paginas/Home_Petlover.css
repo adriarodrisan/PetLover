@@ -21,3 +21,11 @@ nav a{
     font-weight: bold;
     margin:0 15px;
 }
+.boton-autenticacion{
+    background-color: #FF9966;
+    border:none ;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
