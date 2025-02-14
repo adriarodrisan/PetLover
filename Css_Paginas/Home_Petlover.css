@@ -32,12 +32,12 @@ nav a{
 .boton_autenticacion:hover{
     background-color: #FF7043;
 }
-.heroes{
+.seccion-principal{
     background-color: #ffdab9;
     padding: 50px 20px;
 }
 
-.contenedor-categoria{
+.contenedor-categorias{
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -56,7 +56,7 @@ nav a{
 .tarjeta-categoria:hover{
     transform: scale(1.1);
 }
-.seccion-destacada, .contenedor-pasos{
+.seccion-destacados, .contenedor-pasos{
     display: flex;
     justify-content: center;
     gap: 20px;
