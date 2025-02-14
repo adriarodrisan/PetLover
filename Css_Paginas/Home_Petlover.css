@@ -41,7 +41,7 @@ nav a{
     display: flex;
     justify-content: center;
     gap: 20px;
-    display: flex;
+
 }
 .tarjeta-categoria{
     text-decoration: none;
@@ -55,6 +55,10 @@ nav a{
 }
 .tarjeta-categoria:hover{
     transform: scale(1.1);
+}
+.seccion-destacados, .seccion-testimonios, .seccion-adopcion {
+    padding: 40px;
+    background-color: #FFF3E0;
 }
 .seccion-destacados, .contenedor-pasos{
     display: flex;
@@ -86,4 +90,10 @@ nav a{
 }
 .tarjeta-mascota button:hover {
     background-color: #FF7043;
+}
+.pie-pagina {
+    background-color: #8D6E63;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
 }
