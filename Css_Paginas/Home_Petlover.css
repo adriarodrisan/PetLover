@@ -55,3 +55,13 @@ nav a{
 .tarjeta-categoria:hover{
     transform: scale(1.1);
 }
+.seccion-destacados, .contenedor-pasos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.tarjeta-mascota img{
+    width: 100%;
+    border-radius: 10px;
+}
