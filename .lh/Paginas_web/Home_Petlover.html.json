@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1739560305465,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1739560353271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,6 +79,9 @@\n                     <p>Completa el proceso y llévate un nuevo amigo a casa.</p>\r\n                 </div>\r\n             </div>\r\n         </section>\r\n+        <footer class=\"pie-pagina\">\r\n+            © 2025 PetLover | Contacto: petlover@gmail.com\r\n+        </footer>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1739560305465,
