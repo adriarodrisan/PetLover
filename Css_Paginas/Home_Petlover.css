@@ -66,5 +66,13 @@ nav a{
     border-radius: 10px;
 }
 .tarjeta-mascota button{
-    background-color: ;
+    background-color: #FF9966;
+    border: none;
+    color: white;
+    padding:10px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.tarjeta-mascota button:hover {
+    background-color: #FF7043;
 }

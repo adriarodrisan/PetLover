@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1739558344903,
@@ -12,6 +12,18 @@
                 {
                     "date": 1739558484694,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,5 +63,8 @@\n }\r\n .tarjeta-mascota img{\r\n     width: 100%;\r\n     border-radius: 10px;\r\n+}\r\n+.tarjeta-mascota button{\r\n+    background-color: ;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1739558649686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,6 +65,11 @@\n     width: 100%;\r\n     border-radius: 10px;\r\n }\r\n .tarjeta-mascota button{\r\n-    background-color: ;\r\n+    background-color: #FF9966;\r\n+    border: none;\r\n+    color: white;\r\n+    padding:10px;\r\n+    border-radius: 5px;\r\n+    cursor:pointer;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1739558737145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,5 +71,5 @@\n     color: white;\r\n     padding:10px;\r\n     border-radius: 5px;\r\n     cursor:pointer;\r\n-}\n\\ No newline at end of file\n+}\r\n"
+                },
+                {
+                    "date": 1739558751971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,4 +72,7 @@\n     padding:10px;\r\n     border-radius: 5px;\r\n     cursor:pointer;\r\n }\r\n+.tarjeta-mascota button:hover {\r\n+    background-color: #FF7043;\r\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1739558344903,
