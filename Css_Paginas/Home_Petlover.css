@@ -52,3 +52,6 @@ nav a{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
 }
+.tarjeta-categoria:hover{
+    transform: scale(1.1);
+}
