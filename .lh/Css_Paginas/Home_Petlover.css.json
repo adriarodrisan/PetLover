@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1739558344903,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1739558484694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,5 +63,8 @@\n }\r\n .tarjeta-mascota img{\r\n     width: 100%;\r\n     border-radius: 10px;\r\n+}\r\n+.tarjeta-mascota button{\r\n+    background-color: ;\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1739558344903,
