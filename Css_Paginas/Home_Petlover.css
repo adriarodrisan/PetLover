@@ -12,7 +12,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.logo h1{
+.logo-contenedor h1{
     margin: 0;
 }
 nav a{
@@ -21,7 +21,7 @@ nav a{
     font-weight: bold;
     margin:0 15px;
 }
-.boton-autenticacion{
+.boton_autenticacion{
     background-color: #FF9966;
     border:none ;
     color: white;
@@ -29,18 +29,19 @@ nav a{
     border-radius: 5px;
     cursor: pointer;
 }
-.boton-autenticacion:hover{
+.boton_autenticacion:hover{
     background-color: #FF7043;
 }
-.seccion-principal{
+.heroes{
     background-color: #ffdab9;
     padding: 50px 20px;
 }
 
-.contenedor-categorias{
+.contenedor-categoria{
     display: flex;
     justify-content: center;
     gap: 20px;
+    display: flex;
 }
 .tarjeta-categoria{
     text-decoration: none;
@@ -55,11 +56,21 @@ nav a{
 .tarjeta-categoria:hover{
     transform: scale(1.1);
 }
-.seccion-destacados, .contenedor-pasos{
+.seccion-destacada, .contenedor-pasos{
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    display: flex;
+}
+.tarjeta-mascota, .tarjeta-testimonio, .paso{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin :15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
 }
 .tarjeta-mascota img{
     width: 100%;
