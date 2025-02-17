@@ -21,7 +21,7 @@ nav a{
     font-weight: bold;
     margin:0 15px;
 }
-.boton_autenticacion{
+.boton-autenticacion{
     background-color: #FF9966;
     border:none ;
     color: white;
@@ -29,7 +29,7 @@ nav a{
     border-radius: 5px;
     cursor: pointer;
 }
-.boton_autenticacion:hover{
+.boton-autenticacion:hover{
     background-color: #FF7043;
 }
 .seccion-principal{
@@ -65,7 +65,7 @@ nav a{
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-    display: flex;
+
 }
 .tarjeta-mascota, .tarjeta-testimonio, .paso{
     background-color: white;
@@ -76,8 +76,9 @@ nav a{
     text-align: center;
     width: 250px;
 }
-.tarjeta-mascota img{
-    width: 100%;
+.tarjeta-mascota img {
+    max-width: 250px;
+    height: auto;
     border-radius: 10px;
 }
 .tarjeta-mascota button{
@@ -96,4 +97,11 @@ nav a{
     color: white;
     padding: 10px;
     margin-top: 20px;
+}
+.contenedor-destacados {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start ;
+    flex-wrap: wrap;
+    gap: 20px;
 }
