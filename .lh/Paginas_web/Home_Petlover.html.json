@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1739560305465,
@@ -36,6 +36,22 @@
                 {
                     "date": 1739816347184,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,16 +34,16 @@\n     <section class=\"seccion-destacados\">\r\n         <h2>🐶🐱 Mascotas Destacadas</h2>\r\n         <div class=\"contenedor-destacados\">\r\n             <div class=\"tarjeta-mascota\">\r\n-                <img src=\"nerea.png\" alt=\"Perro en adopción\">\r\n+                <img src=\"/nerea.png\" alt=\"Perro en adopción\">\r\n                 <h4>Max</h4>\r\n                 <p>Raza: Pastor Belga Malioisse | Fecha de nacimiento: 22/02/2020</p>\r\n                 <button> Conoceme! </button>\r\n             </div>\r\n <!-- 🐾 Sección de Gatos -->\r\n             <div class=\"tarjeta-mascota\">\r\n-                <img src=\"isis.png\" alt=\"Gato en adopción\">\r\n+                <img src=\"/isis.png\" alt=\"Gato en adopción\">\r\n                 <h4>Isis</h4>\r\n                 <p> Raza: Europea | Fecha de nacimiento: 01/06/2019</p>\r\n                 <button>Conoceme! </button>\r\n             </div>\r\n"
+                },
+                {
+                    "date": 1739817267864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n     </section>\r\n <!-- 🐾 Sección de Perros y Gatos Destacados con grandes necesidades! -->\r\n <!-- 🐾 Sección de Perros -->\r\n     <section class=\"seccion-destacados\">\r\n-        <h2>🐶🐱 Mascotas Destacadas</h2>\r\n+        <h2>🐶🐱 Mascotas Destacadas</h2><br>\r\n         <div class=\"contenedor-destacados\">\r\n             <div class=\"tarjeta-mascota\">\r\n                 <img src=\"/nerea.png\" alt=\"Perro en adopción\">\r\n                 <h4>Max</h4>\r\n"
+                },
+                {
+                    "date": 1739817280663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,11 +31,11 @@\n     </section>\r\n <!-- 🐾 Sección de Perros y Gatos Destacados con grandes necesidades! -->\r\n <!-- 🐾 Sección de Perros -->\r\n     <section class=\"seccion-destacados\">\r\n-        <h2>🐶🐱 Mascotas Destacadas</h2><br>\r\n-        <div class=\"contenedor-destacados\">\r\n-            <div class=\"tarjeta-mascota\">\r\n+        <h2>🐶🐱 Mascotas Destacadas</h2>\r\n+            <div class=\"contenedor-destacados\">\r\n+                <div class=\"tarjeta-mascota\">\r\n                 <img src=\"/nerea.png\" alt=\"Perro en adopción\">\r\n                 <h4>Max</h4>\r\n                 <p>Raza: Pastor Belga Malioisse | Fecha de nacimiento: 22/02/2020</p>\r\n                 <button> Conoceme! </button>\r\n"
+                },
+                {
+                    "date": 1739817671671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,11 +31,11 @@\n     </section>\r\n <!-- 🐾 Sección de Perros y Gatos Destacados con grandes necesidades! -->\r\n <!-- 🐾 Sección de Perros -->\r\n     <section class=\"seccion-destacados\">\r\n-        <h2>🐶🐱 Mascotas Destacadas</h2>\r\n-            <div class=\"contenedor-destacados\">\r\n-                <div class=\"tarjeta-mascota\">\r\n+        <h2 class=\"titulo-destacados\">🐶🐱 Mascotas Destacadas</h2>\r\n+        <div class=\"contenedor-destacados\">\r\n+            <div class=\"tarjeta-mascota\">\r\n                 <img src=\"/nerea.png\" alt=\"Perro en adopción\">\r\n                 <h4>Max</h4>\r\n                 <p>Raza: Pastor Belga Malioisse | Fecha de nacimiento: 22/02/2020</p>\r\n                 <button> Conoceme! </button>\r\n"
+                },
+                {
+                    "date": 1739817713825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,17 +34,17 @@\n     <section class=\"seccion-destacados\">\r\n         <h2 class=\"titulo-destacados\">🐶🐱 Mascotas Destacadas</h2>\r\n         <div class=\"contenedor-destacados\">\r\n             <div class=\"tarjeta-mascota\">\r\n+                <h4>Max</h4>\r\n                 <img src=\"/nerea.png\" alt=\"Perro en adopción\">\r\n-                <h4>Max</h4>\r\n                 <p>Raza: Pastor Belga Malioisse | Fecha de nacimiento: 22/02/2020</p>\r\n                 <button> Conoceme! </button>\r\n             </div>\r\n <!-- 🐾 Sección de Gatos -->\r\n             <div class=\"tarjeta-mascota\">\r\n+                <h4>Isis</h4>\r\n                 <img src=\"/isis.png\" alt=\"Gato en adopción\">\r\n-                <h4>Isis</h4>\r\n                 <p> Raza: Europea | Fecha de nacimiento: 01/06/2019</p>\r\n                 <button>Conoceme! </button>\r\n             </div>\r\n         </div>\r\n"
                 }
             ],
             "date": 1739560305465,

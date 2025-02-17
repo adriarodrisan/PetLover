@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 12,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1739560443780,
@@ -56,6 +56,10 @@
                 {
                     "date": 1739817024147,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,5 +121,16 @@\n }\r\n .tarjeta-mascota {\r\n     position: relative;\r\n     overflow: hidden;\r\n+}\r\n+.tarjeta-mascota h4 {\r\n+    position: absolute;\r\n+    top: 10px; \r\n+    left: 50%;\r\n+    transform: translateX(-50%);\r\n+    background: rgba(0, 0, 0, 0.6);\r\n+    color: white;\r\n+    padding: 5px 10px;\r\n+    border-radius: 5px;\r\n+    font-size: 1rem;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1739817779838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,5 +132,11 @@\n     color: white;\r\n     padding: 5px 10px;\r\n     border-radius: 5px;\r\n     font-size: 1rem;\r\n+}\r\n+.titulo-destacados {\r\n+    text-align: center;\r\n+    font-size: 24px;\r\n+    font-weight: bold;\r\n+    margin-bottom: 20px; \r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1739560443780,
