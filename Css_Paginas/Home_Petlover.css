@@ -101,11 +101,9 @@ nav a{
 }
 .contenedor-destacados {
     display: flex;
-    justify-content: center;
-    align-items:flex-start ;
+    justify-content: center; 
+    gap: 20px; 
     flex-wrap: wrap;
-    gap: 40px;
-    padding: 20px;
 }
 .tarjeta-mascota {
     background-color: white;
