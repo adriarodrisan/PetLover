@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1740066556158,
@@ -28,6 +28,14 @@
                 {
                     "date": 1740067037442,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+body{\r\n+    font-family: 'Arial', sans-serif;\r\n+    background-color: #ffe5b4;\r\n+    color: #6d4c41;\r\n+    margin: 0;\r\n+    text-align: center;\r\n+}\r\n+header{\r\n+    background-color: #FFCC99;\r\n+    padding: 15px;\r\n+    display: flex;\r\n+    justify-content: space-between;\r\n+    align-items: center;\r\n+}\r\n+nav a{\r\n+    text-decoration: none;\r\n+    color: #6d4c41;\r\n+    font-weight: bold;\r\n+    margin: 0 15px;\r\n+}\r\n+.hero{\r\n+    background-color: #ffdab9;\r\n+    padding: 50px 20px;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740067061866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+body{\r\n+    font-family: 'Arial', sans-serif;\r\n+    background-color: #ffe5b4;\r\n+    color: #6d4c41;\r\n+    margin: 0;\r\n+    text-align: center;\r\n+}\r\n+header{\r\n+    background-color: #FFCC99;\r\n+    padding: 15px;\r\n+    display: flex;\r\n+    justify-content: space-between;\r\n+    align-items: center;\r\n+}\r\n+nav a{\r\n+    text-decoration: none;\r\n+    color: #6d4c41;\r\n+    font-weight: bold;\r\n+    margin: 0 15px;\r\n+}\r\n+.hero{\r\n+    background-color: #ffdab9;\r\n+    padding: 50px 20px;\r\n+}\r\n+.filters{\r\n+    margin: 20px 0;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740067136515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,34 @@\n+body{\r\n+    font-family: 'Arial', sans-serif;\r\n+    background-color: #ffe5b4;\r\n+    color: #6d4c41;\r\n+    margin: 0;\r\n+    text-align: center;\r\n+}\r\n+header{\r\n+    background-color: #FFCC99;\r\n+    padding: 15px;\r\n+    display: flex;\r\n+    justify-content: space-between;\r\n+    align-items: center;\r\n+}\r\n+nav a{\r\n+    text-decoration: none;\r\n+    color: #6d4c41;\r\n+    font-weight: bold;\r\n+    margin: 0 15px;\r\n+}\r\n+.hero{\r\n+    background-color: #ffdab9;\r\n+    padding: 50px 20px;\r\n+}\r\n+.filters{\r\n+    margin: 20px 0;\r\n+}\r\n+.filters select, .filters button{\r\n+    padding: 10px;\r\n+    margin: 5px;\r\n+    border-radius: 5px;\r\n+    border: 1px solid #6d4c41  ;\r\n+\r\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1740066556158,
