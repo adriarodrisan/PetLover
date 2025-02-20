@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1740060861604,
@@ -44,6 +44,10 @@
                 {
                     "date": 1740062659852,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,9 @@\n             <option value=\"cachorro\"> Cachorro (-1 año)</option>\r\n             <option value=\"adulto\">Adulto (1-7 años)</option>\r\n             <option value=\"senior\"> Senior (+7 años)</option>\r\n         </select>\r\n+        <button onclick=\"filtrarPerror()\">Buscar</button>\r\n     </section>\r\n     \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740063830440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,7 +43,16 @@\n             <option value=\"senior\"> Senior (+7 años)</option>\r\n         </select>\r\n         <button onclick=\"filtrarPerror()\">Buscar</button>\r\n     </section>\r\n+    <section class=\"lista-perros\" id=\"lista-perros\">\r\n+        <div class=\"tarjeta-perro\">\r\n+            <img src=\"/Imagenes_Animales/dog1.png\" alt=\"Perro en adopción\">\r\n+            <h4>Miga</h4>\r\n+            <p>Raza Mestiza| Fecha de nacimiento:   |  Tamaño: Mediano </p>\r\n+            <button>Saber más</button>\r\n+        </div>\r\n+\r\n+    </section>\r\n     \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1740060861603,
