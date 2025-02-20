@@ -12,3 +12,13 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+nav a{
+    text-decoration: none;
+    color: #6d4c41;
+    font-weight: bold;
+    margin: 0 15px;
+}
+.hero{
+    background-color: #ffdab9;
+    padding: 50px 20px;
+}
