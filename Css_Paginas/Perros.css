@@ -46,3 +46,15 @@ nav a{
     text-align: center;
     width: 250px;
 }
+.tarjeta-perro img{
+    width: 100%;
+    border-radius: 10px;
+}
+.tarjeta-perro button{
+    background-color: #FF9966;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
