@@ -58,3 +58,12 @@ nav a{
     border-radius: 5px;
     cursor: pointer;
 }
+.tarjeta-perro button:hover{
+    background-color: #ff7043;
+}
+.footer{
+    background-color: #8d6e63;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
