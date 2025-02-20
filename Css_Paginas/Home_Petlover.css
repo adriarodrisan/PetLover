@@ -123,7 +123,7 @@ nav a{
 }
 .tarjeta-mascota h4 {
     position: absolute;
-    top: 10px; 
+    top: 5 vxpx; 
     left: 50%;
     transform: translateX(-50%);
     background: rgba(0, 0, 0, 0.6);

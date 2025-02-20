@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 14,
+            "activePatchIndex": 16,
             "patches": [
                 {
                     "date": 1739560443780,
@@ -64,6 +64,14 @@
                 {
                     "date": 1739817810641,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,13 +100,11 @@\n     margin-top: 20px;\r\n }\r\n .contenedor-destacados {\r\n     display: flex;\r\n-    justify-content: center;\r\n-    align-items:flex-start ;\r\n+    justify-content: center; \r\n+    gap: 20px; \r\n     flex-wrap: wrap;\r\n-    gap: 40px;\r\n-    padding: 20px;\r\n }\r\n .tarjeta-mascota {\r\n     background-color: white;\r\n     border-radius: 10px;\r\n@@ -138,5 +136,5 @@\n     text-align: center;\r\n     font-size: 24px;\r\n     font-weight: bold;\r\n     margin-bottom: 20px; \r\n-}\n\\ No newline at end of file\n+}\r\n"
+                },
+                {
+                    "date": 1739818173478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n     overflow: hidden;\r\n }\r\n .tarjeta-mascota h4 {\r\n     position: absolute;\r\n-    top: 10px; \r\n+    top: 5px; \r\n     left: 50%;\r\n     transform: translateX(-50%);\r\n     background: rgba(0, 0, 0, 0.6);\r\n     color: white;\r\n"
+                },
+                {
+                    "date": 1739979713591,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n     overflow: hidden;\r\n }\r\n .tarjeta-mascota h4 {\r\n     position: absolute;\r\n-    top: 5px; \r\n+    top: 5 vxpx; \r\n     left: 50%;\r\n     transform: translateX(-50%);\r\n     background: rgba(0, 0, 0, 0.6);\r\n     color: white;\r\n"
                 }
             ],
             "date": 1739560443780,
