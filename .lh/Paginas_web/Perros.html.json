@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1740060861604,
@@ -20,6 +20,14 @@
                 {
                     "date": 1740061134988,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,15 @@\n     <header>\r\n         <div class=\"logo\">\r\n             <h1>PetLover</h1>\r\n         </div>\r\n+        <nav>\r\n+            <a href=\"Home_Petlover.html\">Inicio</a>\r\n+            <a href=\"gatos.html\"> Gatos</a>\r\n+            <a href=\"#Ayuda\"></a>\r\n+            <a href=\"Contactos\"></a>\r\n+        </nav>\r\n     </header>\r\n+    <section></section>\r\n     \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740061229335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Perros en Adopción - Petlover</title>\r\n+    <link rel=\"stylesheet\" href=\"/Css_Paginas/Perros.css\">\r\n+</head>\r\n+<body>\r\n+    <header>\r\n+        <div class=\"logo\">\r\n+            <h1>PetLover</h1>\r\n+        </div>\r\n+        <nav>\r\n+            <a href=\"Home_Petlover.html\">Inicio</a>\r\n+            <a href=\"gatos.html\"> Gatos</a>\r\n+            <a href=\"#Ayuda\"></a>\r\n+            <a href=\"Contactos\"></a>\r\n+        </nav>\r\n+    </header>\r\n+    <section class=\"hero\">\r\n+        <h2>Perros en Adopción</h2>\r\n+        <p>Encuentra el compañero ideal para ti.</p>\r\n+    </section>\r\n+    \r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740061250414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Perros en Adopción - Petlover</title>\r\n+    <link rel=\"stylesheet\" href=\"/Css_Paginas/Perros.css\">\r\n+</head>\r\n+<body>\r\n+    <header>\r\n+        <div class=\"logo\">\r\n+            <h1>PetLover</h1>\r\n+        </div>\r\n+        <nav>\r\n+            <a href=\"Home_Petlover.html\">Inicio</a>\r\n+            <a href=\"gatos.html\"> Gatos</a>\r\n+            <a href=\"#Ayuda\"></a>\r\n+            <a href=\"Contactos\"></a>\r\n+        </nav>\r\n+    </header>\r\n+    <section class=\"hero\">\r\n+        <h2>Perros en Adopción</h2>\r\n+        <p>Encuentra el compañero ideal para ti.</p>\r\n+    </section>\r\n+    \r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1740060861603,
