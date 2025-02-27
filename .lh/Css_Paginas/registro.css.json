@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1740671220637,
@@ -20,6 +20,10 @@
                 {
                     "date": 1740671281609,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,9 @@\n     border-radius: 10px;\r\n     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);\r\n     text-align: center;\r\n     width: 350px;\r\n+}\r\n+h2 {\r\n+    color: #6d4c41;\r\n+    margin-bottom: 20px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740671296006,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,10 @@\n }\r\n h2 {\r\n     color: #6d4c41;\r\n     margin-bottom: 20px;\r\n+}\r\n+form {\r\n+    display: flex;\r\n+    flex-direction: column;\r\n+    align-items: center;\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1740671220637,
