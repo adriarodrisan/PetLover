@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1740582422934,
@@ -20,6 +20,14 @@
                 {
                     "date": 1740582737988,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                 <label for=\"password\">Contraseña:</label>\r\n                 <input type=\"password\" id=\"paswword\" name=\"password0\" required>\r\n \r\n                 <button type=\"submit\"> Iniciar Sesión</button>\r\n-\r\n+                <p> No tienes cuenta? </a>Registrate</p>\r\n             </form>\r\n \r\n         </div>\r\n \r\n"
+                },
+                {
+                    "date": 1740669004623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,12 +14,12 @@\n                 <label for=\"email\"> Corero Electrónico:</label>\r\n                 <input type=\"email\" id=\"email\" name=\"email\" required>\r\n \r\n                 <label for=\"password\">Contraseña:</label>\r\n-                <input type=\"password\" id=\"paswword\" name=\"password0\" required>\r\n+                <input type=\"password\" id=\"password\" name=\"password\" required>\r\n \r\n                 <button type=\"submit\"> Iniciar Sesión</button>\r\n-                <p> No tienes cuenta? </a>Registrate</p>\r\n+                <p> No tienes cuenta? <a href=\"/Paginas_web/registro.html\">Registrate</a></p>\r\n             </form>\r\n \r\n         </div>\r\n \r\n"
+                },
+                {
+                    "date": 1740670190917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n     <title>Pet_Lover - registros </title>\r\n     <link rel=\"stylesheet\" href=\"/Css_Paginas/Inicio_Session.css\">\r\n </head>\r\n <body>\r\n-    <div class=\"container\">\r\n-        <div class=\"caja-formulario\">\r\n+    <div class=\"fondo\">\r\n             <form id=\"loginForm\" action=\"\" method=\"POST\">\r\n                 <h2>Iniciar Sesión</h2>\r\n                 <label for=\"email\"> Corero Electrónico:</label>\r\n                 <input type=\"email\" id=\"email\" name=\"email\" required>\r\n"
                 }
             ],
             "date": 1740582422934,
