@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1740666661166,
@@ -20,6 +20,14 @@
                 {
                     "date": 1740666840983,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,5 +16,9 @@\n }\r\n h2{\r\n     color: #6d4c41;\r\n     margin-bottom: 20px;\r\n+}\r\n+form{\r\n+    display: flex;\r\n+    flex-direction: column;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740666929266,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,11 @@\n }\r\n form{\r\n     display: flex;\r\n     flex-direction: column;\r\n+}\r\n+label{\r\n+    text-align: left;\r\n+    font-weight: bold;\r\n+    color: #6d4c41;\r\n+    margin-bottom: 5px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1740666943142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,5 +26,8 @@\n     text-align: left;\r\n     font-weight: bold;\r\n     color: #6d4c41;\r\n     margin-bottom: 5px;\r\n+}\r\n+input{\r\n+    \r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1740666661166,
