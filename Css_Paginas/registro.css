@@ -24,3 +24,10 @@ form {
     flex-direction: column;
     align-items: center;
 }
+label {
+    text-align: left;
+    font-weight: bold;
+    color: #6d4c41;
+    margin-top: 10px;
+    width: 100%;
+}
