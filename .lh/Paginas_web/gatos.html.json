@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1741188226408,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1741188477852,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,6 +21,15 @@\n     <section class=\"hero\">\r\n         <h2>Gatos en Adopcion  </h2>\r\n         <p>Encuentra el compañero ideal para ti. </p>\r\n     </section>\r\n+    <section class=\"filters\"> \r\n+        <h3>Filtrar por: </h3>\r\n+        <select name=\"raza\">\r\n+            <option value=\"\">Selecciona una raza </option>\r\n+            <option value=\"siames\">Siamés</option>\r\n+            <option value=\"persa\">Persa</option>\r\n+            <option value=\"mainecoon\">Maine Coon</option>\r\n+        </select>\r\n+    </section>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1741188226408,
