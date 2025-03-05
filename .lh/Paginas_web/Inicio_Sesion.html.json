@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1740582422934,
@@ -40,6 +40,18 @@
                 {
                     "date": 1741185497742,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n                     <a href=\"/Paginas_web/registro.html\"></a>\r\n                         <button type=\"button\" class=\"registrar\">Registro Usuario</button>\r\n                     </a>\r\n                     <a href=\"/Paginas_web/registro_protectora.html\"></a>\r\n-                    <button type=\"button\" class=\"registrar\"> Registro Protectora</button>\r\n+                        <button type=\"button\" class=\"registrar\"> Registro Protectora</button>\r\n             </form>\r\n         </div>\r\n     </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1741186019728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,10 @@\n                         <button type=\"button\" class=\"registrar\">Registro Usuario</button>\r\n                     </a>\r\n                     <a href=\"/Paginas_web/registro_protectora.html\"></a>\r\n                         <button type=\"button\" class=\"registrar\"> Registro Protectora</button>\r\n+                    </a>\r\n+                </div>\r\n             </form>\r\n-        </div>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1741186124568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,12 +19,12 @@\n                 <button type=\"submit\"> Iniciar Sesión</button>\r\n \r\n                 <p> No tienes cuenta? Selecciona una de nuestras opciones:</p> \r\n                 <div class=\"registro-opciones\">\r\n-                    <a href=\"/Paginas_web/registro.html\"></a>\r\n+                    <a href=\"/Paginas_web/registro.html\">\r\n                         <button type=\"button\" class=\"registrar\">Registro Usuario</button>\r\n                     </a>\r\n-                    <a href=\"/Paginas_web/registro_protectora.html\"></a>\r\n+                    <a href=\"/Paginas_web/registro_protectora.html\">\r\n                         <button type=\"button\" class=\"registrar\"> Registro Protectora</button>\r\n                     </a>\r\n                 </div>\r\n             </form>\r\n"
+                },
+                {
+                    "date": 1741186162015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                 <input type=\"password\" id=\"password\" name=\"password\" required>\r\n \r\n                 <button type=\"submit\"> Iniciar Sesión</button>\r\n \r\n-                <p> No tienes cuenta? Selecciona una de nuestras opciones:</p> \r\n+                <p> ¿No tienes cuenta? Selecciona una de nuestras opciones:</p> \r\n                 <div class=\"registro-opciones\">\r\n                     <a href=\"/Paginas_web/registro.html\">\r\n                         <button type=\"button\" class=\"registrar\">Registro Usuario</button>\r\n                     </a>\r\n"
                 }
             ],
             "date": 1740582422934,
