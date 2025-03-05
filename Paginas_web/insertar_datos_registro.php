@@ -1,5 +1,8 @@
 <?php
 require_once ('conexion.php');
+if (!$conn){
+    die("Conexión fallida: ". mysqli_connect_error());
+}
 $dni= trim($_POST['dni']);
 $nombre= trim($_POST['nombre']);
 $telefono= trim($_POST['telefono']);
@@ -9,6 +12,13 @@ $confirmar_contrasena= trim($_POST['confirmar_contrasena']);
 //revisar que los campos no sean null
 if(empty($dni) || empty($nombre) || empty($telefono) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
+    exit;
+}
+$verificar_correo = "SELECT * FROM adoptante WHERE Correo = '$correo'";
+$correo_verificado = mysqli_query($conn, $verificar_correo);
+//verificar si el mail esta registrado
+if (mysqli_num_rows($correo_verificado)>0){
+    echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
 ?>
