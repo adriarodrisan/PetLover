@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1740582422934,
@@ -28,6 +28,10 @@
                 {
                     "date": 1740670190917,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,9 @@\n     <title>Pet_Lover - registros </title>\r\n     <link rel=\"stylesheet\" href=\"/Css_Paginas/Inicio_Session.css\">\r\n </head>\r\n <body>\r\n-    <div class=\"container\">\r\n-        <div class=\"caja-formulario\">\r\n+    <div class=\"fondo\">\r\n             <form id=\"loginForm\" action=\"\" method=\"POST\">\r\n                 <h2>Iniciar Sesión</h2>\r\n                 <label for=\"email\"> Corero Electrónico:</label>\r\n                 <input type=\"email\" id=\"email\" name=\"email\" required>\r\n"
+                },
+                {
+                    "date": 1741185110028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,16 @@\n                 <label for=\"password\">Contraseña:</label>\r\n                 <input type=\"password\" id=\"password\" name=\"password\" required>\r\n \r\n                 <button type=\"submit\"> Iniciar Sesión</button>\r\n-                <p> No tienes cuenta? <a href=\"/Paginas_web/registro.html\">Registrate</a></p>\r\n+\r\n+                <p> No tienes cuenta? Selecciona una de nuestras opciones:</p> \r\n+                <div class=\"registro-opciones\">\r\n+                    <a href=\"/Paginas_web/registro.html\"></a>\r\n+                        <button type=\"button\" class=\"registrar\">Registro Usuario</button>\r\n+                    </a>\r\n+                <a href=\"/Paginas_web/registro.html\">Registro Usuario</a></p>\r\n+                <p>Crear cuenta como Protectora <a href=\"/Paginas_web/registro_protectora.html\">Registrate como Protectora</a></p>\r\n             </form>\r\n \r\n         </div>\r\n \r\n"
                 }
             ],
             "date": 1740582422934,
