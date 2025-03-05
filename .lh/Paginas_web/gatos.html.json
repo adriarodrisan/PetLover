@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1741188226408,
@@ -16,6 +16,10 @@
                 {
                     "date": 1741189023367,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,7 +29,13 @@\n             <option value=\"siames\">Siamés</option>\r\n             <option value=\"persa\">Persa</option>\r\n             <option value=\"mainecoon\">Maine Coon</option>\r\n         </select>\r\n+        <select id=\"peso\">\r\n+            <option value=\"\">Selecciona un peso</option>\r\n+            <option value=\"pequeno\">Pequeño (-4kg)</option>\r\n+            <option value=\"mediano\">Mediano (4-7kg)</option>\r\n+            <option value=\"grande\">Grande (+7kg)</option>\r\n+        </select>\r\n     </section>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1741189084121,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,7 +35,13 @@\n             <option value=\"pequeno\">Pequeño (-4kg)</option>\r\n             <option value=\"mediano\">Mediano (4-7kg)</option>\r\n             <option value=\"grande\">Grande (+7kg)</option>\r\n         </select>\r\n+        <select id=\"edad\">\r\n+            <option value=\"\">Selecciona una edad</option>\r\n+            <option value=\"cachorro\">Cachorro (-1 año)</option>\r\n+            <option value=\"adulto\">Adulto (1-7 años)</option>\r\n+            <option value=\"senior\">Senior (+7 años)</option>\r\n+        </select>\r\n     </section>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1741188226408,
