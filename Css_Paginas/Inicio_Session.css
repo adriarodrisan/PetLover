@@ -76,3 +76,12 @@ p a:hover {
     gap: 10px;
     margin-top: 10px;
 }
+.registrar {
+    background-color: #FF9966;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
