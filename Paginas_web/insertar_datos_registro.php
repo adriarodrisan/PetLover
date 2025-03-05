@@ -14,11 +14,17 @@ if(empty($dni) || empty($nombre) || empty($telefono) || empty($correo) || empty(
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
     exit;
 }
+//verificar las contraseñas que sean iguales
+if ($contrasena !== $confirmar_contrasena){
+    echo "Las cotraseñas no coinciden.";
+    exit;
+}
+//verificar si el mail esta registrado
 $verificar_correo = "SELECT * FROM adoptante WHERE Correo = '$correo'";
 $correo_verificado = mysqli_query($conn, $verificar_correo);
-//verificar si el mail esta registrado
 if (mysqli_num_rows($correo_verificado)>0){
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
+
 ?>
