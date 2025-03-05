@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="enlaces">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate como Protectora </title>
+    <link rel="stylesheet" href="/Css_Paginas/registro.css">
+</head>
+<body>
+    <div class="fondo">
+        <h2>Registro de Protectoras </h2>
+        <form action="/Paginas_web/insertar_datos_registro.php">
+            <label for="DNI"> DNI:</label>
+            <input type="text" name="dni" placeholder="DNI" required>
+            <label for="nombre"> Nombre:</label>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <label for="ciudad"> Ciudad:</label>
+            <input type="text" name="ciudad" placeholder="Ciudad" required>
+            <label for="correo"> Correo:</label>
+            <input type="email" name="correo" placeholder="Correo" required>
+            <label for="contrasena"> Contraseña:</label>
+            <input type="password" name="contrasena" placeholder="Contraseña" required>
+            <label for="confirmar_contrasena"> Confirmar la contrasena:</label>
+            <input type="password" name="confirmar_contrasena" placeholder="Confirmar Contraseña" required>
+        <br>
+        <button type="submit">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
