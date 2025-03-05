@@ -20,11 +20,16 @@ if ($contrasena !== $confirmar_contrasena){
     exit;
 }
 //verificar si el mail esta registrado
-$verificar_correo = "SELECT * FROM adoptante WHERE Correo = '$correo'";
-$correo_verificado = mysqli_query($conn, $verificar_correo);
+$verificar_correo_usuario = "SELECT * FROM adoptante WHERE Correo = '$correo'";
+$correo_verificado_usuario = mysqli_query($conn, $verificar_correo_usuario);
 if (mysqli_num_rows($correo_verificado)>0){
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
-
+$verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
+$correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
+if (mysqli_num_rows($correo_verificado)>0){
+    echo "Este correo ya esta registrado, por favor, intelo con otro correo";
+    exit;
+}
 ?>
