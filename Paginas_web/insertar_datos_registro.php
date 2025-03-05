@@ -32,4 +32,27 @@ if (mysqli_num_rows($correo_verificado)>0){
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
+//hashear pass
+$contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
+$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
+if (mysqli_query($conn, $registrar_usuario)){
+    echo '<!DOCTYPE html>
+            <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Registro Exitoso</title>
+                </head>
+                <body class="cuerpo">
+                    <div class="alertas">
+                        <h1>Registro Exitoso</h1>
+                        <a href="/pagina_web/Home_Petlover.html> Ir al inicio</a>
+                    </div>
+                </body>
+            </html>
+            ';
+            exit;
+}else{
+    echo "Error al registrar usuario: ". mysqli_error($conn);
+}
 ?>
