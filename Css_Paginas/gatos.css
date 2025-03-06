@@ -22,3 +22,12 @@ nav a {
     background-color: #FFDAB9;
     padding: 50px 20px;
 }
+.filters {
+    margin: 20px 0;
+}
+.filters select, .filters button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #6D4C41;
+}
