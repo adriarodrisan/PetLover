@@ -22,20 +22,20 @@ if ($contrasena !== $confirmar_contrasena){
 //verificar si el mail esta registrado
 $verificar_correo_usuario = "SELECT * FROM adoptante WHERE Correo = '$correo'";
 $correo_verificado_usuario = mysqli_query($conn, $verificar_correo_usuario);
-if (mysqli_num_rows($correo_verificado)>0){
+if (mysqli_num_rows($correo_verificado_usuario)>0){
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
 $verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
 $correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
-if (mysqli_num_rows($correo_verificado)>0){
+if (mysqli_num_rows($correo_verificado_protectora)>0){
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
 //hashear pass
 $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
 $registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
-if (mysqli_query($conn, $registrar_usuario)){
+if (mysqli_query($conn, $registrar_usuarios)){
     echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
@@ -46,7 +46,7 @@ if (mysqli_query($conn, $registrar_usuario)){
                 <body class="cuerpo">
                     <div class="alertas">
                         <h1>Registro Exitoso</h1>
-                        <a href="/pagina_web/Home_Petlover.html> Ir al inicio</a>
+                        <a href="/Paginas_web/Home_Petlover.html"> Ir al inicio</a>
                     </div>
                 </body>
             </html>
