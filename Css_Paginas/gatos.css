@@ -12,3 +12,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+nav a {
+    text-decoration: none;
+    color: #6D4C41;
+    font-weight: bold;
+    margin: 0 15px;
+}
