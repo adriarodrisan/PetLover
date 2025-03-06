@@ -6,6 +6,15 @@
     <title>Contacto</title>
 </head>
 <body>
-    
+    <p>Si tiene alguna duda haz este formulario y te escribiremos lo antes posible</p>
+    <form>
+        <label for="nombre"> Nombre:</label>
+        <input type="text" name="nombre" placeholder="Nombre" required><br/>
+        <label for="correo"> Correo:</label>
+        <input type="email" name="correo" placeholder="Correo" required><br/>
+        <label for="mensaje">Mensaje:</label><br/>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="50" required placeholder="Pon aqui la duda que tengas"></textarea>
+        <button type="submit" class="btn">Enviar la duda</button>
+    </form>
 </body>
 </html>
