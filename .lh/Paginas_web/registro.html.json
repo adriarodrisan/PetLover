@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1740671208628,
@@ -20,6 +20,10 @@
                 {
                     "date": 1741277410604,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n </head>\r\n <body>\r\n     <div class=\"fondo\">\r\n         <h2>Registro de Usuario (adoptante)</h2>\r\n-        <form class=\"form-container register-form\" action=\"/Paginas_web/insertar_datos_registro.php\" method=\"post\">\r\n+        <form action=\"/Paginas_web/insertar_datos_registro.php\" method=\"POST\">\r\n             <label for=\"DNI\"> DNI:</label>\r\n             <input type=\"text\" name=\"dni\" placeholder=\"DNI\" required>\r\n             <label for=\"nombre\"> Nombre:</label>\r\n             <input type=\"text\" name=\"nombre\" placeholder=\"Nombre\" required>\r\n"
+                },
+                {
+                    "date": 1741277486781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n </head>\r\n <body>\r\n     <div class=\"fondo\">\r\n         <h2>Registro de Usuario (adoptante)</h2>\r\n-        <form class=\"form-container register-form\" action=\"/Paginas_web/insertar_datos_registro.php\" method=\"POST\">\r\n+        <form action=\"/Paginas_web/insertar_datos_registro.php\" method=\"POST\">\r\n             <label for=\"DNI\"> DNI:</label>\r\n             <input type=\"text\" name=\"dni\" placeholder=\"DNI\" required>\r\n             <label for=\"nombre\"> Nombre:</label>\r\n             <input type=\"text\" name=\"nombre\" placeholder=\"Nombre\" required>\r\n"
                 }
             ],
             "date": 1740671208628,
