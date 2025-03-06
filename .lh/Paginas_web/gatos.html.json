@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1741188226408,
@@ -24,6 +24,14 @@
                 {
                     "date": 1741189185430,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,7 +41,8 @@\n             <option value=\"cachorro\">Cachorro (-1 año)</option>\r\n             <option value=\"adulto\">Adulto (1-7 años)</option>\r\n             <option value=\"senior\">Senior (+7 años)</option>\r\n         </select>\r\n+        <button onclick=\"filtrarGatos()\">Buscar</button>\r\n     </section>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1741190292218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,6 +43,14 @@\n             <option value=\"senior\">Senior (+7 años)</option>\r\n         </select>\r\n         <button onclick=\"filtrarGatos()\">Buscar</button>\r\n     </section>\r\n+    <section class=\"cat-list\" id=\"cat-list\">\r\n+        <div class=\"cat-card\">\r\n+            <img src=\"cat1.png\" alt=\"Gato en adopción\">\r\n+            <h4>Milo</h4>\r\n+            <p>Raza: Siamés | Edad: 2 años | Tamaño: Mediano</p>\r\n+            <button>Saber más</button>\r\n+        </div>\r\n+\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1741277374311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,7 +50,13 @@\n             <h4>Milo</h4>\r\n             <p>Raza: Siamés | Edad: 2 años | Tamaño: Mediano</p>\r\n             <button>Saber más</button>\r\n         </div>\r\n+        <div class=\"cat-card\">\r\n+            <img src=\"cat2.png\" alt=\"Gato en adopción\">\r\n+            <h4>Luna</h4>\r\n+            <p>Raza: Persa | Edad: 3 años | Tamaño: Pequeño</p>\r\n+            <button>Saber más</button>\r\n+        </div>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1741188226408,
