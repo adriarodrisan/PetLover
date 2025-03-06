@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1741188269288,
@@ -44,6 +44,10 @@
                 {
                     "date": 1741277910180,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,48 @@\n+body {\r\n+    font-family: 'Arial', sans-serif;\r\n+    background-color: #FFE5B4;\r\n+    color: #6D4C41;\r\n+    margin: 0;\r\n+    text-align: center;\r\n+}\r\n+header {\r\n+    background-color: #FFCC99;\r\n+    padding: 15px;\r\n+    display: flex;\r\n+    justify-content: space-between;\r\n+    align-items: center;\r\n+}\r\n+nav a {\r\n+    text-decoration: none;\r\n+    color: #6D4C41;\r\n+    font-weight: bold;\r\n+    margin: 0 15px;\r\n+}\r\n+.hero {\r\n+    background-color: #FFDAB9;\r\n+    padding: 50px 20px;\r\n+}\r\n+.filters {\r\n+    margin: 20px 0;\r\n+}\r\n+.filters select, .filters button {\r\n+    padding: 10px;\r\n+    margin: 5px;\r\n+    border-radius: 5px;\r\n+    border: 1px solid #6D4C41;\r\n+}\r\n+.cat-list {\r\n+    display: flex;\r\n+    flex-wrap: wrap;\r\n+    justify-content: center;\r\n+    padding: 20px;\r\n+}\r\n+.cat-card {\r\n+    background: white;\r\n+    border-radius: 10px;\r\n+    padding: 15px;\r\n+    margin: 15px;\r\n+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);\r\n+    text-align: center;\r\n+    width: 250px;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1741277919197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,53 @@\n+body {\r\n+    font-family: 'Arial', sans-serif;\r\n+    background-color: #FFE5B4;\r\n+    color: #6D4C41;\r\n+    margin: 0;\r\n+    text-align: center;\r\n+}\r\n+header {\r\n+    background-color: #FFCC99;\r\n+    padding: 15px;\r\n+    display: flex;\r\n+    justify-content: space-between;\r\n+    align-items: center;\r\n+}\r\n+nav a {\r\n+    text-decoration: none;\r\n+    color: #6D4C41;\r\n+    font-weight: bold;\r\n+    margin: 0 15px;\r\n+}\r\n+.hero {\r\n+    background-color: #FFDAB9;\r\n+    padding: 50px 20px;\r\n+}\r\n+.filters {\r\n+    margin: 20px 0;\r\n+}\r\n+.filters select, .filters button {\r\n+    padding: 10px;\r\n+    margin: 5px;\r\n+    border-radius: 5px;\r\n+    border: 1px solid #6D4C41;\r\n+}\r\n+.cat-list {\r\n+    display: flex;\r\n+    flex-wrap: wrap;\r\n+    justify-content: center;\r\n+    padding: 20px;\r\n+}\r\n+.cat-card {\r\n+    background: white;\r\n+    border-radius: 10px;\r\n+    padding: 15px;\r\n+    margin: 15px;\r\n+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);\r\n+    text-align: center;\r\n+    width: 250px;\r\n+}\r\n+\r\n+.cat-card img {\r\n+    width: 100%;\r\n+    border-radius: 10px;\r\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1741188269288,
