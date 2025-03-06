@@ -5,3 +5,10 @@ body {
     margin: 0;
     text-align: center;
 }
+header {
+    background-color: #FFCC99;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
