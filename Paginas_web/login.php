@@ -17,5 +17,11 @@ $resultado_adoptante = mysqli_query($conn, $sql_adoptante);
 
 if (mysqli_num_rows($resultado_adoptante) > 0) {
     $fila = mysqli_fetch_assoc($resultado_adoptante);
+
+    if (password_verify($contrasena, $fila['Contraseña'])) {
+        $_SESSION['usuario'] = $fila['Nombre'];
+        $_SESSION['rol'] = 'refugio';
+        header("Location: Home_Petlover.html");
+        exit;
 }
 ?>
