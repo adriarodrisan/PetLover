@@ -2,6 +2,7 @@
 require_once ('conexion.php');
 if (!$conn){
     die("Conexión fallida: ". mysqli_connect_error());
+    exit;
 }
 $dni= trim($_POST['dni']);
 $nombre= trim($_POST['nombre']);
@@ -54,5 +55,6 @@ if (mysqli_query($conn, $registrar_usuarios)){
             exit;
 }else{
     echo "Error al registrar usuario: ". mysqli_error($conn);
+    exit;
 }
 ?>
