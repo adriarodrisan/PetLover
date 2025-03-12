@@ -15,4 +15,7 @@ if (empty($correo) || empty($contrasena)) {
 $sql_adoptante = "SELECT * FROM adoptante WHERE Correo = '$correo'";
 $resultado_adoptante = mysqli_query($conn, $sql_adoptante);
 
+if (mysqli_num_rows($resultado_adoptante) > 0) {
+    $fila = mysqli_fetch_assoc($resultado_adoptante);
+}
 ?>
