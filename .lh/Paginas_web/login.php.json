@@ -1,0 +1,30 @@
+{
+    "sourceFile": "Paginas_web/login.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1741794668563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1741794679958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n include('conexion.php');\r\n \r\n if (!$conn) {\r\n     die(\"Error de conexión: \" . mysqli_connect_error());\r\n+}\r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1741794729680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,7 +2,7 @@\n session_start();\r\n include('conexion.php');\r\n \r\n if (!$conn) {\r\n-    die(\"Error de conexión: \" . mysqli_connect_error());\r\n+    die(\"Conexion fallida: \" . mysqli_connect_error());\r\n }\r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1741794761516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,12 @@\n \r\n if (!$conn) {\r\n     die(\"Conexion fallida: \" . mysqli_connect_error());\r\n }\r\n+$correo = trim($_POST['correo']);\r\n+$contrasena = trim($_POST['contrasena']);\r\n+\r\n+if (empty($correo) || empty($contrasena)) {\r\n+    echo \"Por favor completa todos los campos.\";\r\n+    exit;\r\n+}\r\n ?>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1741794668563,
+            "name": "Commit-0",
+            "content": "<?php\r\nsession_start();\r\ninclude('conexion.php');\r\n\r\nif (!$conn) {\r\n    die(\"Error de conexión: \" . mysqli_connect_error());\r\n?>"
+        }
+    ]
+}
