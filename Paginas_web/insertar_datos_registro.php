@@ -33,7 +33,7 @@ if (mysqli_num_rows($correo_verificado_protectora)>0){
     exit;
 }
 //hashear pass
-$contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
+$contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT());
 $registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
 if (mysqli_query($conn, $registrar_usuarios)){
     echo '<!DOCTYPE html>

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 13,
+            "activePatchIndex": 14,
             "patches": [
                 {
                     "date": 1739560305465,
@@ -60,6 +60,10 @@
                 {
                     "date": 1740581210508,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,16 +17,19 @@\n             <a href=\"#Adopcion\">Cómo Adoptar</a>\r\n             <a href=\"#Ayudas\">Ayudanos</a>\r\n             <a href=\"#Contactos\">Contato</a>\r\n         </nav>\r\n-        <button class=\"boton-autenticacion\"> Iniciar Sesión </button>\r\n+        <a href=\"Inicio_Sesion.html\">\r\n+            <button class=\"boton-autenticacion\">Iniciar Sesión</button>\r\n+        </a>\r\n+          \r\n     </header>\r\n  <!-- 🎥 Separacion entre gato y perro  -->\r\n     <section class= \"seccion-principal\">\r\n         <h2>Encuentra a tu mejora amigo</h2>\r\n         <p>Explora nuestros refugios y Encuentra a tu compañero ideal</p>\r\n         <div class=\"contenedor-categorias\">\r\n-            <a href=\"#perros.html\" class=\"tarjeta-categoria\">🐶 <h3>Perros</h3></a>\r\n+            <a href=\"perros.html\" class=\"tarjeta-categoria\">🐶 <h3>Perros</h3></a>\r\n             <a href=\"#gatos.html\" class=\"tarjeta-categoria\">🐱 <h3>Gatos</h3></a>\r\n         </div>\r\n     </section>\r\n <!-- 🐾 Sección de Perros y Gatos Destacados con grandes necesidades! -->\r\n"
+                },
+                {
+                    "date": 1741278023350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,22 +15,21 @@\n         <nav>\r\n             <a href=\"#AboutUs\">Sobre Nosotros</a>\r\n             <a href=\"#Adopcion\">Cómo Adoptar</a>\r\n             <a href=\"#Ayudas\">Ayudanos</a>\r\n-            <a href=\"#Contactos\">Contato</a>\r\n+            <a href=\"contacto.html\">Contato</a>\r\n         </nav>\r\n         <a href=\"Inicio_Sesion.html\">\r\n             <button class=\"boton-autenticacion\">Iniciar Sesión</button>\r\n-        </a>\r\n-          \r\n+        </a>      \r\n     </header>\r\n  <!-- 🎥 Separacion entre gato y perro  -->\r\n     <section class= \"seccion-principal\">\r\n         <h2>Encuentra a tu mejora amigo</h2>\r\n         <p>Explora nuestros refugios y Encuentra a tu compañero ideal</p>\r\n         <div class=\"contenedor-categorias\">\r\n             <a href=\"perros.html\" class=\"tarjeta-categoria\">🐶 <h3>Perros</h3></a>\r\n-            <a href=\"#gatos.html\" class=\"tarjeta-categoria\">🐱 <h3>Gatos</h3></a>\r\n+            <a href=\"gatos.html\" class=\"tarjeta-categoria\">🐱 <h3>Gatos</h3></a>\r\n         </div>\r\n     </section>\r\n <!-- 🐾 Sección de Perros y Gatos Destacados con grandes necesidades! -->\r\n <!-- 🐾 Sección de Perros -->\r\n"
                 }
             ],
             "date": 1739560305465,

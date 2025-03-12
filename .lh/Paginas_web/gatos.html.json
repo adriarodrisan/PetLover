@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1741188226408,
@@ -36,6 +36,10 @@
                 {
                     "date": 1741277470675,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,7 +56,11 @@\n             <h4>Luna</h4>\r\n             <p>Raza: Persa | Edad: 3 años | Tamaño: Pequeño</p>\r\n             <button>Saber más</button>\r\n         </div>\r\n+    </section>\r\n+    <footer class=\"footer\">\r\n+        © 2025 PetLover | Contacto: petlover@gmail.com\r\n+    </footer>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1741278051295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,15 +45,15 @@\n         <button onclick=\"filtrarGatos()\">Buscar</button>\r\n     </section>\r\n     <section class=\"cat-list\" id=\"cat-list\">\r\n         <div class=\"cat-card\">\r\n-            <img src=\"cat1.png\" alt=\"Gato en adopción\">\r\n+            <img src=\"/Imagenes_Animales/cat1.png\" alt=\"Gato en adopción\">\r\n             <h4>Milo</h4>\r\n             <p>Raza: Siamés | Edad: 2 años | Tamaño: Mediano</p>\r\n             <button>Saber más</button>\r\n         </div>\r\n         <div class=\"cat-card\">\r\n-            <img src=\"cat2.png\" alt=\"Gato en adopción\">\r\n+            <img src=\"/Imagenes_Animales/cat2.png\" alt=\"Gato en adopción\">\r\n             <h4>Luna</h4>\r\n             <p>Raza: Persa | Edad: 3 años | Tamaño: Pequeño</p>\r\n             <button>Saber más</button>\r\n         </div>\r\n"
                 }
             ],
             "date": 1741188226408,
