@@ -1,8 +1,13 @@
 <?php
-require_once ('conexion.php');
-if (!$conn){
-    die("Conexión fallida: ". mysqli_connect_error());
-    exit;
+$servername = 'localhost'; // este sera el nombre de nuestro servidor
+$database = 'protectora'; // nombre bd
+$username = 'petlove'; // Usuario bd
+$password = 'mascota'; // pass base de datos
+// creamos conexion
+$conn = new mysqli($servername, $username, $password, $database);
+//verificamos la conexion
+if ($conn->connect_error){
+    die("Conexion fallida: ". $conn->connect_error);
 }
 $dni= trim($_POST['dni']);
 $nombre= trim($_POST['nombre']);
@@ -55,6 +60,5 @@ if (mysqli_query($conn, $registrar_usuarios)){
             exit;
 }else{
     echo "Error al registrar usuario: ". mysqli_error($conn);
-    exit;
 }
 ?>
