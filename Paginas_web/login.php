@@ -23,5 +23,11 @@ if (mysqli_num_rows($resultado_adoptante) > 0) {
         $_SESSION['rol'] = 'refugio';
         header("Location: Home_Petlover.html");
         exit;
+    } else {
+        echo "Contraseña incorrecta.";
+        exit;
+    }
 }
+
+echo "Correo no encontrado.";
 ?>
