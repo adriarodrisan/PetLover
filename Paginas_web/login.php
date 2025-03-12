@@ -12,4 +12,7 @@ if (empty($correo) || empty($contrasena)) {
     echo "Por favor completa todos los campos.";
     exit;
 }
+$sql_adoptante = "SELECT * FROM adoptante WHERE Correo = '$correo'";
+$resultado_adoptante = mysqli_query($conn, $sql_adoptante);
+
 ?>

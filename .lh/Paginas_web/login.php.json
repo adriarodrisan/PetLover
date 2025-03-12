@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1741794668563,
@@ -20,6 +20,10 @@
                 {
                     "date": 1741794761516,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,12 @@\n \r\n if (!$conn) {\r\n     die(\"Conexion fallida: \" . mysqli_connect_error());\r\n }\r\n+$correo = trim($_POST['correo']);\r\n+$contrasena = trim($_POST['contrasena']);\r\n+\r\n+if (empty($correo) || empty($contrasena)) {\r\n+    echo \"Por favor completa todos los campos.\";\r\n+    exit;\r\n+}\r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1741794823182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+<?php\r\n+session_start();\r\n+include('conexion.php');\r\n+\r\n+if (!$conn) {\r\n+    die(\"Conexion fallida: \" . mysqli_connect_error());\r\n+}\r\n+$correo = trim($_POST['correo']);\r\n+$contrasena = trim($_POST['contrasena']);\r\n+\r\n+if (empty($correo) || empty($contrasena)) {\r\n+    echo \"Por favor completa todos los campos.\";\r\n+    exit;\r\n+}\r\n+$sql_adoptante = \"SELECT * FROM adoptante WHERE Correo = '$correo'\";\r\n+$resultado_adoptante = mysqli_query($conn, $sql_adoptante);\r\n+\r\n+?>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1741794668563,
