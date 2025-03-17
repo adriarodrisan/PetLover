@@ -4,6 +4,7 @@ include('conexion.php');
 
 if (!$conn) {
     die("Conexion fallida: " . mysqli_connect_error());
+    exit;
 }
 $correo = trim($_POST['email']);
 $contrasena = trim($_POST['password']);
