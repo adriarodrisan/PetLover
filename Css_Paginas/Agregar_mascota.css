@@ -18,3 +18,8 @@ body{
     max-width: 900px;
     box-sizing: border-box;
 }
+h2 {
+    text-align: center;
+    color: #6d4c41;
+    margin-bottom: 30px;
+}
