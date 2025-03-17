@@ -11,24 +11,25 @@ try {
 }catch (PDOException $e){
     echo 'Falló la conixion: ' . $e->getMessage(); 
 }
-//session_start();
-//$servername = 'localhost'; // este sera el nombre de nuestro servidor
-//$database = 'protectora'; // nombre bd
-//$username = 'petlove'; // Usuario bd
-//$password = 'mascota'; // pass base de datos
-//$conn = new mysqli($servername, $username, $password, $database);
+/*session_start();
+$servername = 'localhost'; // este sera el nombre de nuestro servidor
+$database = 'protectora'; // nombre bd
+$username = 'petlove'; // Usuario bd
+$password = 'mascota'; // pass base de datos
+$conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_errno){
     echo 'fallo al conectar';
     die("Conexion fallida: ". $conn->connect_error);
-}
+}*/
 $correo = trim($_POST['email']);
 $contrasena = trim($_POST['password']);
 if (empty($correo) || empty($contrasena)) {
     echo "Por favor completa todos los campos.";
     exit;
 }
-$sql_adoptante = "SELECT * FROM adoptante WHERE Correo = '$correo'";
-$resultado_adoptante = mysqli_query($conn, $sql_adoptante);
+$registros = $db->query("SELECT * FROM adoptante WHERE Correo = '$correo'");
+//$sql_adoptante = "SELECT * FROM adoptante WHERE Correo = '$correo'";
+//$resultado_adoptante = mysqli_query($conn, $sql_adoptante);
 
 if (mysqli_num_rows($resultado_adoptante) > 0) {
     $fila = mysqli_fetch_assoc($resultado_adoptante);
