@@ -23,3 +23,8 @@ h2 {
     color: #6d4c41;
     margin-bottom: 30px;
 }
+.formulario-g{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px 30px;
+}
