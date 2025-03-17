@@ -5,8 +5,8 @@ include('conexion.php');
 if (!$conn) {
     die("Conexion fallida: " . mysqli_connect_error());
 }
-$correo = trim($_POST['correo']);
-$contrasena = trim($_POST['contrasena']);
+$correo = trim($_POST['email']);
+$contrasena = trim($_POST['password']);
 
 if (empty($correo) || empty($contrasena)) {
     echo "Por favor completa todos los campos.";
@@ -28,6 +28,5 @@ if (mysqli_num_rows($resultado_adoptante) > 0) {
         exit;
     }
 }
-
 echo "Correo no encontrado.";
 ?>

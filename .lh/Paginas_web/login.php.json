@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1741794668563,
@@ -36,6 +36,10 @@
                 {
                     "date": 1741795008633,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,33 @@\n+<?php\r\n+session_start();\r\n+include('conexion.php');\r\n+\r\n+if (!$conn) {\r\n+    die(\"Conexion fallida: \" . mysqli_connect_error());\r\n+}\r\n+$correo = trim($_POST['correo']);\r\n+$contrasena = trim($_POST['contrasena']);\r\n+\r\n+if (empty($correo) || empty($contrasena)) {\r\n+    echo \"Por favor completa todos los campos.\";\r\n+    exit;\r\n+}\r\n+$sql_adoptante = \"SELECT * FROM adoptante WHERE Correo = '$correo'\";\r\n+$resultado_adoptante = mysqli_query($conn, $sql_adoptante);\r\n+\r\n+if (mysqli_num_rows($resultado_adoptante) > 0) {\r\n+    $fila = mysqli_fetch_assoc($resultado_adoptante);\r\n+\r\n+    if (password_verify($contrasena, $fila['Contraseña'])) {\r\n+        $_SESSION['usuario'] = $fila['Nombre'];\r\n+        $_SESSION['rol'] = 'refugio';\r\n+        header(\"Location: Home_Petlover.html\");\r\n+        exit;\r\n+    } else {\r\n+        echo \"Contraseña incorrecta.\";\r\n+        exit;\r\n+    }\r\n+}\r\n+\r\n+echo \"Correo no encontrado.\";\r\n+?>\r\n"
+                },
+                {
+                    "date": 1741876075451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+<?php\r\n+session_start();\r\n+include('conexion.php');\r\n+\r\n+if (!$conn) {\r\n+    die(\"Conexion fallida: \" . mysqli_connect_error());\r\n+}\r\n+$correo = trim($_POST['email']);\r\n+$contrasena = trim($_POST['password']);\r\n+\r\n+if (empty($correo) || empty($contrasena)) {\r\n+    echo \"Por favor completa todos los campos.\";\r\n+    exit;\r\n+}\r\n+$sql_adoptante = \"SELECT * FROM adoptante WHERE Correo = '$correo'\";\r\n+$resultado_adoptante = mysqli_query($conn, $sql_adoptante);\r\n+\r\n+if (mysqli_num_rows($resultado_adoptante) > 0) {\r\n+    $fila = mysqli_fetch_assoc($resultado_adoptante);\r\n+\r\n+    if (password_verify($contrasena, $fila['Contraseña'])) {\r\n+        $_SESSION['usuario'] = $fila['Nombre'];\r\n+        $_SESSION['rol'] = 'refugio';\r\n+        header(\"Location: Home_Petlover.html\");\r\n+        exit;\r\n+    } else {\r\n+        echo \"Contraseña incorrecta.\";\r\n+        exit;\r\n+    }\r\n+}\r\n+echo \"Correo no encontrado.\";\r\n+?>\r\n"
                 }
             ],
             "date": 1741794668563,
