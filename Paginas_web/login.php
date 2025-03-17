@@ -4,12 +4,19 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
 error_reporting(E_ALL);
-session_start();
-$servername = 'localhost'; // este sera el nombre de nuestro servidor
-$database = 'protectora'; // nombre bd
-$username = 'petlove'; // Usuario bd
-$password = 'mascota'; // pass base de datos
-$conn = new mysqli($servername, $username, $password, $database);
+$opciones = [PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"];
+try {
+    $db = new PDO('mysql:host=localhost;dbname=protectora', 'petlove', 'mascota');
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTON);
+}catch (PDOException $e){
+    echo 'Falló la conixion: ' . $e->getMessage(); 
+}
+//session_start();
+//$servername = 'localhost'; // este sera el nombre de nuestro servidor
+//$database = 'protectora'; // nombre bd
+//$username = 'petlove'; // Usuario bd
+//$password = 'mascota'; // pass base de datos
+//$conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_errno){
     echo 'fallo al conectar';
     die("Conexion fallida: ". $conn->connect_error);
