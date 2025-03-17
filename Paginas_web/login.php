@@ -29,5 +29,6 @@ if (mysqli_num_rows($resultado_adoptante) > 0) {
         exit;
     }
 }
+
 echo "Correo no encontrado.";
 ?>
