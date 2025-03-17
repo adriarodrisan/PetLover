@@ -1,24 +1,20 @@
 <?php
 $servername = 'localhost'; // este sera el nombre de nuestro servidor
 $database = 'protectora'; // nombre bd
-$username = 'root'; // Usuario bd
-$password = ''; // pass base de datos
+$username = 'petlove'; // Usuario bd
+$password = 'mascota'; // pass base de datos
 // creamos conexion
-if (function_exists('mysqli_connect')){
-    echo "mysqli yes";
-}
-
-echo "intentamos conexion" . $servername . $database.$username.$password;
+//if (function_exists('mysqli_connect')){
+//    echo "mysqli yes";
+//}
+//echo "intentamos conexion" . $servername . $database.$username.$password;
 $conn = new mysqli($servername, $username, $password, $database);
 //verificamos la conexion
-echo "este no se muestra";
-
+//echo "este no se muestra";
 if ($conn->connect_errno){
     echo 'fallo al conectar';
     die("Conexion fallida: ". $conn->connect_error);
-
 }
-
 $dni= trim($_POST['dni']);
 $nombre= trim($_POST['nombre']);
 $telefono= trim($_POST['telefono']);
@@ -30,7 +26,7 @@ echo $dni." ".$correo;
 if(empty($dni) || empty($nombre) || empty($telefono) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
     exit;
-}/*
+}
 //verificar las contraseñas que sean iguales
 if ($contrasena !== $confirmar_contrasena){
     echo "Las cotraseñas no coinciden.";
@@ -49,11 +45,10 @@ if (mysqli_num_rows($correo_verificado_protectora)>0){
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
-    */
 //hashear pass
-//$contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
-//$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
-//if (mysqli_query($conn, $registrar_usuarios)){
+$contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
+$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
+if (mysqli_query($conn, $registrar_usuarios)){
     echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
@@ -70,7 +65,7 @@ if (mysqli_num_rows($correo_verificado_protectora)>0){
             </html>
             ';
             exit;
-//}else{
-//    echo "Error al registrar usuario: ". mysqli_error($conn);
-//}
+}else{
+   echo "Error al registrar usuario: ". mysqli_error($conn);
+}
 ?>
