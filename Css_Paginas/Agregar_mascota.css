@@ -60,3 +60,6 @@ h2 {
     font-size: 1rem;
     cursor: pointer;
 }
+.boton button:hover {
+    background-color: #FF7043;
+}
