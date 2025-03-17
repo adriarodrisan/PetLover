@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1742234250487,
@@ -24,6 +24,10 @@
                 {
                     "date": 1742235543845,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,35 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Agregar Mascota</title>\r\n+    <link rel=\"stylesheet\" href=\"Agregar_Mascota.html\">\r\n+</head>\r\n+<body>\r\n+    <div class=\"formulario-contenedor\">\r\n+        <h2>Agregar una nueva Mascota</h2>  \r\n+        <form action=\"insertar_mascota.php\" method=\"POST\">\r\n+            <div class=\"campo\">\r\n+                <label for=\"Chip_ID\">ID del Chip: </label>\r\n+                <input type=\"text\" name=\"Chip_ID\" id=\"Chip_ID\" required>\r\n+            </div>\r\n+            <div class=\"campo\">\r\n+                <label for=\"Nombre\">Nombre: </label>\r\n+                <input type=\"text\" name=\"Nombre\" id=\"Nombre\" required>\r\n+            </div>\r\n+            <div class=\"campo\">\r\n+                <label for=\"Especie\"> Especie: </label>\r\n+                <select name=\"Especie\" id=\"Nombre\" required>\r\n+                    <option value=\"\">Selecciona...</option>\r\n+                    <option value=\"Perro\">Perro</option>\r\n+                    <option value=\"Gato\">Gato</option>\r\n+                </select>   \r\n+            </div>\r\n+\r\n+\r\n+        </form>      \r\n+    </div>\r\n+    \r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742235744609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,39 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Agregar Mascota</title>\r\n+    <link rel=\"stylesheet\" href=\"Agregar_Mascota.html\">\r\n+</head>\r\n+<body>\r\n+    <div class=\"formulario-contenedor\">\r\n+        <h2>Agregar una nueva Mascota</h2>  \r\n+        <form action=\"insertar_mascota.php\" method=\"POST\">\r\n+            <div class=\"campo\">\r\n+                <label for=\"Chip_ID\">ID del Chip: </label>\r\n+                <input type=\"text\" name=\"Chip_ID\" id=\"Chip_ID\" required>\r\n+            </div>\r\n+            <div class=\"campo\">\r\n+                <label for=\"Nombre\">Nombre: </label>\r\n+                <input type=\"text\" name=\"Nombre\" id=\"Nombre\" required>\r\n+            </div>\r\n+            <div class=\"campo\">\r\n+                <label for=\"Especie\"> Especie: </label>\r\n+                <select name=\"Especie\" id=\"Nombre\" required>\r\n+                    <option value=\"\">Selecciona...</option>\r\n+                    <option value=\"Perro\">Perro</option>\r\n+                    <option value=\"Gato\">Gato</option>\r\n+                </select>   \r\n+            </div>\r\n+            <div class=\"campo\">\r\n+                <label for=\"raza\">Raza: </label>\r\n+                <input type=\"text\" name=\"raza\" id=\"raza\" required>\r\n+            </div>\r\n+\r\n+\r\n+        </form>      \r\n+    </div>\r\n+    \r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1742234250487,
