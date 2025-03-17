@@ -51,3 +51,12 @@ h2 {
     text-align: center;
     margin-top: 20px;
 }
+.boton button {
+    background-color: #FF9966;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}

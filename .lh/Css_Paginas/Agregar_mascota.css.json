@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 14,
+            "activePatchIndex": 15,
             "patches": [
                 {
                     "date": 1742237172541,
@@ -64,6 +64,10 @@
                 {
                     "date": 1742239110556,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,53 @@\n+body{\r\n+    font-family: Arial, sans-serif;\r\n+    background-color: #FFE5B4;\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    display: flex;\r\n+    justify-content: center;\r\n+    align-items: center;\r\n+    min-height: 100vh;\r\n+\r\n+}\r\n+.fomulario-contenedor{\r\n+    background-color: white;\r\n+    padding-left: 40px;\r\n+    border-radius: 10px;\r\n+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);\r\n+    width: 90%;\r\n+    max-width: 900px;\r\n+    box-sizing: border-box;\r\n+}\r\n+h2 {\r\n+    text-align: center;\r\n+    color: #6d4c41;\r\n+    margin-bottom: 30px;\r\n+}\r\n+.formulario-g{\r\n+    display: grid;\r\n+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\r\n+    gap: 20px 30px;\r\n+}\r\n+.campo label{\r\n+    display: block;\r\n+    font-weight: bold;\r\n+    margin-bottom: 5px;\r\n+    color:#6d4c41; \r\n+}\r\n+.campo input, .campo select{\r\n+    width: 100%;\r\n+    padding: 10px;\r\n+    border: 1px solid #d3a87c ;\r\n+    border-radius: 5px;\r\n+    font-size: 1rem;\r\n+}\r\n+.campo-con-imagen{\r\n+    grid-column: span 2;\r\n+    text-align: center;\r\n+    margin-top: 20px;\r\n+}\r\n+.boton {\r\n+    grid-column: span 2;\r\n+    text-align: center;\r\n+    margin-top: 20px;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742239144624,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,62 @@\n+body{\r\n+    font-family: Arial, sans-serif;\r\n+    background-color: #FFE5B4;\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    display: flex;\r\n+    justify-content: center;\r\n+    align-items: center;\r\n+    min-height: 100vh;\r\n+\r\n+}\r\n+.fomulario-contenedor{\r\n+    background-color: white;\r\n+    padding-left: 40px;\r\n+    border-radius: 10px;\r\n+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);\r\n+    width: 90%;\r\n+    max-width: 900px;\r\n+    box-sizing: border-box;\r\n+}\r\n+h2 {\r\n+    text-align: center;\r\n+    color: #6d4c41;\r\n+    margin-bottom: 30px;\r\n+}\r\n+.formulario-g{\r\n+    display: grid;\r\n+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\r\n+    gap: 20px 30px;\r\n+}\r\n+.campo label{\r\n+    display: block;\r\n+    font-weight: bold;\r\n+    margin-bottom: 5px;\r\n+    color:#6d4c41; \r\n+}\r\n+.campo input, .campo select{\r\n+    width: 100%;\r\n+    padding: 10px;\r\n+    border: 1px solid #d3a87c ;\r\n+    border-radius: 5px;\r\n+    font-size: 1rem;\r\n+}\r\n+.campo-con-imagen{\r\n+    grid-column: span 2;\r\n+    text-align: center;\r\n+    margin-top: 20px;\r\n+}\r\n+.boton {\r\n+    grid-column: span 2;\r\n+    text-align: center;\r\n+    margin-top: 20px;\r\n+}\r\n+.boton button {\r\n+    background-color: #FF9966;\r\n+    color: white;\r\n+    padding: 12px 30px;\r\n+    border: none;\r\n+    border-radius: 5px;\r\n+    font-size: 1rem;\r\n+    cursor: pointer;\r\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1742237172541,
