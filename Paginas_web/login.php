@@ -1,14 +1,16 @@
 <?php
 session_start();
-include('conexion.php');
-
-if (!$conn) {
-    die("Conexion fallida: " . mysqli_connect_error());
-    exit;
+$servername = 'localhost'; // este sera el nombre de nuestro servidor
+$database = 'protectora'; // nombre bd
+$username = 'petlove'; // Usuario bd
+$password = 'mascota'; // pass base de datos
+$conn = new mysqli($servername, $username, $password, $database);
+if ($conn->connect_errno){
+    echo 'fallo al conectar';
+    die("Conexion fallida: ". $conn->connect_error);
 }
 $correo = trim($_POST['email']);
 $contrasena = trim($_POST['password']);
-
 if (empty($correo) || empty($contrasena)) {
     echo "Por favor completa todos los campos.";
     exit;
@@ -22,8 +24,22 @@ if (mysqli_num_rows($resultado_adoptante) > 0) {
     if (password_verify($contrasena, $fila['Contraseña'])) {
         $_SESSION['usuario'] = $fila['Nombre'];
         $_SESSION['rol'] = 'refugio';
-        header("Location: Home_Petlover.html");
-        exit;
+        echo '<!DOCTYPE html>
+            <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Registro Exitoso</title>
+                </head>
+                <body class="cuerpo">
+                    <div class="alertas">
+                        <h1>Inicio de sesion exitoso</h1>
+                        <a href="/Paginas_web/Home_Petlover.html"> Ir al inicio</a>
+                    </div>
+                </body>
+            </html>
+            ';
+            exit;
     } else {
         echo "Contraseña incorrecta.";
         exit;
