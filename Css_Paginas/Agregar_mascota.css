@@ -41,3 +41,8 @@ h2 {
     border-radius: 5px;
     font-size: 1rem;
 }
+.campo-con-imagen{
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 20px;
+}
