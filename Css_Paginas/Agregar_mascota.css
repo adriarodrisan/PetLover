@@ -34,3 +34,10 @@ h2 {
     margin-bottom: 5px;
     color:#6d4c41; 
 }
+.campo input, .campo select{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d3a87c ;
+    border-radius: 5px;
+    font-size: 1rem;
+}
