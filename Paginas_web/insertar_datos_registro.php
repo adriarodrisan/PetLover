@@ -1,4 +1,5 @@
 <?php
+
 $servername = 'localhost'; // este sera el nombre de nuestro servidor
 $database = 'protectora'; // nombre bd
 $username = 'petlove'; // Usuario bd

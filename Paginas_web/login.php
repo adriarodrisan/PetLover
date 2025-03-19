@@ -30,7 +30,7 @@ if (empty($correo) || empty($contrasena)) {
 $registros = $db->query("SELECT * FROM adoptante WHERE Correo = '$correo'");
 //$sql_adoptante = "SELECT * FROM adoptante WHERE Correo = '$correo'";
 //$resultado_adoptante = mysqli_query($conn, $sql_adoptante);
-$registros->exececute(); 
+$registros->execute(); 
 //if (mysqli_num_rows($resultado_adoptante) > 0) {
    if ($registros->rowCount() > 0) {
     $fila = $registros->fetch(PDO::FETCH_ASSOC);
