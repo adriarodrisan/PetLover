@@ -4,7 +4,13 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
 error_reporting(E_ALL);
-$servername = 'localhost'; // este sera el nombre de nuestro servidor
+try {
+    $db = new PDO('mysql:host=localhost;dbname=protectora', 'petlove', 'mascota');
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}catch (PDOException $e){
+    echo 'Falló la conixion: ' . $e->getMessage(); 
+}
+/*$servername = 'localhost'; // este sera el nombre de nuestro servidor
 $database = 'protectora'; // nombre bd
 $username = 'petlove'; // Usuario bd
 $password = 'mascota'; // pass base de datos
@@ -19,7 +25,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_errno){
     echo 'fallo al conectar';
     die("Conexion fallida: ". $conn->connect_error);
-}
+}*/
 $dni= trim($_POST['dni']);
 $nombre= trim($_POST['nombre']);
 $telefono= trim($_POST['telefono']);
