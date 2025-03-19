@@ -1,5 +1,16 @@
 <?php
-$servername = 'localhost'; // este sera el nombre de nuestro servidor
+ini_set('display_errors', 1);
+
+ini_set('display_startup_errors', 1);
+
+error_reporting(E_ALL);
+try {
+    $db = new PDO('mysql:host=localhost;dbname=protectora', 'petlove', 'mascota');
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}catch (PDOException $e){
+    echo 'Falló la conixion: ' . $e->getMessage(); 
+}
+/*$servername = 'localhost'; // este sera el nombre de nuestro servidor
 $database = 'protectora'; // nombre bd
 $username = 'petlove'; // Usuario bd
 $password = 'mascota'; // pass base de datos
@@ -14,7 +25,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 if ($conn->connect_errno){
     echo 'fallo al conectar';
     die("Conexion fallida: ". $conn->connect_error);
-}
+}*/
 $dni= trim($_POST['dni']);
 $nombre= trim($_POST['nombre']);
 $telefono= trim($_POST['telefono']);
@@ -22,7 +33,7 @@ $correo= trim($_POST['correo']);
 $contrasena= trim($_POST['contrasena']);
 $confirmar_contrasena= trim($_POST['confirmar_contrasena']);
 //revisar que los campos no sean null
-echo $dni." ".$correo;
+//echo $dni." ".$correo;
 if(empty($dni) || empty($nombre) || empty($telefono) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
     exit;
@@ -33,15 +44,21 @@ if ($contrasena !== $confirmar_contrasena){
     exit;
 }
 //verificar si el mail esta registrado
-$verificar_correo_usuario = "SELECT * FROM adoptante WHERE Correo = '$correo'";
-$correo_verificado_usuario = mysqli_query($conn, $verificar_correo_usuario);
-if (mysqli_num_rows($correo_verificado_usuario)>0){
+$registros_adoptate = $db->query("SELECT * FROM adoptante WHERE Correo = '$correo'");
+$registros_adoptate->execute(); 
+//$verificar_correo_usuario = "SELECT * FROM adoptante WHERE Correo = '$correo'";
+//$correo_verificado_usuario = mysqli_query($conn, $verificar_correo_usuario);
+//if (mysqli_num_rows($correo_verificado_usuario)>0){
+if ($registros_adoptate->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
-$verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
-$correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
-if (mysqli_num_rows($correo_verificado_protectora)>0){
+$registros_protectora = $db->query("SELECT * FROM adoptante WHERE Correo = '$correo'");
+$registros_protectora->execute(); 
+//$verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
+//$correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
+//if (mysqli_num_rows($correo_verificado_protectora)>0){
+if ($registros_protectora->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
@@ -67,5 +84,6 @@ if (mysqli_query($conn, $registrar_usuarios)){
             exit;
 }else{
    echo "Error al registrar usuario: ". mysqli_error($conn);
+   exit;
 }
 ?>
