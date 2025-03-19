@@ -33,7 +33,7 @@ $correo= trim($_POST['correo']);
 $contrasena= trim($_POST['contrasena']);
 $confirmar_contrasena= trim($_POST['confirmar_contrasena']);
 //revisar que los campos no sean null
-echo $dni." ".$correo;
+//echo $dni." ".$correo;
 if(empty($dni) || empty($nombre) || empty($telefono) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
     exit;
