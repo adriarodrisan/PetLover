@@ -44,15 +44,21 @@ if ($contrasena !== $confirmar_contrasena){
     exit;
 }
 //verificar si el mail esta registrado
-$verificar_correo_usuario = "SELECT * FROM adoptante WHERE Correo = '$correo'";
-$correo_verificado_usuario = mysqli_query($conn, $verificar_correo_usuario);
-if (mysqli_num_rows($correo_verificado_usuario)>0){
+$registros_adoptate = $db->query("SELECT * FROM adoptante WHERE Correo = '$correo'");
+$registros_adoptate->execute(); 
+//$verificar_correo_usuario = "SELECT * FROM adoptante WHERE Correo = '$correo'";
+//$correo_verificado_usuario = mysqli_query($conn, $verificar_correo_usuario);
+//if (mysqli_num_rows($correo_verificado_usuario)>0){
+if ($registros_adoptate->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
-$verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
-$correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
-if (mysqli_num_rows($correo_verificado_protectora)>0){
+$registros_protectora = $db->query("SELECT * FROM adoptante WHERE Correo = '$correo'");
+$registros_protectora->execute(); 
+//$verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
+//$correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
+//if (mysqli_num_rows($correo_verificado_protectora)>0){
+if ($registros_protectora->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
