@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Mascota</title>
-    <link rel="stylesheet" href="Agregar_Mascota.html">
+    <link rel="stylesheet" href="/Css_Paginas/Agregar_mascota.css">
 </head>
 <body>
     <div class="formulario-contenedor">
         <h2>Agregar una nueva Mascota</h2>  
-        <form action="insertar_mascota.php" method="POST" class="formulario-g">
+        <form action="insertar_mascota.php" method="POST" enctype="multipart/form-data" class="formulario-g">
             <div class="campo">
                 <label for="Chip_ID">ID del Chip: </label>
                 <input type="text" name="Chip_ID" id="Chip_ID" required>
@@ -55,11 +55,11 @@
                     <option value="Reservado">Reservado</option>
                 </select>
             </div>
-            <div class="campo-con-imagen">
+            <div class="campo campo-imagen">
                 <label for="Imagen">Sube una Imagen:</label> 
                 <input type="file" name="Imagen" id="Imagen" accept="Imagen/*" required >
             </div>
-            <div class="boton">
+            <div class="boton-contenedor">
                 <button type="submit">Guardar Mascota</button>
             </div>
         </form>      
