@@ -30,13 +30,14 @@ if (empty($correo) || empty($contrasena)) {
 $registros = $db->query("SELECT * FROM adoptante WHERE Correo = '$correo'");
 //$sql_adoptante = "SELECT * FROM adoptante WHERE Correo = '$correo'";
 //$resultado_adoptante = mysqli_query($conn, $sql_adoptante);
-
-if (mysqli_num_rows($resultado_adoptante) > 0) {
-    $fila = mysqli_fetch_assoc($resultado_adoptante);
+$registros->exececute(); 
+//if (mysqli_num_rows($resultado_adoptante) > 0) {
+   if ($registros->rowCount() > 0) {
+    $fila = $registros->fetch(PDO::FETCH_ASSOC);
 
     if (password_verify($contrasena, $fila['Contraseña'])) {
-        $_SESSION['usuario'] = $fila['Nombre'];
-        $_SESSION['rol'] = 'refugio';
+        //$_SESSION['usuario'] = $fila['Nombre'];
+        //$_SESSION['rol'] = 'refugio';
         echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
