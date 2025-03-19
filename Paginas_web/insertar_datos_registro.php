@@ -84,5 +84,6 @@ if (mysqli_query($conn, $registrar_usuarios)){
             exit;
 }else{
    echo "Error al registrar usuario: ". mysqli_error($conn);
+   exit;
 }
 ?>
