@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Paginas_web/SobreNosotros.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1742397788667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742397945127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,16 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Sobre Nosotros - Petlover </title>\r\n-    <h1>Conoce a <span class=\"marca\">Petlover</span></h1>\r\n-    <p>Más que un proyecto, somos un grupo de alumnos comprometidos con el bienestar animal. </p>\r\n+    <link rel=\"stylesheet\" href=\"/Css_Paginas/SobreNosotros.css\">\r\n </head>\r\n <body>\r\n+    <main class=\"seccion-nosotros\">\r\n+        <section class=\"encabezado-nosotros\">\r\n+            <h1>Conoce a <span class=\"marca\">Petlover</span></h1>\r\n+            <p>Más que un proyecto, somos un grupo de alumnos comprometidos con el bienestar animal. </p>\r\n+        </section>\r\n+</body>\r\n     \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1742397788667,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Sobre Nosotros - Petlover </title>\r\n    <h1>Conoce a <span class=\"marca\">Petlover</span></h1>\r\n    <p>Más que un proyecto, somos un grupo de alumnos comprometidos con el bienestar animal. </p>\r\n</head>\r\n<body>\r\n    \r\n</body>\r\n</html>"
+        }
+    ]
+}
