@@ -64,8 +64,10 @@ if ($registros_protectora->rowCount() > 0) {
 }
 //hashear pass
 $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
-$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
-if (mysqli_query($conn, $registrar_usuarios)){
+$registrar_usuarios = $db->query("INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada')");
+//$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
+if ($registrar_usuarios->execute()){
+//if (mysqli_query($conn, $registrar_usuarios)){
     echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
