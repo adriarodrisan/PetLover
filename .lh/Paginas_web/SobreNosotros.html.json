@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 12,
+            "activePatchIndex": 17,
             "patches": [
                 {
                     "date": 1742397788667,
@@ -56,6 +56,26 @@
                 {
                     "date": 1742486269990,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,13 @@\n                   <li>Colabora como hogar de acogida.</li>\r\n                   <li>Apoya con donaciones o difusión.</li>\r\n                 </ul>\r\n               </div>\r\n+              <section class=\"cta-nosotros\">\r\n+                <h2>¿Ayudas al cambio?</h2>\r\n+                <p>Tu ayuda puede ayudar una vida. Adopta, difunde o colabora.</p>\r\n+                <a href=\"Home_Petlover.html\" class=\"boton-nosotros\">Ver Mascotas</a>\r\n+              </section>\r\n         \r\n         </section>\r\n </body>\r\n     \r\n"
+                },
+                {
+                    "date": 1742486431935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n                   <li>Colabora como hogar de acogida.</li>\r\n                   <li>Apoya con donaciones o difusión.</li>\r\n                 </ul>\r\n               </div>\r\n+            </section>\r\n               <section class=\"cta-nosotros\">\r\n                 <h2>¿Ayudas al cambio?</h2>\r\n                 <p>Tu ayuda puede ayudar una vida. Adopta, difunde o colabora.</p>\r\n                 <a href=\"Home_Petlover.html\" class=\"boton-nosotros\">Ver Mascotas</a>\r\n"
+                },
+                {
+                    "date": 1742486438156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,10 +58,8 @@\n               <section class=\"cta-nosotros\">\r\n                 <h2>¿Ayudas al cambio?</h2>\r\n                 <p>Tu ayuda puede ayudar una vida. Adopta, difunde o colabora.</p>\r\n                 <a href=\"Home_Petlover.html\" class=\"boton-nosotros\">Ver Mascotas</a>\r\n-              </section>\r\n-        \r\n         </section>\r\n </body>\r\n     \r\n </body>\r\n"
+                },
+                {
+                    "date": 1742486992049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">❤️</div>\r\n                 <h2>Cuidamos con Amor</h2>\r\n-                <p>Más allá del cuidado físico, ofrecemos cariño, compañía y atención personalizada a cada peludo mientras espera una nueva familia.</p>\r\n+                <p>Ofrecemos cariño, compañía y atención personalizada a cada peludo mientras espera una nueva familia.</p>\r\n               </div>\r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">🤝</div>\r\n                 <h2>¿Cómo puedes ayudar?</h2>\r\n"
+                },
+                {
+                    "date": 1742487025908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             </div>\r\n             <div class=\"tarjeta\">\r\n                 <div class=\"icono\">🧑‍🤝‍🧑</div>\r\n                 <h2>Quiénes Somos</h2>\r\n-                <p>Un equipo de voluntarios, protectoras, cuidadores y personas que aman profundamente a los animales. Somos una familia.</p>\r\n+                <p>Un equipo de estudiantes que aman profundamente a los animales.</p>\r\n               </div>\r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">🐾</div>\r\n                 <h2>Qué Hacemos</h2>\r\n"
+                },
+                {
+                    "date": 1742487054588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">❤️</div>\r\n                 <h2>Cuidamos con Amor</h2>\r\n-                <p>Ofrecemos cariño, compañía y atención personalizada a cada peludo mientras espera una nueva familia.</p>\r\n+                <p>Ofrecemos cariño, compañía y atención personalizada a cada uno de nuestros peludos mientras espera una nueva familia.</p>\r\n               </div>\r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">🤝</div>\r\n                 <h2>¿Cómo puedes ayudar?</h2>\r\n"
                 }
             ],
             "date": 1742397788667,

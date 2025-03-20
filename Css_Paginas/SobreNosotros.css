@@ -87,3 +87,19 @@ body {
     font-size: 16px;
     margin-bottom: 15px;
   }
+  .boton-nosotros {
+    display: inline-block;
+    background-color: #FF9966;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-nosotros:hover {
+    background-color: #FF7043;
+  }
+  
