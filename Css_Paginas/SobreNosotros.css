@@ -10,3 +10,11 @@ body {
     margin: 0 auto;
     padding: 40px 20px;
   }
+  .encabezado-nosotros {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #FFCC99;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
