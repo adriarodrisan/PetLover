@@ -25,3 +25,15 @@ body {
   .encabezado-nosotros .marca {
     color: #FF7043;
   }
+  .encabezado-nosotros p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #6D4C41;
+  }
+  .tarjetas-nosotros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+  
