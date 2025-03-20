@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 12,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1742481345603,
@@ -56,6 +56,10 @@
                 {
                     "date": 1742485819632,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,5 +61,9 @@\n     line-height: 1.6;\r\n     margin: 0;\r\n     padding: 0;\r\n   }\r\n-  \n\\ No newline at end of file\n+  .tarjeta ul {\r\n+    list-style: none;\r\n+    margin-top: 10px;\r\n+    padding-left: 0;\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742485836421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,5 +65,9 @@\n   .tarjeta ul {\r\n     list-style: none;\r\n     margin-top: 10px;\r\n     padding-left: 0;\r\n+  }\r\n+  .tarjeta ul li::before {\r\n+    content: \"🐶\";\r\n+    margin-right: 8px;\r\n   }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1742481345603,

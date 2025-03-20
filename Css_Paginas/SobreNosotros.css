@@ -67,3 +67,7 @@ body {
     margin-top: 10px;
     padding-left: 0;
   }
+  .tarjeta ul li::before {
+    content: "🐶";
+    margin-right: 8px;
+  }
