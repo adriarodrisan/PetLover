@@ -18,4 +18,8 @@ $fecha_nacimiento= trim($_POST['FechaNacimiento']);
 $sexo= trim($_POST['Sexo']);
 $peso= trim($_POST['Peso']);
 $imagen= trim($_POST['Imagen']);
+if(empty($chip)|| empty($nombre)|| empty($especie)|| empty($raza)|| empty($fecha_nacimiento)|| empty($sexo)|| empty($peso)|| empty($imagen)){
+    echo "Por favor, no dejes ningun hueco vacio en el formulario";
+    exit;
+}
 ?>
