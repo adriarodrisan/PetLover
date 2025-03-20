@@ -53,7 +53,7 @@ if ($registros_adoptate->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
-$registros_protectora = $db->query("SELECT * FROM adoptante WHERE Correo = '$correo'");
+$registros_protectora = $db->query("SELECT * FROM refugio WHERE Correo = '$correo'");
 $registros_protectora->execute(); 
 //$verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
 //$correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
