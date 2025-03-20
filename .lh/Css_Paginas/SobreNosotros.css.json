@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Css_Paginas/SobreNosotros.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1742481345603,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1742481345603,
+            "name": "Commit-0",
+            "content": "body {\r\n    margin: 0;\r\n    padding: 0;\r\n    font-family: 'Arial', sans-serif;\r\n    background-color: #FFE5B4;\r\n    color: #6D4C41;\r\n  }"
+        }
+    ]
+}
