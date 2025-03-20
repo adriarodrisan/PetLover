@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1742397788667,
@@ -16,6 +16,18 @@
                 {
                     "date": 1742399015217,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,17 @@\n         <section class=\"encabezado-nosotros\">\r\n             <h1>Conoce a <span class=\"marca\">Petlover</span></h1>\r\n             <p>Más que un proyecto, somos un grupo de alumnos comprometidos con el bienestar animal. </p>\r\n         </section>\r\n+\r\n+        <section class=\"tarjetas-nosotros\">\r\n+            <div class=\"tarjeta\">\r\n+                <div class=\"icono\">💛</div>\r\n+                <h2>Misión</h2>\r\n+                <p>Unir a nuestros peludos amigos en hogares llenos de amor. Promovemos la adopsción responsable y trabajamos para ofrecer una nueva oportunidad a quienes más lo necesitan.</p>\r\n+            </div>\r\n+\r\n+        </section>\r\n </body>\r\n     \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742480667884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n         <section class=\"tarjetas-nosotros\">\r\n             <div class=\"tarjeta\">\r\n                 <div class=\"icono\">💛</div>\r\n                 <h2>Misión</h2>\r\n-                <p>Unir a nuestros peludos amigos en hogares llenos de amor. Promovemos la adopsción responsable y trabajamos para ofrecer una nueva oportunidad a quienes más lo necesitan.</p>\r\n+                <p>Unir a nuestros peludos amigos en hogares llenos de amor. Promovemos la adopción responsable y trabajamos para ofrecer una nueva oportunidad a quienes más lo necesitan.</p>\r\n             </div>\r\n \r\n         </section>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1742480697205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,15 @@\n                 <div class=\"icono\">💛</div>\r\n                 <h2>Misión</h2>\r\n                 <p>Unir a nuestros peludos amigos en hogares llenos de amor. Promovemos la adopción responsable y trabajamos para ofrecer una nueva oportunidad a quienes más lo necesitan.</p>\r\n             </div>\r\n+            <div class=\"tarjeta\">\r\n+                <div class=\"icono\">🧑‍🤝‍🧑</div>\r\n+                <h2>Quiénes Somos</h2>\r\n+                <p>Un equipo de voluntarios, protectoras, cuidadores y personas que aman profundamente a los animales. Somos comunidad, somos familia.</p>\r\n+              </div>\r\n \r\n+\r\n         </section>\r\n </body>\r\n     \r\n </body>\r\n"
+                },
+                {
+                    "date": 1742480719909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,33 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Sobre Nosotros - Petlover </title>\r\n+    <link rel=\"stylesheet\" href=\"/Css_Paginas/SobreNosotros.css\">\r\n+</head>\r\n+<body>\r\n+    <main class=\"seccion-nosotros\">\r\n+        <section class=\"encabezado-nosotros\">\r\n+            <h1>Conoce a <span class=\"marca\">Petlover</span></h1>\r\n+            <p>Más que un proyecto, somos un grupo de alumnos comprometidos con el bienestar animal. </p>\r\n+        </section>\r\n+\r\n+        <section class=\"tarjetas-nosotros\">\r\n+            <div class=\"tarjeta\">\r\n+                <div class=\"icono\">💛</div>\r\n+                <h2>Misión</h2>\r\n+                <p>Unir a nuestros peludos amigos en hogares llenos de amor. Promovemos la adopción responsable y trabajamos para ofrecer una nueva oportunidad a quienes más lo necesitan.</p>\r\n+            </div>\r\n+            <div class=\"tarjeta\">\r\n+                <div class=\"icono\">🧑‍🤝‍🧑</div>\r\n+                <h2>Quiénes Somos</h2>\r\n+                <p>Un equipo de voluntarios, protectoras, cuidadores y personas que aman profundamente a los animales. Somos una familia.</p>\r\n+              </div>\r\n+\r\n+\r\n+        </section>\r\n+</body>\r\n+    \r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1742397788667,
