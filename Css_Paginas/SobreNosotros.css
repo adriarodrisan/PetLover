@@ -18,3 +18,10 @@ body {
     margin-bottom: 30px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   }
+  .encabezado-nosotros h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  .encabezado-nosotros .marca {
+    color: #FF7043;
+  }
