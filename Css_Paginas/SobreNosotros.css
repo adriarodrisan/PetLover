@@ -71,3 +71,10 @@ body {
     content: "🐶";
     margin-right: 8px;
   }
+  .cta-nosotros {
+    text-align: center;
+    background-color: #FFCC99;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
