@@ -46,3 +46,7 @@ body {
   .tarjeta:hover {
     transform: translateY(-5px);
   }
+  .tarjeta .icono {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
