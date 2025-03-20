@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 10,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1742481345603,
@@ -48,6 +48,10 @@
                 {
                     "date": 1742485706457,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,5 +48,11 @@\n   }\r\n   .tarjeta .icono {\r\n     font-size: 32px;\r\n     margin-bottom: 10px;\r\n-  }\n\\ No newline at end of file\n+  }\r\n+  .tarjeta h2 {\r\n+    font-size: 20px;\r\n+    margin-bottom: 10px;\r\n+    color: #6D4C41;\r\n+  }\r\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742485745736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,5 +54,12 @@\n     font-size: 20px;\r\n     margin-bottom: 10px;\r\n     color: #6D4C41;\r\n   }\r\n+  .tarjeta p,\r\n+  .tarjeta ul {\r\n+    font-size: 15px;\r\n+    line-height: 1.6;\r\n+    margin: 0;\r\n+    padding: 0;\r\n+  }\r\n   \n\\ No newline at end of file\n"
                 }
             ],
             "date": 1742481345603,
