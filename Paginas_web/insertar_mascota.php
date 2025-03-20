@@ -10,4 +10,12 @@ try {
 }catch (PDOException $e){
     echo 'Falló la conixion: ' . $e->getMessage(); 
 }
+$chip= trim($_POST['Chip_ID']);
+$nombre= trim($_POST['nombre']);
+$especie= trim($_POST['Especie']);
+$raza= trim($_POST['raza']);
+$fecha_nacimiento= trim($_POST['FechaNacimiento']);
+$sexo= trim($_POST['Sexo']);
+$peso= trim($_POST['Peso']);
+$imagen= trim($_POST['Imagen']);
 ?>
