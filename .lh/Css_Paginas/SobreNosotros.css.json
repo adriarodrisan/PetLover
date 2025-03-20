@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1742481345603,
@@ -32,6 +32,14 @@
                 {
                     "date": 1742482912041,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,5 +28,12 @@\n   .encabezado-nosotros p {\r\n     font-size: 18px;\r\n     margin-top: 10px;\r\n     color: #6D4C41;\r\n-  }\n\\ No newline at end of file\n+  }\r\n+  .tarjetas-nosotros {\r\n+    display: grid;\r\n+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));\r\n+    gap: 25px;\r\n+    margin-bottom: 40px;\r\n+  }\r\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742484317819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,5 +35,11 @@\n     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));\r\n     gap: 25px;\r\n     margin-bottom: 40px;\r\n   }\r\n-  \n\\ No newline at end of file\n+  .tarjeta {\r\n+    background-color: #FFFDF9;\r\n+    border-radius: 12px;\r\n+    padding: 25px 20px;\r\n+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);\r\n+    transition: transform 0.2s ease;\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742484840329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,5 +41,8 @@\n     border-radius: 12px;\r\n     padding: 25px 20px;\r\n     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);\r\n     transition: transform 0.2s ease;\r\n+  }\r\n+  .tarjeta:hover {\r\n+    transform: translateY(-5px);\r\n   }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1742481345603,
