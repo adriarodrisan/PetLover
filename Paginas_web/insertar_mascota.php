@@ -30,4 +30,25 @@ if ($datos_animales->rowCount()>0){
     echo "Este animal ya esta registrado porfavor revise el numero de chip que puede estar equivocado.";
     exit;
 }
+$registrar_animales= $db->query("INSERT INTO animal (Chip_ID, Nombre, Especie, raza, FechaNacimiento, Sexo, Peso, Estado, ID_refugio, Imagen) VALUES ('$chip','$nombre','$especie','$raza','$fecha_nacimiento','$sexo','$peso','$estado','$protectora','$imagen')");
+if ($registrar_animales->execute()){
+    echo '<!DOCTYPE html>
+            <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Registro Del Animal Exitoso</title>
+                </head>
+                <body class="cuerpo">
+                    <div class="alertas">
+                        <h1>Registro Del Animal Exitoso</h1>
+                        <a href="/Paginas_web/Home_Petlover.html"> Ir al inicio</a>
+                    </div>
+                </body>
+            </html>
+            ';
+            exit;
+}else{
+    echo "Error al registrar usuario: ". mysqli_error();
+}
 ?>
