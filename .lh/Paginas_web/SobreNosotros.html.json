@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 17,
+            "activePatchIndex": 19,
             "patches": [
                 {
                     "date": 1742397788667,
@@ -76,6 +76,14 @@
                 {
                     "date": 1742487054588,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">❤️</div>\r\n                 <h2>Cuidamos con Amor</h2>\r\n-                <p>Ofrecemos cariño, compañía y atención personalizada a cada peludo mientras espera una nueva familia.</p>\r\n+                <p>Ofrecemos cariño, compañía y atención personalizada a cada uno de nuestros peludos mientras espera una nueva familia.</p>\r\n               </div>\r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">🤝</div>\r\n                 <h2>¿Cómo puedes ayudar?</h2>\r\n"
+                },
+                {
+                    "date": 1742487139385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             </div>\r\n             <div class=\"tarjeta\">\r\n                 <div class=\"icono\">🧑‍🤝‍🧑</div>\r\n                 <h2>Quiénes Somos</h2>\r\n-                <p>Un equipo de estudiantes que aman profundamente a los animales.</p>\r\n+                <p>Un equipo de estudiantes que aman profundamente a los animales y que desean aportar un granito de arena a la sociedad.</p>\r\n               </div>\r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">🐾</div>\r\n                 <h2>Qué Hacemos</h2>\r\n"
+                },
+                {
+                    "date": 1742487247792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">❤️</div>\r\n                 <h2>Cuidamos con Amor</h2>\r\n-                <p>Ofrecemos cariño, compañía y atención personalizada a cada uno de nuestros peludos mientras espera una nueva familia.</p>\r\n+                <p>Les proporcionamos cariño, compañía y atención personalizada a cada uno de nuestros peludos mientras espera una nueva familia.</p>\r\n               </div>\r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">🤝</div>\r\n                 <h2>¿Cómo puedes ayudar?</h2>\r\n"
                 }
             ],
             "date": 1742397788667,

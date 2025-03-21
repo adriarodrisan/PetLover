@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 16,
+            "activePatchIndex": 17,
             "patches": [
                 {
                     "date": 1742481345603,
@@ -72,6 +72,10 @@
                 {
                     "date": 1742486385505,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,5 +85,21 @@\n   \r\n   .cta-nosotros p {\r\n     font-size: 16px;\r\n     margin-bottom: 15px;\r\n-  }\n\\ No newline at end of file\n+  }\r\n+  .boton-nosotros {\r\n+    display: inline-block;\r\n+    background-color: #FF9966;\r\n+    color: white;\r\n+    padding: 12px 25px;\r\n+    border-radius: 6px;\r\n+    text-decoration: none;\r\n+    font-weight: bold;\r\n+    font-size: 1rem;\r\n+    transition: background-color 0.3s ease;\r\n+  }\r\n+  \r\n+  .boton-nosotros:hover {\r\n+    background-color: #FF7043;\r\n+  }\r\n+  \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1742487114155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,12 +66,13 @@\n     list-style: none;\r\n     margin-top: 10px;\r\n     padding-left: 0;\r\n   }\r\n-  .tarjeta ul li::before {\r\n+  \r\n+  /* .tarjeta ul li::before {\r\n     content: \"🐶\";\r\n     margin-right: 8px;\r\n-  }\r\n+  } */\r\n   .cta-nosotros {\r\n     text-align: center;\r\n     background-color: #FFCC99;\r\n     padding: 40px 20px;\r\n"
                 }
             ],
             "date": 1742481345603,

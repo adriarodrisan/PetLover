@@ -67,10 +67,11 @@ body {
     margin-top: 10px;
     padding-left: 0;
   }
-  .tarjeta ul li::before {
+  
+  /* .tarjeta ul li::before {
     content: "🐶";
     margin-right: 8px;
-  }
+  } */
   .cta-nosotros {
     text-align: center;
     background-color: #FFCC99;
