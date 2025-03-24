@@ -5,6 +5,10 @@ body{
     margin: 0;
     text-align: center;
 }
+img{
+    width: 100px;
+    height: 100px;
+}
 header{
     background-color: #FFCC99;
     padding: 15px;
