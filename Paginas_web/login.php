@@ -27,14 +27,12 @@ if (empty($correo) || empty($contrasena)) {
     echo "Por favor completa todos los campos.";
     exit;
 }
-$registros = $db->query("SELECT * FROM adoptante WHERE Correo = '$correo'");
+$registros_adoptante = $db->execute("SELECT * FROM adoptante WHERE Correo = '$correo'");
 //$sql_adoptante = "SELECT * FROM adoptante WHERE Correo = '$correo'";
 //$resultado_adoptante = mysqli_query($conn, $sql_adoptante);
-$registros->execute(); 
 //if (mysqli_num_rows($resultado_adoptante) > 0) {
-   if ($registros->rowCount() > 0) {
-    $fila = $registros->fetch(PDO::FETCH_ASSOC);
-
+   if ($registros_adoptante->rowCount() > 0) {
+    $fila = $registros_adoptante->fetch(PDO::FETCH_ASSOC);
     if (password_verify($contrasena, $fila['Contraseña'])) {
         //$_SESSION['usuario'] = $fila['Nombre'];
         //$_SESSION['rol'] = 'refugio';
@@ -59,6 +57,30 @@ $registros->execute();
         exit;
     }
 }
-
+$registros_protectora = $db->execute("SELECT * FROM refugio WHERE Correo = '$correo'");
+   if ($registros_protectora->rowCount() > 0) {
+    $fila = $registros_protectora->fetch(PDO::FETCH_ASSOC);
+    if (password_verify($contrasena, $fila['Contraseña'])) {
+        echo '<!DOCTYPE html>
+            <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Registro Exitoso</title>
+                </head>
+                <body class="cuerpo">
+                    <div class="alertas">
+                        <h1>Inicio de sesion exitoso</h1>
+                        <a href="/Paginas_web/Home_Petlover.html"> Ir al inicio</a>
+                    </div>
+                </body>
+            </html>
+            ';
+            exit;
+    } else {
+        echo "Contraseña incorrecta.";
+        exit;
+    }
+}
 echo "Correo no encontrado.";
 ?>
