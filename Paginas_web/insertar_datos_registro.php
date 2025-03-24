@@ -44,8 +44,7 @@ if ($contrasena !== $confirmar_contrasena){
     exit;
 }
 //verificar si el mail esta registrado
-$registros_adoptate = $db->query("SELECT * FROM adoptante WHERE Correo = '$correo'");
-$registros_adoptate->execute(); 
+$registros_adoptate = $db->execute("SELECT * FROM adoptante WHERE Correo = '$correo'");
 //$verificar_correo_usuario = "SELECT * FROM adoptante WHERE Correo = '$correo'";
 //$correo_verificado_usuario = mysqli_query($conn, $verificar_correo_usuario);
 //if (mysqli_num_rows($correo_verificado_usuario)>0){
@@ -53,8 +52,7 @@ if ($registros_adoptate->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
-$registros_protectora = $db->query("SELECT * FROM refugio WHERE Correo = '$correo'");
-$registros_protectora->execute(); 
+$registros_protectora = $db->execute("SELECT * FROM refugio WHERE Correo = '$correo'");
 //$verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
 //$correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
 //if (mysqli_num_rows($correo_verificado_protectora)>0){
@@ -64,9 +62,9 @@ if ($registros_protectora->rowCount() > 0) {
 }
 //hashear pass
 $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
-$registrar_usuarios = $db->query("INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada')");
+$registrar_usuarios = $db->execute("INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada')");
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
-if ($registrar_usuarios->execute()){
+if ($registrar_usuarios){
 //if (mysqli_query($conn, $registrar_usuarios)){
     echo '<!DOCTYPE html>
             <html lang="es">
