@@ -1,3 +1,10 @@
+<?php
+if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora') {
+    include 'encabezado_protectora.php';
+} else {
+    include 'encabeza_adoptante.php';
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

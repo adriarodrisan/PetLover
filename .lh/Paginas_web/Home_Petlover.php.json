@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1743000892311,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743001271395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,11 @@\n+<?php\r\n+if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora') {\r\n+    include 'encabezado_protectora.php';\r\n+} else {\r\n+    include 'encabeza_adoptante.php';\r\n+}\r\n+?>\r\n <!DOCTYPE html>\r\n <html lang=\"es\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n"
                 }
             ],
             "date": 1743000892311,

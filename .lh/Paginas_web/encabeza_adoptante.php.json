@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1743000892302,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743001440239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,6 @@\n             <a href=\"SobreNosotros.html\">Sobre Nosotros</a>\r\n             <a href=\"#Adopcion\">Cómo Adoptar</a>\r\n             <a href=\"#Ayudas\">Ayudanos</a>\r\n             <a href=\"contacto.html\">Contato</a>\r\n+            <a href=\"cerrar_sesion.php\">Cerrar sersion</a>\r\n </nav>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1743000892302,
