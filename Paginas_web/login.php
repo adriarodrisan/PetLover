@@ -27,7 +27,9 @@ if (empty($correo) || empty($contrasena)) {
     echo "Por favor completa todos los campos.";
     exit;
 }
-$registros_adoptante = $db->execute("SELECT * FROM adoptante WHERE Correo = '$correo'");
+$registros_adoptante = $db->prepare("SELECT * FROM adoptante WHERE Correo = :correo");
+$registros_adoptante ->bindParam(':correo', $correo);
+$registros_adoptante ->execute();
 //$sql_adoptante = "SELECT * FROM adoptante WHERE Correo = '$correo'";
 //$resultado_adoptante = mysqli_query($conn, $sql_adoptante);
 //if (mysqli_num_rows($resultado_adoptante) > 0) {
@@ -60,8 +62,10 @@ $registros_adoptante = $db->execute("SELECT * FROM adoptante WHERE Correo = '$co
         exit;
     }
 }
-$registros_protectora = $db->execute("SELECT * FROM refugio WHERE Correo = '$correo'");
-   if ($registros_protectora->rowCount() > 0) {
+$registros_protectora = $db->prepare("SELECT * FROM refugio WHERE Correo = :correo");
+$registros_protectora ->bindParam(':correo', $correo);
+$registros_protectora ->execute();
+if ($registros_protectora->rowCount() > 0) {
     $fila = $registros_protectora->fetch(PDO::FETCH_ASSOC);
     if (password_verify($contrasena, $fila['Contraseña'])) {
         echo '<!DOCTYPE html>
