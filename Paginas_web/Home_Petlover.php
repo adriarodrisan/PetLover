@@ -12,12 +12,6 @@
             <img id="logo" src="/Imagenes_Animales/logo.png"/>
         </div>
 <!-- 🎥 Nuestros apartados de informacion, enlaces y boton de inicio de sesión -->
-        <nav>
-            <a href="SobreNosotros.html">Sobre Nosotros</a>
-            <a href="#Adopcion">Cómo Adoptar</a>
-            <a href="#Ayudas">Ayudanos</a>
-            <a href="contacto.html">Contato</a>
-        </nav>
         <a href="Inicio_Sesion.html">
             <button class="boton-autenticacion">Iniciar Sesión</button>
         </a>      

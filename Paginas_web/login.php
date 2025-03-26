@@ -34,6 +34,9 @@ $registros_adoptante = $db->execute("SELECT * FROM adoptante WHERE Correo = '$co
    if ($registros_adoptante->rowCount() > 0) {
     $fila = $registros_adoptante->fetch(PDO::FETCH_ASSOC);
     if (password_verify($contrasena, $fila['Contraseña'])) {
+
+        //setcookie("tipo_usuario", "adoptante", time() + (86400 * 30), "/");
+
         //$_SESSION['usuario'] = $fila['Nombre'];
         //$_SESSION['rol'] = 'refugio';
         echo '<!DOCTYPE html>
