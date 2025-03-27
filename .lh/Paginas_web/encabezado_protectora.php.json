@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1743000892300,
@@ -16,6 +16,10 @@
                 {
                     "date": 1743001440246,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,6 @@\n             <a href=\"#Adopcion\">Cómo Adoptar</a>\r\n             <a href=\"#Ayudas\">Ayudanos</a>\r\n             <a href=\"contacto.html\">Contato</a>\r\n             <a href=\"Agregar_Mascota\">Agrega una mascota</a>\r\n+            <a href=\"cerrar_sesion.php\">Cerrar sersion</a>\r\n </nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1743086199610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+<nav>\r\n+            <a href=\"SobreNosotros.html\">Sobre Nosotros</a>\r\n+            <a href=\"#Adopcion\">Cómo Adoptar</a>\r\n+            <a href=\"#Ayudas\">Ayudanos</a>\r\n+            <a href=\"contacto.html\">Contato</a>\r\n+            <a href=\"Agregar_Mascota\">Agrega una mascota</a>\r\n+            <a href=\"cerrar_sesion.php\">Cerrar sersion</a>\r\n+</nav>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1743000892300,

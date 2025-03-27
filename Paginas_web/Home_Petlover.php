@@ -1,10 +1,10 @@
-<?php
+<!-- /* <?php
 if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora') {
     include 'encabezado_protectora.php';
 } else {
     include 'encabeza_adoptante.php';
 }
-?>
+?>*/ -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,6 +15,12 @@ if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora'
 </head>
 <body>
     <header>
+    <nav>
+            <a href="SobreNosotros.html">Sobre Nosotros</a>
+            <a href="#Adopcion">Cómo Adoptar</a>
+            <a href="#Ayudas">Ayudanos</a>
+            <a href="contacto.html">Contato</a>
+</nav>
         <div class="logo-contenedor">
             <img id="logo" src="/Imagenes_Animales/logo.png"/>
         </div>
