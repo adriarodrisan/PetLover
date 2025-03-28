@@ -9,6 +9,10 @@ session_start();
       <li><a href="Inicio_Sesion.php">Iniciar Sesión</a></li>
       <li><a href="registro.html">Registrarse</a></li>
 
+      <?php elseif ($_SESSION['rol'] === 'adoptante'): ?>
+      <li><a href="insertar_masacotas.php">Ver Mascotas</a></li>
+      <li><a href="cerrar_sesion.php">Cerrar Sesión</a></li>
+
 
 
 

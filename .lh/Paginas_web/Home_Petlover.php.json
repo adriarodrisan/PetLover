@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1743000892311,
@@ -24,6 +24,10 @@
                 {
                     "date": 1743186003001,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n- <?php\r\n-/*if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora') {\r\n+<!-- /* <?php\r\n+if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora') {\r\n     include 'encabezado_protectora.php';\r\n } else {\r\n     include 'encabeza_adoptante.php';\r\n }\r\n-*/?> \r\n+?>*/ -->\r\n <!DOCTYPE html>\r\n <html lang=\"es\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n@@ -14,14 +14,8 @@\n     <link rel=\"stylesheet\" href=\"/Css_Paginas/Home_Petlover.css\">\r\n </head>\r\n <body>\r\n     <header>\r\n-\r\n-            <a href=\"SobreNosotros.html\">Sobre Nosotros</a>\r\n-            <a href=\"#Adopcion\">Cómo Adoptar</a>\r\n-            <a href=\"#Ayudas\">Ayudanos</a>\r\n-            <a href=\"contacto.html\">Contato</a>\r\n-\r\n         <div class=\"logo-contenedor\">\r\n             <img id=\"logo\" src=\"/Imagenes_Animales/logo.png\"/>\r\n         </div>\r\n <!-- 🎥 Nuestros apartados de informacion, enlaces y boton de inicio de sesión -->\r\n"
+                },
+                {
+                    "date": 1743186895462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n- <?php\r\n+<!-- /* <?php\r\n if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora') {\r\n     include 'encabezado_protectora.php';\r\n } else {\r\n     include 'encabeza_adoptante.php';\r\n }\r\n-?> \r\n+?>*/ -->\r\n <!DOCTYPE html>\r\n <html lang=\"es\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n@@ -14,14 +14,8 @@\n     <link rel=\"stylesheet\" href=\"/Css_Paginas/Home_Petlover.css\">\r\n </head>\r\n <body>\r\n     <header>\r\n-\r\n-            <a href=\"SobreNosotros.html\">Sobre Nosotros</a>\r\n-            <a href=\"#Adopcion\">Cómo Adoptar</a>\r\n-            <a href=\"#Ayudas\">Ayudanos</a>\r\n-            <a href=\"contacto.html\">Contato</a>\r\n-\r\n         <div class=\"logo-contenedor\">\r\n             <img id=\"logo\" src=\"/Imagenes_Animales/logo.png\"/>\r\n         </div>\r\n <!-- 🎥 Nuestros apartados de informacion, enlaces y boton de inicio de sesión -->\r\n@@ -46,16 +40,16 @@\n         </section>\r\n         <section class=\"seccion-destacados\">\r\n             <div class=\"tarjeta-mascota\">\r\n                 <h4>Max</h4>\r\n-                <img src=\"../Imagenes_Animales/nerea.png\" alt=\"Perro en adopción\">\r\n+                <img src=\"/nerea.png\" alt=\"Perro en adopción\">\r\n                 <p>Raza: Pastor Belga Malioisse | Fecha de nacimiento: 22/02/2020</p>\r\n                 <button> Conoceme! </button>\r\n             </div>\r\n <!-- 🐾 Sección de Gatos -->\r\n             <div class=\"tarjeta-mascota\">\r\n                 <h4>Isis</h4>\r\n-                <img src=\"../Imagenes_Animales/isis.png\" alt=\"Gato en adopción\">\r\n+                <img src=\"/isis.png\" alt=\"Gato en adopción\">\r\n                 <p> Raza: Europea | Fecha de nacimiento: 01/06/2019</p>\r\n                 <button>Conoceme! </button>\r\n             </div>\r\n         </div>\r\n"
                 }
             ],
             "date": 1743000892311,
