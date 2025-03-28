@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1743186002942,
@@ -28,6 +28,14 @@
                 {
                     "date": 1743186887849,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+<?php\r\n+session_start();\r\n+?>\r\n+<nav>\r\n+  <ul>\r\n+    <li><a href=\"Home_Petlover.php\">Inicio</a></li>    \r\n+    \r\n+    <?php if (!isset($_SESSION['rol'])): ?>\r\n+      <li><a href=\"Inicio_Sesion.php\">Iniciar Sesión</a></li>\r\n+      <li><a href=\"registro.html\">Registrarse</a></li>\r\n+\r\n+      <?php elseif ($_SESSION['rol'] === 'adoptante'): ?>\r\n+      <li><a href=\"insertar_masacotas.php\">Ver Mascotas</a></li>\r\n+      <li><a href=\"cerrar_sesion.php\">Cerrar Sesión</a></li>\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+<nav>\r\n+            <a href=\"SobreNosotros.html\">Sobre Nosotros</a>\r\n+            <a href=\"#Adopcion\">Cómo Adoptar</a>\r\n+            <a href=\"#Ayudas\">Ayudanos</a>\r\n+            <a href=\"contacto.html\">Contato</a>\r\n+            <a href=\"Agregar_Mascota\">Agrega una mascota</a>\r\n+            <a href=\"cerrar_sesion.php\">Cerrar sersion</a>\r\n+</nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1743187000505,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,33 @@\n+<?php\r\n+session_start();\r\n+?>\r\n+<nav>\r\n+  <ul>\r\n+    <li><a href=\"Home_Petlover.php\">Inicio</a></li>    \r\n+    \r\n+    <?php if (!isset($_SESSION['rol'])): ?>\r\n+      <li><a href=\"Inicio_Sesion.php\">Iniciar Sesión</a></li>\r\n+      <li><a href=\"registro.html\">Registrarse</a></li>\r\n+\r\n+      <?php elseif ($_SESSION['rol'] === 'adoptante'): ?>\r\n+      <li><a href=\"mostrar_masacota.php\">Ver Mascotas</a></li>\r\n+      <li><a href=\"cerrar_sesion.php\">Cerrar Sesión</a></li>\r\n+\r\n+      <?php elseif ($_SESSION['rol'] === 'protectora'): ?>\r\n+      <li><a href=\"insertar_mascota.php\">Publicar Mascota</a></li>\r\n+      <li><a href=\"cerrar_sesion.php\">Cerrar Sesión</a></li>\r\n+\r\n+      <?php endif; ?>\r\n+  </ul>\r\n+</nav>\r\n+\r\n+\r\n+\r\n+<nav>\r\n+            <a href=\"SobreNosotros.html\">Sobre Nosotros</a>\r\n+            <a href=\"#Adopcion\">Cómo Adoptar</a>\r\n+            <a href=\"#Ayudas\">Ayudanos</a>\r\n+            <a href=\"contacto.html\">Contato</a>\r\n+            <a href=\"Agregar_Mascota\">Agrega una mascota</a>\r\n+            <a href=\"cerrar_sesion.php\">Cerrar sersion</a>\r\n+</nav>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1743187664448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n <nav>\r\n   <ul>\r\n     <li><a href=\"Home_Petlover.php\">Inicio</a></li>    \r\n     \r\n-    <?php if (!isset($_SESSION['rol'])): ?>\r\n+    <?php if ($_SESSION['rol'] === null ): ?>\r\n       <li><a href=\"Inicio_Sesion.php\">Iniciar Sesión</a></li>\r\n       <li><a href=\"registro.html\">Registrarse</a></li>\r\n \r\n       <?php elseif ($_SESSION['rol'] === 'adoptante'): ?>\r\n@@ -19,11 +19,8 @@\n \r\n       <?php endif; ?>\r\n   </ul>\r\n </nav>\r\n-\r\n-\r\n-\r\n <nav>\r\n             <a href=\"SobreNosotros.html\">Sobre Nosotros</a>\r\n             <a href=\"#Adopcion\">Cómo Adoptar</a>\r\n             <a href=\"#Ayudas\">Ayudanos</a>\r\n"
                 }
             ],
             "date": 1743186002942,
