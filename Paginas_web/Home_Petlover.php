@@ -1,10 +1,10 @@
  <?php
-/*if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora') {
+if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora') {
     include 'encabezado_protectora.php';
 } else {
     include 'encabeza_adoptante.php';
 }
-*/?> 
+?> 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -47,14 +47,14 @@
         <section class="seccion-destacados">
             <div class="tarjeta-mascota">
                 <h4>Max</h4>
-                <img src="/nerea.png" alt="Perro en adopción">
+                <img src="../Imagenes_Animales/nerea.png" alt="Perro en adopción">
                 <p>Raza: Pastor Belga Malioisse | Fecha de nacimiento: 22/02/2020</p>
                 <button> Conoceme! </button>
             </div>
 <!-- 🐾 Sección de Gatos -->
             <div class="tarjeta-mascota">
                 <h4>Isis</h4>
-                <img src="/isis.png" alt="Gato en adopción">
+                <img src="../Imagenes_Animales/isis.png" alt="Gato en adopción">
                 <p> Raza: Europea | Fecha de nacimiento: 01/06/2019</p>
                 <button>Conoceme! </button>
             </div>
