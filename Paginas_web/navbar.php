@@ -3,7 +3,14 @@ session_start();
 ?>
 <nav>
   <ul>
-    <li><a href="Home_Petlover.php">Inicio</a></li>
+    <li><a href="Home_Petlover.php">Inicio</a></li>    
+    
+    <?php if (!isset($_SESSION['rol'])): ?>
+      <li><a href="Inicio_Sesion.php">Iniciar Sesión</a></li>
+      <li><a href="registro.html">Registrarse</a></li>
+
+
+
 
 
 
