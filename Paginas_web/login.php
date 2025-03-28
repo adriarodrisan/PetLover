@@ -39,8 +39,8 @@ $registros_adoptante ->execute();
 
         //setcookie("tipo_usuario", "adoptante", time() + (86400 * 30), "/");
 
-        //$_SESSION['usuario'] = $fila['Nombre'];
-        //$_SESSION['rol'] = 'refugio';
+        $_SESSION['usuario'] = $fila['correo'];
+        $_SESSION['rol'] = 'adoptante';
         echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
@@ -68,6 +68,8 @@ $registros_protectora ->execute();
 if ($registros_protectora->rowCount() > 0) {
     $fila = $registros_protectora->fetch(PDO::FETCH_ASSOC);
     if (password_verify($contrasena, $fila['Contraseña'])) {
+        $_SESSION['usuario'] = $fila['Nombre'];
+        $_SESSION['rol'] = 'protectora';
         echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
