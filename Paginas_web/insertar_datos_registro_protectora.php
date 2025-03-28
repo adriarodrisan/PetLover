@@ -26,15 +26,14 @@ if ($conn->connect_errno){
     echo 'fallo al conectar';
     die("Conexion fallida: ". $conn->connect_error);
 }*/
-$dni= trim($_POST['dni']);
 $nombre= trim($_POST['nombre']);
-$telefono= trim($_POST['telefono']);
+$ciudad= trim($_POST['ciudad']);
 $correo= trim($_POST['correo']);
 $contrasena= trim($_POST['contrasena']);
 $confirmar_contrasena= trim($_POST['confirmar_contrasena']);
 //revisar que los campos no sean null
 //echo $dni." ".$correo;
-if(empty($dni) || empty($nombre) || empty($telefono) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){
+if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
     exit;
 }
@@ -66,15 +65,16 @@ if ($registros_protectora->rowCount() > 0) {
 }
 //hashear pass
 $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
-$registrar_usuarios = $db->prepare("INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES (:dni, :nombre,:telefono,:correo,:contrasena)");
-$registrar_usuarios ->bindParam(':dni', $dni);
+$registrar_usuarios = $db->prepare("INSERT INTO refugio (Nombre, Ciudad, Correo, Contraseña) VALUES (:nombre,:ciudad,:correo,:contrasena)");
 $registrar_usuarios ->bindParam(':nombre', $nombre);
 $registrar_usuarios ->bindParam(':correo', $correo);
-$registrar_usuarios ->bindParam(':telefono', $telefono);
+$registrar_usuarios ->bindParam(':ciudad', $ciudad);
 $registrar_usuarios ->bindParam(':contrasena', $contrasena_hasheada);
 $registrar_usuarios ->execute();
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
 if ($registrar_usuarios){
+    $_SESSION['usuario'] = $nombre;
+    $_SESSION['rol'] = 'protectora';
 //if (mysqli_query($conn, $registrar_usuarios)){
     echo '<!DOCTYPE html>
             <html lang="es">
