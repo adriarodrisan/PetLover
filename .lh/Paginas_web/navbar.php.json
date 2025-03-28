@@ -3,11 +3,19 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1743186002942,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743186417919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n+<?php\r\n+session_start();\r\n+?>\r\n \r\n \r\n <nav>\r\n             <a href=\"SobreNosotros.html\">Sobre Nosotros</a>\r\n"
+                },
+                {
+                    "date": 1743186469552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,13 @@\n <?php\r\n session_start();\r\n ?>\r\n+<nav>\r\n+  <ul>\r\n+    <li><a href=\"Home_Petlover.php\">Inicio</a></li>\r\n \r\n \r\n+\r\n <nav>\r\n             <a href=\"SobreNosotros.html\">Sobre Nosotros</a>\r\n             <a href=\"#Adopcion\">Cómo Adoptar</a>\r\n             <a href=\"#Ayudas\">Ayudanos</a>\r\n"
                 }
             ],
             "date": 1743186002942,

@@ -1,3 +1,10 @@
+<?php
+session_start();
+?>
+<nav>
+  <ul>
+    <li><a href="Home_Petlover.php">Inicio</a></li>
+
 
 
 <nav>
