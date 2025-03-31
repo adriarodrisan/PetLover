@@ -1,3 +1,10 @@
+<!-- /* <?php
+if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora') {
+    include 'encabezado_protectora.php';
+} else {
+    include 'encabeza_adoptante.php';
+}
+?>*/ -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,13 +18,6 @@
         <div class="logo-contenedor">
             <img id="logo" src="/Imagenes_Animales/logo.png"/>
         </div>
-        <?php
-if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora') {
-    include 'encabezado_protectora.php';
-} else {
-    include 'encabeza_adoptante.php';
-}
-?> 
 <!-- 🎥 Nuestros apartados de informacion, enlaces y boton de inicio de sesión -->
         <a href="Inicio_Sesion.html">
             <button class="boton-autenticacion">Iniciar Sesión</button>
@@ -25,7 +25,7 @@ if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora'
     </header>
  <!-- 🎥 Separacion entre gato y perro  -->
     <section class= "seccion-principal">
-        <h2>Encuentra a tu mejora amigo</h2>
+        <h2>Encuentra a tu mejor amigo</h2>
         <p>Explora nuestros refugios y Encuentra a tu compañero ideal</p>
         <div class="contenedor-categorias">
             <a href="perros.html" class="tarjeta-categoria">🐶 <h3>Perros</h3></a>
@@ -41,14 +41,14 @@ if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora'
         <section class="seccion-destacados">
             <div class="tarjeta-mascota">
                 <h4>Max</h4>
-                <img src="../Imagenes_Animales/nerea.png" alt="Perro en adopción">
+                <img src="/nerea.png" alt="Perro en adopción">
                 <p>Raza: Pastor Belga Malioisse | Fecha de nacimiento: 22/02/2020</p>
                 <button> Conoceme! </button>
             </div>
 <!-- 🐾 Sección de Gatos -->
             <div class="tarjeta-mascota">
                 <h4>Isis</h4>
-                <img src="../Imagenes_Animales/isis.png" alt="Gato en adopción">
+                <img src="/isis.png" alt="Gato en adopción">
                 <p> Raza: Europea | Fecha de nacimiento: 01/06/2019</p>
                 <button>Conoceme! </button>
             </div>
