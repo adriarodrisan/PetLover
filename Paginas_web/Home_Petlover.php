@@ -1,10 +1,4 @@
-<!-- /* <?php
-if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora') {
-    include 'encabezado_protectora.php';
-} else {
-    include 'encabeza_adoptante.php';
-}
-?>*/ -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -18,10 +12,10 @@ if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora'
         <div class="logo-contenedor">
             <img id="logo" src="/Imagenes_Animales/logo.png"/>
         </div>
-<!-- 🎥 Nuestros apartados de informacion, enlaces y boton de inicio de sesión -->
-        <a href="Inicio_Sesion.html">
-            <button class="boton-autenticacion">Iniciar Sesión</button>
-        </a>      
+        <?php
+    include 'navbar.php';
+?> 
+<!-- 🎥 Nuestros apartados de informacion, enlaces y boton de inicio de sesión -->     
     </header>
  <!-- 🎥 Separacion entre gato y perro  -->
     <section class= "seccion-principal">
@@ -41,14 +35,14 @@ if (isset($_COOKIE['tipo_usuario']) && $_COOKIE['tipo_usuario'] === 'protectora'
         <section class="seccion-destacados">
             <div class="tarjeta-mascota">
                 <h4>Max</h4>
-                <img src="/nerea.png" alt="Perro en adopción">
+                <img src="../Imagenes_Animales/nerea.png" alt="Perro en adopción">
                 <p>Raza: Pastor Belga Malioisse | Fecha de nacimiento: 22/02/2020</p>
                 <button> Conoceme! </button>
             </div>
 <!-- 🐾 Sección de Gatos -->
             <div class="tarjeta-mascota">
                 <h4>Isis</h4>
-                <img src="/isis.png" alt="Gato en adopción">
+                <img src="../Imagenes_Animales/isis.png" alt="Gato en adopción">
                 <p> Raza: Europea | Fecha de nacimiento: 01/06/2019</p>
                 <button>Conoceme! </button>
             </div>
