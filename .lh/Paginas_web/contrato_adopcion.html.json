@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1743441417824,
@@ -12,6 +12,14 @@
                 {
                     "date": 1743441628149,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,16 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Formulario de adopcion - Petlover</title>\r\n </head>\r\n <body>\r\n+    <div class=\"Formulario-adopcion\">\r\n+        <h1>Formulario de Adopción</h1>\r\n+        <form action=\"procesar_adopcion.php\" method=\"POST\">\r\n+            <fieldset>\r\n+                <legend>Datos del Adoptante</legend>\r\n+                </fieldset>\r\n+        </form>\r\n+\r\n+    </div>\r\n     \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1743441779128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         <h1>Formulario de Adopción</h1>\r\n         <form action=\"procesar_adopcion.php\" method=\"POST\">\r\n             <fieldset>\r\n                 <legend>Datos del Adoptante</legend>\r\n+                <label>Nombre Completo: <input type=\"text\" name=\"nombre\" required> </label>\r\n                 </fieldset>\r\n         </form>\r\n \r\n     </div>\r\n"
+                },
+                {
+                    "date": 1743441837279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,13 @@\n         <h1>Formulario de Adopción</h1>\r\n         <form action=\"procesar_adopcion.php\" method=\"POST\">\r\n             <fieldset>\r\n                 <legend>Datos del Adoptante</legend>\r\n-                <label>Nombre Completo: <input type=\"text\" name=\"nombre\" required> </label>\r\n+                <label>Nombre Completo: <input type=\"text\" name=\"nombre\" required></label>\r\n+                <label>DNI: <input type=\"text\" name=\"dni\" required></label>\r\n+                <label>Dirección: <input type=\"text\" name=\"direccion\" required></label>\r\n+                <label>Teléfono: <input type=\"tel\" name=\"telefono\" required></label>\r\n+                <label>Correo Electrónico: <input type=\"email\" name=\"correo\" required></label>\r\n                 </fieldset>\r\n         </form>\r\n \r\n     </div>\r\n"
                 }
             ],
             "date": 1743441417824,
