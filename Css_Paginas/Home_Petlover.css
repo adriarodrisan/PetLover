@@ -142,3 +142,8 @@ nav a{
     font-weight: bold;
     margin-bottom: 20px; 
 }
+ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
