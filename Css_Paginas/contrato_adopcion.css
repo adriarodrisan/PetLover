@@ -56,3 +56,10 @@ textarea {
   font-size: 1rem;
   margin-top: 5px;
 }
+textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
