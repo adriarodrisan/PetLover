@@ -63,3 +63,18 @@ textarea {
   input[type="checkbox"] {
     margin-right: 10px;
   }
+  button {
+    background-color: #FF9966;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #FF7043;
+  }
+  

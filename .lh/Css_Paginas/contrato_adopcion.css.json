@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1743504538833,
@@ -44,6 +44,10 @@
                 {
                     "date": 1743506495342,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,5 +54,12 @@\n   border: 1px solid #d3a87c;\r\n   border-radius: 5px;\r\n   font-size: 1rem;\r\n   margin-top: 5px;\r\n-}\n\\ No newline at end of file\n+}\r\n+textarea {\r\n+    resize: vertical;\r\n+    min-height: 100px;\r\n+  }\r\n+  input[type=\"checkbox\"] {\r\n+    margin-right: 10px;\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1743506654515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,5 +61,20 @@\n     min-height: 100px;\r\n   }\r\n   input[type=\"checkbox\"] {\r\n     margin-right: 10px;\r\n-  }\n\\ No newline at end of file\n+  }\r\n+  button {\r\n+    background-color: #FF9966;\r\n+    color: white;\r\n+    padding: 12px;\r\n+    border: none;\r\n+    border-radius: 5px;\r\n+    cursor: pointer;\r\n+    font-size: 1rem;\r\n+    margin-top: 20px;\r\n+  }\r\n+  \r\n+  button:hover {\r\n+    background-color: #FF7043;\r\n+  }\r\n+  \n\\ No newline at end of file\n"
                 }
             ],
             "date": 1743504538833,
