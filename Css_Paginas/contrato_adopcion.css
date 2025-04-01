@@ -32,3 +32,8 @@ body {
     border-radius: 8px;
     padding: 20px;
   }
+  legend {
+    font-weight: bold;
+    color: #ff7043;
+    padding: 0 10px;
+  }
