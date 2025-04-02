@@ -72,7 +72,7 @@ $registrar_adopcion ->bindParam(':compromisos', $compromisos);
 
 
 
-$registrar_usuarios ->execute();
+$registrar_adopcion ->execute();
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
 if ($registrar_usuarios){
     $_SESSION['usuario'] = $nombre;
@@ -83,11 +83,11 @@ if ($registrar_usuarios){
                 <head>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Registro Exitoso</title>
+                    <title>Registro Exitoso!</title>
                 </head>
-                <body class="cuerpo">
+                <body>
                     <div class="alertas">
-                        <h1>Registro Exitoso</h1>
+                        <h1>Adopción registrada exitosamente</h1>
                         <a href="/Paginas_web/Home_Petlover.html"> Ir al inicio</a>
                     </div>
                 </body>
