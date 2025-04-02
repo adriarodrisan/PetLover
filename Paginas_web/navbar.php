@@ -1,30 +1,30 @@
 <?php
-session_start();
+$rol = $_COOKIE['rol'] ?? null;
 ?>
-<nav>
+<header>
+<div class="logo-contenedor">
+  <img id="logo" src="/Imagenes_Animales/logo.png"/>
+</div>
+<nav class="menu-centro">
   <ul>
-    <li><a href="Home_Petlover.php">Inicio</a></li>    
-    
-    <?php if ($_SESSION['rol'] === null ): ?>
-      <li><a href="Inicio_Sesion.php">Iniciar Sesión</a></li>
-      <li><a href="registro.html">Registrarse</a></li>
+    <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+    <li><a href="#Adopcion">Cómo Adoptar</a></li>
+    <li><a href="#Ayudas">Ayudanos</a></li>
+    <li><a href="contacto.html">Contato</a></li>
 
-      <?php elseif ($_SESSION['rol'] === 'adoptante'): ?>
-      <li><a href="mostrar_masacota.php">Ver Mascotas</a></li>
-      <li><a href="cerrar_sesion.php">Cerrar Sesión</a></li>
-
-      <?php elseif ($_SESSION['rol'] === 'protectora'): ?>
-      <li><a href="insertar_mascota.php">Publicar Mascota</a></li>
-      <li><a href="cerrar_sesion.php">Cerrar Sesión</a></li>
-
+    <?php if ($rol === 'adoptante'): ?>
+        <li><a href="mostrar_mascota.php">Ver Mascotas</a></li>
+      <?php elseif ($rol === 'protectora'): ?>
+        <li><a href="insertar_mascota.php">Publicar Mascota</a></li>
       <?php endif; ?>
-  </ul>
-</nav>
-<nav>
-            <a href="SobreNosotros.html">Sobre Nosotros</a>
-            <a href="#Adopcion">Cómo Adoptar</a>
-            <a href="#Ayudas">Ayudanos</a>
-            <a href="contacto.html">Contato</a>
-            <a href="Agregar_Mascota">Agrega una mascota</a>
-            <a href="cerrar_sesion.php">Cerrar sersion</a>
+      </ul>
+      </nav>
+      <div class="btn-session">
+      <?php if ($rol):?>
+        <a href="cerrar_session.php">Cerrar Session</a>
+      <?php else: ?>
+        <a href="Inicio_Sesion.html"><button>Registrate/iniciar sesión</button></a>
+    <?php endif; ?>
+    </div>
+    </header>
 </nav>
