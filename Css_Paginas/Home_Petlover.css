@@ -16,14 +16,30 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.logo-contenedor h1{
-    margin: 0;
+.menu-centro {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
-nav a{
+.menu-centro ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.menu-centro ul li a {
     text-decoration: none;
     color: #6d4c41;
     font-weight: bold;
-    margin:0 15px;
+}
+.btn-session{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.logo-contenedor h1{
+    margin: 0;
 }
 .boton-autenticacion{
     background-color: #FF9966;
@@ -141,9 +157,4 @@ nav a{
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px; 
-}
-ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
 }
