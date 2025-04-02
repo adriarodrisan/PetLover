@@ -11,28 +11,13 @@ try {
 }catch (PDOException $e){
     echo 'Falló la conixion: ' . $e->getMessage(); 
 }
-/*$servername = 'localhost'; // este sera el nombre de nuestro servidor
-$database = 'protectora'; // nombre bd
-$username = 'petlove'; // Usuario bd
-$password = 'mascota'; // pass base de datos
-// creamos conexion
-//if (function_exists('mysqli_connect')){
-//    echo "mysqli yes";
-//}
-//echo "intentamos conexion" . $servername . $database.$username.$password;
-$conn = new mysqli($servername, $username, $password, $database);
-//verificamos la conexion
-//echo "este no se muestra";
-if ($conn->connect_errno){
-    echo 'fallo al conectar';
-    die("Conexion fallida: ". $conn->connect_error);
-}*/
+//persona
 $nombre= trim($_POST['nombre']);
 $dni= trim($_POST['dni']);
 $direccion= trim($_POST['direccion']);
 $telefono= trim($_POST['telefono']);
 $correo= trim($_POST['correo']);
-
+//animal
 $nombre_animal = trim($_POST['nombre_animal']);
 $chip = trim($_POST['chip']);
 $especie = $_POST['especie'];
@@ -41,8 +26,7 @@ $sexo = $_POST['sexo'];
 
 // Recibir los compromisos (implode es una funcion que devuelve un string de los elementos de un array)
 $compromisos = isset($_POST['compromisos']) ? implode(", ", $_POST['compromisos']) : '';
-//revisar que los campos no sean null
-//echo $dni." ".$correo;
+//Validamos que los campos fueron rellenados
 if(empty($nombre) || empty($dni) || empty($direccion) || empty($telefono) || empty($correo)){
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
     exit;
@@ -56,9 +40,7 @@ if ($contrasena !== $confirmar_contrasena){
 $registros_adoptate = $db->prepare("SELECT * FROM adoptante WHERE Correo = :correo");
 $registros_adoptate ->bindParam(':correo', $correo);
 $registros_adoptate ->execute();
-//$verificar_correo_usuario = "SELECT * FROM adoptante WHERE Correo = '$correo'";
-//$correo_verificado_usuario = mysqli_query($conn, $verificar_correo_usuario);
-//if (mysqli_num_rows($correo_verificado_usuario)>0){
+
 if ($registros_adoptate->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
@@ -66,13 +48,14 @@ if ($registros_adoptate->rowCount() > 0) {
 $registros_protectora = $db->prepare("SELECT * FROM refugio WHERE Correo = :correo");
 $registros_protectora ->bindParam(':correo', $correo);
 $registros_protectora ->execute();
-//$verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
-//$correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
-//if (mysqli_num_rows($correo_verificado_protectora)>0){
+
 if ($registros_protectora->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
+//datos insertado
+$registrar_adopcion = $db->prepare("INSERT INTO adopciones (nombre_adoptante, dni, direccion, telefono, correo, nombre_animal, chip, especie, raza, sexo, compromisos) 
+                                    VALUES (:nombre, :dni, :direccion, :telefono, :correo, :nombre_animal, :chip, :especie, :raza, :sexo, :compromisos)");
 //hashear pass
 $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
 $registrar_usuarios = $db->prepare("INSERT INTO refugio (Nombre, Ciudad, Correo, Contraseña) VALUES (:nombre,:ciudad,:correo,:contrasena)");
