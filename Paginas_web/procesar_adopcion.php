@@ -1,4 +1,5 @@
 <?php
+//ESTE FORMULARIO ESTARÁ METIDO DENTRO DE LAS IMAGENES AL DARLE MAS INFORMACION. (Talvez tambien metemos un campo donde explicamos info de cada animal)
 ini_set('display_errors', 1);
 
 ini_set('display_startup_errors', 1);
@@ -42,7 +43,7 @@ $sexo = $_POST['sexo'];
 $compromisos = isset($_POST['compromisos']) ? implode(", ", $_POST['compromisos']) : '';
 //revisar que los campos no sean null
 //echo $dni." ".$correo;
-if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){
+if(empty($nombre) || empty($dni) || empty($direccion) || empty($telefono) || empty($correo)){
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
     exit;
 }
@@ -106,3 +107,4 @@ if ($registrar_usuarios){
    exit;
 }
 ?>
+

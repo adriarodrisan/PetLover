@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1743584046400,
@@ -16,6 +16,10 @@
                 {
                     "date": 1743584333185,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,11 @@\n $chip = trim($_POST['chip']);\r\n $especie = $_POST['especie'];\r\n $raza = trim($_POST['raza']);\r\n $sexo = $_POST['sexo'];\r\n+\r\n+// Recibir los compromisos (implode es una funcion que devuelve un string de los elementos de un array)\r\n+$compromisos = isset($_POST['compromisos']) ? implode(\", \", $_POST['compromisos']) : '';\r\n //revisar que los campos no sean null\r\n //echo $dni.\" \".$correo;\r\n if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){\r\n     echo \"Por favor, no dejes ningun hueco vacio en el formulario\";\r\n"
+                },
+                {
+                    "date": 1743585333859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n <?php\r\n+//ESTE FORMULARIO ESTARÁ METIDO DENTRO DE LAS IMAGENES AL DARLE MAS INFORMACION. (Talvez tambien metemos un campo donde explicamos info de cada animal)\r\n ini_set('display_errors', 1);\r\n \r\n ini_set('display_startup_errors', 1);\r\n \r\n@@ -41,9 +42,9 @@\n // Recibir los compromisos (implode es una funcion que devuelve un string de los elementos de un array)\r\n $compromisos = isset($_POST['compromisos']) ? implode(\", \", $_POST['compromisos']) : '';\r\n //revisar que los campos no sean null\r\n //echo $dni.\" \".$correo;\r\n-if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){\r\n+if(empty($nombre) || empty($dni) || empty($direccion) || empty($telefono) || empty($correo)){\r\n     echo \"Por favor, no dejes ningun hueco vacio en el formulario\";\r\n     exit;\r\n }\r\n //verificar las contraseñas que sean iguales\r\n@@ -104,5 +105,6 @@\n }else{\r\n    echo \"Error al registrar usuario: \". $db->errorInfo()[2];\r\n    exit;\r\n }\r\n-?>\n\\ No newline at end of file\n+?>\r\n+\r\n"
                 }
             ],
             "date": 1743584046400,
