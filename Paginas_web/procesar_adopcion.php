@@ -37,6 +37,9 @@ $chip = trim($_POST['chip']);
 $especie = $_POST['especie'];
 $raza = trim($_POST['raza']);
 $sexo = $_POST['sexo'];
+
+// Recibir los compromisos (implode es una funcion que devuelve un string de los elementos de un array)
+$compromisos = isset($_POST['compromisos']) ? implode(", ", $_POST['compromisos']) : '';
 //revisar que los campos no sean null
 //echo $dni." ".$correo;
 if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1743584046400,
@@ -12,6 +12,10 @@
                 {
                     "date": 1743584095673,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,14 @@\n $dni= trim($_POST['dni']);\r\n $direccion= trim($_POST['direccion']);\r\n $telefono= trim($_POST['telefono']);\r\n $correo= trim($_POST['correo']);\r\n+\r\n+$nombre_animal = trim($_POST['nombre_animal']);\r\n+$chip = trim($_POST['chip']);\r\n+$especie = $_POST['especie'];\r\n+$raza = trim($_POST['raza']);\r\n+$sexo = $_POST['sexo'];\r\n //revisar que los campos no sean null\r\n //echo $dni.\" \".$correo;\r\n if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){\r\n     echo \"Por favor, no dejes ningun hueco vacio en el formulario\";\r\n"
+                },
+                {
+                    "date": 1743584333185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,11 @@\n $chip = trim($_POST['chip']);\r\n $especie = $_POST['especie'];\r\n $raza = trim($_POST['raza']);\r\n $sexo = $_POST['sexo'];\r\n+\r\n+// Recibir los compromisos (implode es una funcion que devuelve un string de los elementos de un array)\r\n+$compromisos = isset($_POST['compromisos']) ? implode(\", \", $_POST['compromisos']) : '';\r\n //revisar que los campos no sean null\r\n //echo $dni.\" \".$correo;\r\n if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){\r\n     echo \"Por favor, no dejes ningun hueco vacio en el formulario\";\r\n"
                 }
             ],
             "date": 1743584046400,
