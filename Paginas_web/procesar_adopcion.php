@@ -56,13 +56,22 @@ if ($registros_protectora->rowCount() > 0) {
 //datos insertado
 $registrar_adopcion = $db->prepare("INSERT INTO adopciones (nombre_adoptante, dni, direccion, telefono, correo, nombre_animal, chip, especie, raza, sexo, compromisos) 
                                     VALUES (:nombre, :dni, :direccion, :telefono, :correo, :nombre_animal, :chip, :especie, :raza, :sexo, :compromisos)");
-//hashear pass
 $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
-$registrar_usuarios = $db->prepare("INSERT INTO refugio (Nombre, Ciudad, Correo, Contraseña) VALUES (:nombre,:ciudad,:correo,:contrasena)");
-$registrar_usuarios ->bindParam(':nombre', $nombre);
-$registrar_usuarios ->bindParam(':correo', $correo);
-$registrar_usuarios ->bindParam(':ciudad', $ciudad);
-$registrar_usuarios ->bindParam(':contrasena', $contrasena_hasheada);
+
+$registrar_adopcion ->bindParam(':nombre', $nombre);
+$registrar_adopcion ->bindParam(':dni', $dni);
+$registrar_adopcion ->bindParam(':direccion', $direccion);
+$registrar_adopcion ->bindParam(':telefono', $telefono);
+$registrar_adopcion ->bindParam(':correo', $correo);
+$registrar_adopcion ->bindParam(':nombre_animal', $nombre_animal);
+$registrar_adopcion ->bindParam(':chip', $chip);
+$registrar_adopcion ->bindParam(':especie', $especie);
+$registrar_adopcion ->bindParam(':raza', $raza);
+$registrar_adopcion ->bindParam(':sexo', $sexo);
+$registrar_adopcion ->bindParam(':compromisos', $compromisos);
+
+
+
 $registrar_usuarios ->execute();
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
 if ($registrar_usuarios){

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1743584046400,
@@ -32,6 +32,14 @@
                 {
                     "date": 1743601108632,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,9 @@\n if ($registros_protectora->rowCount() > 0) {\r\n     echo \"Este correo ya esta registrado, por favor, intelo con otro correo\";\r\n     exit;\r\n }\r\n+//datos insertado\r\n $registrar_adopcion = $db->prepare(\"INSERT INTO adopciones (nombre_adoptante, dni, direccion, telefono, correo, nombre_animal, chip, especie, raza, sexo, compromisos) \r\n                                     VALUES (:nombre, :dni, :direccion, :telefono, :correo, :nombre_animal, :chip, :especie, :raza, :sexo, :compromisos)\");\r\n //hashear pass\r\n $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);\r\n"
+                },
+                {
+                    "date": 1743601671154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,15 +55,28 @@\n }\r\n //datos insertado\r\n $registrar_adopcion = $db->prepare(\"INSERT INTO adopciones (nombre_adoptante, dni, direccion, telefono, correo, nombre_animal, chip, especie, raza, sexo, compromisos) \r\n                                     VALUES (:nombre, :dni, :direccion, :telefono, :correo, :nombre_animal, :chip, :especie, :raza, :sexo, :compromisos)\");\r\n-//hashear pass\r\n $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);\r\n-$registrar_usuarios = $db->prepare(\"INSERT INTO refugio (Nombre, Ciudad, Correo, Contraseña) VALUES (:nombre,:ciudad,:correo,:contrasena)\");\r\n-$registrar_usuarios ->bindParam(':nombre', $nombre);\r\n-$registrar_usuarios ->bindParam(':correo', $correo);\r\n-$registrar_usuarios ->bindParam(':ciudad', $ciudad);\r\n-$registrar_usuarios ->bindParam(':contrasena', $contrasena_hasheada);\r\n+\r\n+$registrar_adopcion ->bindParam(':nombre', $nombre);\r\n+$registrar_adopcion ->bindParam(':dni', $dni);\r\n+$registrar_adopcion ->bindParam(':direccion', $direccion);\r\n+$registrar_adopcion ->bindParam(':telefono', $telefono);\r\n+$registrar_adopcion ->bindParam(':correo', $correo);\r\n+$registrar_adopcion ->bindParam(':nombre_animal', $nombre_animal);\r\n+$registrar_adopcion ->bindParam(':chip', $chip);\r\n+$registrar_adopcion ->bindParam(':especie', $especie);\r\n+$registrar_adopcion ->bindParam(':raza', $raza);\r\n+$registrar_adopcion ->bindParam(':sexo', $raza);\r\n+nombre_animal\r\n+chip\r\n+especie \r\n+raza \r\n+sexo  \r\n+compromisos \r\n+\r\n+\r\n $registrar_usuarios ->execute();\r\n //$registrar_usuarios = \"INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');\";\r\n if ($registrar_usuarios){\r\n     $_SESSION['usuario'] = $nombre;\r\n"
+                },
+                {
+                    "date": 1743601749225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,17 +66,13 @@\n $registrar_adopcion ->bindParam(':nombre_animal', $nombre_animal);\r\n $registrar_adopcion ->bindParam(':chip', $chip);\r\n $registrar_adopcion ->bindParam(':especie', $especie);\r\n $registrar_adopcion ->bindParam(':raza', $raza);\r\n-$registrar_adopcion ->bindParam(':sexo', $raza);\r\n-nombre_animal\r\n-chip\r\n-especie \r\n-raza \r\n-sexo  \r\n-compromisos \r\n+$registrar_adopcion ->bindParam(':sexo', $sexo);\r\n+$registrar_adopcion ->bindParam(':compromisos', $compromisos);\r\n \r\n \r\n+\r\n $registrar_usuarios ->execute();\r\n //$registrar_usuarios = \"INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');\";\r\n if ($registrar_usuarios){\r\n     $_SESSION['usuario'] = $nombre;\r\n"
                 }
             ],
             "date": 1743584046400,
