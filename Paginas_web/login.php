@@ -38,9 +38,7 @@ $registros_adoptante ->execute();
     if (password_verify($contrasena, $fila['Contraseña'])) {
 
         //setcookie("tipo_usuario", "adoptante", time() + (86400 * 30), "/");
-
-        $_SESSION['usuario'] = $fila['correo'];
-        $_SESSION['rol'] = 'adoptante';
+        setcookie("rol", "adoptante", time() + (3600), "/");
         echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
@@ -51,7 +49,7 @@ $registros_adoptante ->execute();
                 <body class="cuerpo">
                     <div class="alertas">
                         <h1>Inicio de sesion exitoso</h1>
-                        <a href="/Paginas_web/Home_Petlover.html"> Ir al inicio</a>
+                        <a href="/Paginas_web/Home_Petlover.php"> Ir al inicio</a>
                     </div>
                 </body>
             </html>
@@ -68,8 +66,7 @@ $registros_protectora ->execute();
 if ($registros_protectora->rowCount() > 0) {
     $fila = $registros_protectora->fetch(PDO::FETCH_ASSOC);
     if (password_verify($contrasena, $fila['Contraseña'])) {
-        $_SESSION['usuario'] = $fila['Nombre'];
-        $_SESSION['rol'] = 'protectora';
+        setcookie("rol", "protectora", time() + (3600), "/");
         echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
