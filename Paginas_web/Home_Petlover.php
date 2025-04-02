@@ -9,9 +9,6 @@
 </head>
 <body>
     <header>
-        <div class="logo-contenedor">
-            <img id="logo" src="/Imagenes_Animales/logo.png"/>
-        </div>
         <?php
     include 'navbar.php';
 ?> 
