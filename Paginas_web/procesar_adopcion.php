@@ -31,6 +31,12 @@ $dni= trim($_POST['dni']);
 $direccion= trim($_POST['direccion']);
 $telefono= trim($_POST['telefono']);
 $correo= trim($_POST['correo']);
+
+$nombre_animal = trim($_POST['nombre_animal']);
+$chip = trim($_POST['chip']);
+$especie = $_POST['especie'];
+$raza = trim($_POST['raza']);
+$sexo = $_POST['sexo'];
 //revisar que los campos no sean null
 //echo $dni." ".$correo;
 if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){

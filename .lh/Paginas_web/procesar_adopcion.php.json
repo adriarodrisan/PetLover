@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1743584046400,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743584095673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,14 @@\n $dni= trim($_POST['dni']);\r\n $direccion= trim($_POST['direccion']);\r\n $telefono= trim($_POST['telefono']);\r\n $correo= trim($_POST['correo']);\r\n+\r\n+$nombre_animal = trim($_POST['nombre_animal']);\r\n+$chip = trim($_POST['chip']);\r\n+$especie = $_POST['especie'];\r\n+$raza = trim($_POST['raza']);\r\n+$sexo = $_POST['sexo'];\r\n //revisar que los campos no sean null\r\n //echo $dni.\" \".$correo;\r\n if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){\r\n     echo \"Por favor, no dejes ningun hueco vacio en el formulario\";\r\n"
                 }
             ],
             "date": 1743584046400,
