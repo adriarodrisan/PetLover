@@ -3,11 +3,19 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1743603314461,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743603427398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,10 @@\n <?php\r\n if (isset($_COOKIE['rol'])) {\r\n     setcookie('rol', '', time() - 3600, '/');\r\n-    \r\n+    header(\"Location: /Paginas_web/Home_Petlover.php\");\r\n+    exit;\r\n+} else {\r\n+    header(\"Location: /Inicio_Sesion.html\");\r\n+    exit;\r\n+} \r\n ?>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1743603464025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,6 @@\n if (isset($_COOKIE['rol'])) {\r\n     setcookie('rol', '', time() - 3600, '/');\r\n     header(\"Location: /Paginas_web/Home_Petlover.php\");\r\n     exit;\r\n-} else {\r\n-    header(\"Location: /Inicio_Sesion.html\");\r\n-    exit;\r\n-} \r\n+}    \r\n ?>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1743603314461,
