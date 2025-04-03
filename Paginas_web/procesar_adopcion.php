@@ -19,7 +19,7 @@ $telefono= trim($_POST['telefono']);
 $correo= trim($_POST['correo']);
 //animal
 $nombre_animal = trim($_POST['nombre_animal']);
-$chip = trim($_POST['chip']);
+//$chip = trim($_POST['chip']);
 $especie = $_POST['especie'];
 $raza = trim($_POST['raza']);
 $sexo = $_POST['sexo'];
@@ -41,38 +41,23 @@ if ($registros_adoptate->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }*/
-$registros_protectora = $db->prepare("SELECT * FROM refugio WHERE Correo = :correo");
-$registros_protectora ->bindParam(':correo', $correo);
-$registros_protectora ->execute();
-
-if ($registros_protectora->rowCount() > 0) {
-    echo "Este correo ya esta registrado, por favor, intelo con otro correo";
-    exit;
-}
 //datos insertado
 $registrar_adopcion = $db->prepare("INSERT INTO adopciones (nombre_adoptante, dni, direccion, telefono, correo, nombre_animal, chip, especie, raza, sexo, compromisos) 
                                     VALUES (:nombre, :dni, :direccion, :telefono, :correo, :nombre_animal, :chip, :especie, :raza, :sexo, :compromisos)");
-$contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
-
 $registrar_adopcion ->bindParam(':nombre', $nombre);
 $registrar_adopcion ->bindParam(':dni', $dni);
 $registrar_adopcion ->bindParam(':direccion', $direccion);
 $registrar_adopcion ->bindParam(':telefono', $telefono);
 $registrar_adopcion ->bindParam(':correo', $correo);
 $registrar_adopcion ->bindParam(':nombre_animal', $nombre_animal);
-$registrar_adopcion ->bindParam(':chip', $chip);
+//$registrar_adopcion ->bindParam(':chip', $chip);
 $registrar_adopcion ->bindParam(':especie', $especie);
 $registrar_adopcion ->bindParam(':raza', $raza);
 $registrar_adopcion ->bindParam(':sexo', $sexo);
 $registrar_adopcion ->bindParam(':compromisos', $compromisos);
-
-
-
 $registrar_adopcion ->execute();
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
 if ($registrar_usuarios){
-    $_SESSION['usuario'] = $nombre;
-    $_SESSION['rol'] = 'protectora';
 //if (mysqli_query($conn, $registrar_usuarios)){
     echo '<!DOCTYPE html>
             <html lang="es">
@@ -84,7 +69,7 @@ if ($registrar_usuarios){
                 <body>
                     <div class="alertas">
                         <h1>Adopción registrada exitosamente</h1>
-                        <a href="/Paginas_web/Home_Petlover.html"> Ir al inicio</a>
+                        <a href="/Paginas_web/Home_Petlover.php"> Ir al inicio</a>
                     </div>
                 </body>
             </html>

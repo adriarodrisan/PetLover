@@ -12,7 +12,8 @@
         <form action="procesar_adopcion.php" method="POST">
             <fieldset>
                 <legend>Datos del Adoptante</legend>
-                <label>Nombre Completo: <input type="text" name="nombre" required></label>
+                <label>Nombre: <input type="text" name="nombre" required></label>
+                <label>Apellido: <input type="text" name="apellido" required></label>
                 <label>DNI: <input type="text" name="dni" required></label>
                 <label>Dirección: <input type="text" name="direccion" required></label>
                 <label>Teléfono: <input type="tel" name="telefono" required></label>
@@ -21,7 +22,7 @@
             <fieldset>
                 <legend> Informacion del Animal </legend>
                 <label>Nombre del animal<input type="text" name="nombre_animal"></label>
-                <label>Nº Microchip: <input type="text" name="chip"></label>
+                <!--<label>Nº Microchip: <input type="text" name="chip"></label>-->
                 <label>Especie:
                     <select name="especie">
                       <option value="perro">Perro</option>
@@ -35,7 +36,6 @@
                       <option value="hembra">Hembra</option>
                     </select>
             </fieldset>
-
             <fieldset>
                 <legend>Compromisos del Adoptante</legend>
                 <label><input type="checkbox" required> Acepto que el animal será solo de compañía</label>
@@ -47,7 +47,6 @@
                 <label><input type="checkbox" required> Enviaré fotos periódicas para seguimiento</label>
                 <label><input type="checkbox" required> Acepto el pago del donativo por adopción</label>
               </fieldset>
-
               <label><input type="checkbox" required> He leído y acepto el contrato de adopción completo.</label>
               <button type="submit">Enviar Solicitud</button>
             </form>
