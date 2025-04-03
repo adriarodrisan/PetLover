@@ -23,7 +23,7 @@ $rol = $_COOKIE['rol'] ?? null;
       <?php if ($rol):?>
         <a href="cerrar_sesion.php">Cerrar Session</a>
       <?php else: ?>
-        <a href="Inicio_Sesion.html"><button>Registrate/iniciar sesión</button></a>
+        <a href="Inicio_Sesion.html">Registrate/iniciar sesión</a>
     <?php endif; ?>
     </div>
     </header>
