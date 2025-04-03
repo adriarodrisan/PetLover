@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 10,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1743584046400,
@@ -48,6 +48,10 @@
                 {
                     "date": 1743601858911,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,13 +82,13 @@\n             <html lang=\"es\">\r\n                 <head>\r\n                     <meta charset=\"UTF-8\">\r\n                     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-                    <title>Registro Exitoso</title>\r\n+                    <title>Registro Exitoso!</title>\r\n                 </head>\r\n-                <body class=\"cuerpo\">\r\n+                <body>\r\n                     <div class=\"alertas\">\r\n-                        <h1>Registro Exitoso</h1>\r\n+                        <h1>Adopción registrada exitosamente</h1>\r\n                         <a href=\"/Paginas_web/Home_Petlover.html\"> Ir al inicio</a>\r\n                     </div>\r\n                 </body>\r\n             </html>\r\n"
+                },
+                {
+                    "date": 1743687679451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,22 +30,18 @@\n if(empty($nombre) || empty($dni) || empty($direccion) || empty($telefono) || empty($correo)){\r\n     echo \"Por favor, no dejes ningun hueco vacio en el formulario\";\r\n     exit;\r\n }\r\n-//verificar las contraseñas que sean iguales\r\n-if ($contrasena !== $confirmar_contrasena){\r\n-    echo \"Las cotraseñas no coinciden.\";\r\n-    exit;\r\n-}\r\n+/*\r\n //verificar si el mail esta registrado\r\n $registros_adoptate = $db->prepare(\"SELECT * FROM adoptante WHERE Correo = :correo\");\r\n $registros_adoptate ->bindParam(':correo', $correo);\r\n $registros_adoptate ->execute();\r\n \r\n if ($registros_adoptate->rowCount() > 0) {\r\n     echo \"Este correo ya esta registrado, por favor, intelo con otro correo\";\r\n     exit;\r\n-}\r\n+}*/\r\n $registros_protectora = $db->prepare(\"SELECT * FROM refugio WHERE Correo = :correo\");\r\n $registros_protectora ->bindParam(':correo', $correo);\r\n $registros_protectora ->execute();\r\n \r\n"
                 }
             ],
             "date": 1743584046400,

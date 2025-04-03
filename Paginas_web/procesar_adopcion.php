@@ -31,11 +31,7 @@ if(empty($nombre) || empty($dni) || empty($direccion) || empty($telefono) || emp
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
     exit;
 }
-//verificar las contraseñas que sean iguales
-if ($contrasena !== $confirmar_contrasena){
-    echo "Las cotraseñas no coinciden.";
-    exit;
-}
+/*
 //verificar si el mail esta registrado
 $registros_adoptate = $db->prepare("SELECT * FROM adoptante WHERE Correo = :correo");
 $registros_adoptate ->bindParam(':correo', $correo);
@@ -44,7 +40,7 @@ $registros_adoptate ->execute();
 if ($registros_adoptate->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
-}
+}*/
 $registros_protectora = $db->prepare("SELECT * FROM refugio WHERE Correo = :correo");
 $registros_protectora ->bindParam(':correo', $correo);
 $registros_protectora ->execute();
