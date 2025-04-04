@@ -5,9 +5,9 @@
 </div>
 <div>
         <p>Síguenos en nuestras redes sociales:</p>
-        <a href="" target="">Facebook</a> | 
-        <a href="" target="">Instagram</a> | 
-        <a href="" target="">Twitter</a>
+        <a href="https://www.facebook.com/profile.php?id=61574684355166" target="">Facebook</a> | 
+        <a href="https://www.intagram.com/petlover_protectora/" target="">Instagram</a> | 
+        <a href="https://x.com/p_petlover" target="">X</a>
     </div>
 
     <div>
