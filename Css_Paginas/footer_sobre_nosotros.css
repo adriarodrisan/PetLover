@@ -42,3 +42,12 @@ body {
     margin-bottom: 40px;
     position: relative;
   }
+  .bloque-creador {
+    background-color: #ffffff;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-left: 6px solid #ffa573;
+    transition: transform 0.2s ease;
+  }
