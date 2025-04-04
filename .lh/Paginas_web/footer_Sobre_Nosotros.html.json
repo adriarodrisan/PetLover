@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1743788742958,
@@ -12,6 +12,14 @@
                 {
                     "date": 1743788832302,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,11 @@\n </head>\r\n <body>\r\n     <section class=\"seccion-creadores\">\r\n         <div class=\"contenedor-texto\">\r\n-\r\n+        <h1>Sobre Nosotros </h1>\r\n+        <p>PetLover es mucho más que un proyecto escolar. Es el resultado de meses de esfuerzo, aprendizaje y amor por los animales.</p>\r\n+        <p>Somos dos estudiantes de Desarrollo de Aplicaciones Web que, como trabajo final, decidimos crear esta pagina web con un propósito: ayudar a las protectoras a conectar con personas dispuestas a adoptar.</p>\r\n         </div>\r\n \r\n     </section>\r\n     \r\n"
+                },
+                {
+                    "date": 1743788945049,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,11 @@\n         <div class=\"contenedor-texto\">\r\n         <h1>Sobre Nosotros </h1>\r\n         <p>PetLover es mucho más que un proyecto escolar. Es el resultado de meses de esfuerzo, aprendizaje y amor por los animales.</p>\r\n         <p>Somos dos estudiantes de Desarrollo de Aplicaciones Web que, como trabajo final, decidimos crear esta pagina web con un propósito: ayudar a las protectoras a conectar con personas dispuestas a adoptar.</p>\r\n-        </div>\r\n+        <p>No ha sido fácil: hemos lidiado con errores, dudas, bases de datos rebeldes y muchas horas de investigación. Pero lo hemos hecho juntos. Cada apartado de nuestro web tiene una historia detrás, una búsqueda en Google, una charla de apoyo o unos nervios después de que todo.</p>\r\n+        <p>Creemos que la tecnología también puede servir para mejorar el mundo, aunque sea un poquito. Si esta web consigue que un solo animal encuentre un hogar, habrá merecido la pena.</p>\r\n+    </div>\r\n \r\n     </section>\r\n     \r\n </body>\r\n"
+                },
+                {
+                    "date": 1743788966309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Creadores de Petlover</title>\r\n+    <link rel=\"stylesheet\" href=\"/Css_Paginas/footer_sobre_nosotros.css\">\r\n+</head>\r\n+<body>\r\n+    <section class=\"seccion-creadores\">\r\n+        <div class=\"contenedor-texto\">\r\n+        <h1>Sobre Nosotros </h1>\r\n+        <p>PetLover es mucho más que un proyecto escolar. Es el resultado de meses de esfuerzo, aprendizaje y amor por los animales.</p>\r\n+        <p>Somos dos estudiantes de Desarrollo de Aplicaciones Web que, como trabajo final, decidimos crear esta pagina web con un propósito: ayudar a las protectoras a conectar con personas dispuestas a adoptar.</p>\r\n+        <p>No ha sido fácil: hemos lidiado con errores, dudas, bases de datos rebeldes y muchas horas de investigación. Pero lo hemos hecho juntos. Cada apartado de nuestro web tiene una historia detrás, una búsqueda en Google, una charla de apoyo o unos nervios después de que todo.</p>\r\n+        <p>Creemos que la tecnología también puede servir para mejorar el mundo, aunque sea un poquito. Si esta web consigue que un solo animal encuentre un hogar, habrá merecido la pena.</p>\r\n+        <p class=\"firma\">Gracias por formar parte de esto. <br>– Los creadores de PetLover 🐾</p>\r\n+    </div>\r\n+    </section>\r\n+    \r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1743788742958,
