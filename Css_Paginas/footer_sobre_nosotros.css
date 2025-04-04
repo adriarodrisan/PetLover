@@ -7,3 +7,13 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .seccion-creadores {
+    background-color: #fff7ec;
+    padding: 60px 40px 40px;
+    border-radius: 25px;
+    max-width: 900px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border: 3px dashed #ffb179;
+  }
