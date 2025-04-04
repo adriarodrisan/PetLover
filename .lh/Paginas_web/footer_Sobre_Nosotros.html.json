@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1743788742958,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743788832302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,11 @@\n </head>\r\n <body>\r\n     <section class=\"seccion-creadores\">\r\n         <div class=\"contenedor-texto\">\r\n-\r\n+        <h1>Sobre Nosotros </h1>\r\n+        <p>PetLover es mucho más que un proyecto escolar. Es el resultado de meses de esfuerzo, aprendizaje y amor por los animales.</p>\r\n+        <p>Somos dos estudiantes de Desarrollo de Aplicaciones Web que, como trabajo final, decidimos crear esta pagina web con un propósito: ayudar a las protectoras a conectar con personas dispuestas a adoptar.</p>\r\n         </div>\r\n \r\n     </section>\r\n     \r\n"
                 }
             ],
             "date": 1743788742958,
