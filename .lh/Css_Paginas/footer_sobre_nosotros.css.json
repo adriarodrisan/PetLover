@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1743789062057,
@@ -16,6 +16,10 @@
                 {
                     "date": 1743789366919,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,22 @@\n     width: 100%;\r\n     position: relative;\r\n     box-shadow: 0 10px 20px rgba(0,0,0,0.1);\r\n     border: 3px dashed #ffb179;\r\n+  }\r\n+  .seccion-creadores::before {\r\n+    content: \"🐶\";\r\n+    position: absolute;\r\n+    font-size: 2.5rem;\r\n+    top: -25px;\r\n+    left: -25px;\r\n+    transform: rotate(-8deg);\r\n+  }\r\n+  \r\n+  .seccion-creadores::after {\r\n+    content: \"🐱\";\r\n+    position: absolute;\r\n+    font-size: 2.5rem;\r\n+    top: -25px;\r\n+    right: -25px;\r\n+    transform: rotate(8deg);\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1743789418610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,13 @@\n     font-size: 2.5rem;\r\n     top: -25px;\r\n     right: -25px;\r\n     transform: rotate(8deg);\r\n+  }\r\n+    \r\n+  .seccion-creadores h2 {\r\n+    text-align: center;\r\n+    color: #ff874f;\r\n+    font-size: 2.2rem;\r\n+    margin-bottom: 40px;\r\n+    position: relative;\r\n   }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1743789062057,

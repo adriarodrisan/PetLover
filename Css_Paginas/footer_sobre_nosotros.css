@@ -34,3 +34,11 @@ body {
     right: -25px;
     transform: rotate(8deg);
   }
+    
+  .seccion-creadores h2 {
+    text-align: center;
+    color: #ff874f;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    position: relative;
+  }
