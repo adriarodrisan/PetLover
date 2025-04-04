@@ -54,3 +54,10 @@ body {
   .bloque-creador:hover {
     transform: translateY(-3px);
   }
+  .bloque-creador p {
+    margin: 0;
+    color: #5b4033;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
