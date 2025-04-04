@@ -9,4 +9,8 @@
         <a href="" target="">Instagram</a> | 
         <a href="" target="">Twitter</a>
     </div>
+
+    <div>
+        <p>Dirección: Calle Pet 123, Barcelona, España</p>
+    </div>
 </footer>

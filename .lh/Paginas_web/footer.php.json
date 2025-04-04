@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1743756799910,
@@ -32,6 +32,10 @@
                 {
                     "date": 1743759001195,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n <p><a href=\"/sobre-nosotros\">Sobre Nosotros</a> | <a href=\"/terminos-condiciones\">Términos y Condiciones</a> | <a href=\"/politica-privacidad\">Política de Privacidad</a></p>\r\n </div>\r\n <div>\r\n         <p>Síguenos en nuestras redes sociales:</p>\r\n-        <a href=\"https://facebook.com/petlover\" target=\"_blank\">Facebook</a> | \r\n-        <a href=\"https://instagram.com/petlover\" target=\"_blank\">Instagram</a> | \r\n-        <a href=\"https://twitter.com/petlover\" target=\"_blank\">Twitter</a>\r\n+        <a href=\"\" target=\"\">Facebook</a> | \r\n+        <a href=\"\" target=\"\">Instagram</a> | \r\n+        <a href=\"\" target=\"\">Twitter</a>\r\n     </div>\r\n </footer>\r\n"
+                },
+                {
+                    "date": 1743759049317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,9 @@\n         <a href=\"\" target=\"\">Facebook</a> | \r\n         <a href=\"\" target=\"\">Instagram</a> | \r\n         <a href=\"\" target=\"\">Twitter</a>\r\n     </div>\r\n+\r\n+    <div>\r\n+        <p>Dirección: Calle Pet 123, Barcelona, España</p>\r\n+    </div>\r\n </footer>\r\n"
                 }
             ],
             "date": 1743756799910,
