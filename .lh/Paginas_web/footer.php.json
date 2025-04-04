@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1743756799910,
@@ -24,6 +24,14 @@
                 {
                     "date": 1743758922614,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <footer class=\"pie-pagina\">\r\n <div>\r\n-<p>© 2025 PetLover | Contacto: <a href=\"mailto:petlover@gmail.com\">petlover@gmail.com</a></p>\r\n+<p>© 2025 PetLover | Contacto: <a href=\"mailto:petlovercomtact@gmail.com\">petlovercomtact@gmail.com</a></p>\r\n <p><a href=\"/sobre-nosotros\">Sobre Nosotros</a> | <a href=\"/terminos-condiciones\">Términos y Condiciones</a> | <a href=\"/politica-privacidad\">Política de Privacidad</a></p>\r\n </div>\r\n </footer>\r\n"
+                },
+                {
+                    "date": 1743758956508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,11 @@\n <div>\r\n <p>© 2025 PetLover | Contacto: <a href=\"mailto:petlovercomtact@gmail.com\">petlovercomtact@gmail.com</a></p>\r\n <p><a href=\"/sobre-nosotros\">Sobre Nosotros</a> | <a href=\"/terminos-condiciones\">Términos y Condiciones</a> | <a href=\"/politica-privacidad\">Política de Privacidad</a></p>\r\n </div>\r\n+<div>\r\n+        <p>Síguenos en nuestras redes sociales:</p>\r\n+        <a href=\"https://facebook.com/petlover\" target=\"_blank\">Facebook</a> | \r\n+        <a href=\"https://instagram.com/petlover\" target=\"_blank\">Instagram</a> | \r\n+        <a href=\"https://twitter.com/petlover\" target=\"_blank\">Twitter</a>\r\n+    </div>\r\n </footer>\r\n"
+                },
+                {
+                    "date": 1743759001195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n <p><a href=\"/sobre-nosotros\">Sobre Nosotros</a> | <a href=\"/terminos-condiciones\">Términos y Condiciones</a> | <a href=\"/politica-privacidad\">Política de Privacidad</a></p>\r\n </div>\r\n <div>\r\n         <p>Síguenos en nuestras redes sociales:</p>\r\n-        <a href=\"https://facebook.com/petlover\" target=\"_blank\">Facebook</a> | \r\n-        <a href=\"https://instagram.com/petlover\" target=\"_blank\">Instagram</a> | \r\n-        <a href=\"https://twitter.com/petlover\" target=\"_blank\">Twitter</a>\r\n+        <a href=\"\" target=\"\">Facebook</a> | \r\n+        <a href=\"\" target=\"\">Instagram</a> | \r\n+        <a href=\"\" target=\"\">Twitter</a>\r\n     </div>\r\n </footer>\r\n"
                 }
             ],
             "date": 1743756799910,
