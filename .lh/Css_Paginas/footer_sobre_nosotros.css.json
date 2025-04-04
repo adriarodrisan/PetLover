@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1743789062057,
@@ -24,6 +24,10 @@
                 {
                     "date": 1743789590247,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,5 +40,14 @@\n     color: #ff874f;\r\n     font-size: 2.2rem;\r\n     margin-bottom: 40px;\r\n     position: relative;\r\n+  }\r\n+  .bloque-creador {\r\n+    background-color: #ffffff;\r\n+    padding: 20px 25px;\r\n+    margin-bottom: 20px;\r\n+    border-radius: 15px;\r\n+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);\r\n+    border-left: 6px solid #ffa573;\r\n+    transition: transform 0.2s ease;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1743789607576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,5 +49,8 @@\n     border-radius: 15px;\r\n     box-shadow: 0 4px 10px rgba(0,0,0,0.05);\r\n     border-left: 6px solid #ffa573;\r\n     transition: transform 0.2s ease;\r\n+  }\r\n+  .bloque-creador:hover {\r\n+    transform: translateY(-3px);\r\n   }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1743789062057,
