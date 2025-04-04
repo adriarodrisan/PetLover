@@ -13,6 +13,7 @@ try {
 }
 //persona
 $nombre= trim($_POST['nombre']);
+$apellido= trim($_POST['apellido']);
 $dni= trim($_POST['dni']);
 $direccion= trim($_POST['direccion']);
 $telefono= trim($_POST['telefono']);
@@ -31,20 +32,62 @@ if(empty($nombre) || empty($dni) || empty($direccion) || empty($telefono) || emp
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
     exit;
 }
-/*
-//verificar si el mail esta registrado
-$registros_adoptate = $db->prepare("SELECT * FROM adoptante WHERE Correo = :correo");
-$registros_adoptate ->bindParam(':correo', $correo);
-$registros_adoptate ->execute();
 
-if ($registros_adoptate->rowCount() > 0) {
-    echo "Este correo ya esta registrado, por favor, intelo con otro correo";
+//verificar si el animal esta guardado en la base de datos
+$id_animal = $db->prepare("SELECT ID FROM animal WHERE Nombre = :nombre_animal");
+$id_animal ->bindParam(':nombre_animal', $nombre_animal);
+$id_animal ->execute();
+
+if ($id_animal->rowCount() < 1) {
+    echo '<!DOCTYPE html>
+            <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Error 453</title>
+                </head>
+                <body>
+                    <div class="alertas">
+                        <h1>Error 453</h1>
+                        <h1>Error con el animal</h1>
+                        <p>No hay Animal con este nombre, Intentalo revisar que no te has equivocado</p>
+                        <a href="/Paginas_web/Home_Petlover.php"> Ir al inicio</a>
+                    </div>
+                </body>
+            </html>
+            ';
     exit;
-}*/
+}
+$id_adoptante = $db->prepare("SELECT ID FROM adoptante WHERE Nombre = :nombre_adoptante");
+$id_adoptante ->bindParam(':nombre_adoptante', $nombre_adoptante);
+$id_adoptante ->execute();
+
+if ($id_adoptante->rowCount() < 1) {
+    echo '<!DOCTYPE html>
+            <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Error 454</title>
+                </head>
+                <body>
+                    <div class="alertas">
+                        <h1>Error 454</h1>
+                        <h1>Error con el Nombre</h1>
+                        <p>No hay Usuario con este nombre, Intentalo revisar que no te has equivocado o no estas registrado</p>
+                        <a href="/Paginas_web/inicio_Sesion.html"> Ir al registro</a>
+                        <a href="/Paginas_web/Home_Petlover.php"> Ir al inicio</a>
+                    </div>
+                </body>
+            </html>
+            ';
+    exit;
+}
 //datos insertado
-$registrar_adopcion = $db->prepare("INSERT INTO adopciones (nombre_adoptante, dni, direccion, telefono, correo, nombre_animal, chip, especie, raza, sexo, compromisos) 
-                                    VALUES (:nombre, :dni, :direccion, :telefono, :correo, :nombre_animal, :chip, :especie, :raza, :sexo, :compromisos)");
+$registrar_adopcion = $db->prepare("INSERT INTO adopciones (nombre_adoptante, apellido_adoptante, dni, direccion, telefono, correo, nombre_animal, especie, raza, sexo, compromisos) 
+                                    VALUES (:nombre, :apellido, :dni, :direccion, :telefono, :correo, :nombre_animal, :especie, :raza, :sexo, :compromisos)");
 $registrar_adopcion ->bindParam(':nombre', $nombre);
+$registrar_adopcion ->bindParam(':apellido', $apellido);
 $registrar_adopcion ->bindParam(':dni', $dni);
 $registrar_adopcion ->bindParam(':direccion', $direccion);
 $registrar_adopcion ->bindParam(':telefono', $telefono);
@@ -57,7 +100,7 @@ $registrar_adopcion ->bindParam(':sexo', $sexo);
 $registrar_adopcion ->bindParam(':compromisos', $compromisos);
 $registrar_adopcion ->execute();
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
-if ($registrar_usuarios){
+if ($registrar_adopcion){
 //if (mysqli_query($conn, $registrar_usuarios)){
     echo '<!DOCTYPE html>
             <html lang="es">
