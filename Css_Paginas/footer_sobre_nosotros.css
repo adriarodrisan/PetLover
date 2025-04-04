@@ -17,3 +17,20 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     border: 3px dashed #ffb179;
   }
+  .seccion-creadores::before {
+    content: "🐶";
+    position: absolute;
+    font-size: 2.5rem;
+    top: -25px;
+    left: -25px;
+    transform: rotate(-8deg);
+  }
+  
+  .seccion-creadores::after {
+    content: "🐱";
+    position: absolute;
+    font-size: 2.5rem;
+    top: -25px;
+    right: -25px;
+    transform: rotate(8deg);
+  }

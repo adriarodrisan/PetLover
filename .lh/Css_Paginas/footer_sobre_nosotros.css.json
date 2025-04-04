@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1743789062057,
@@ -12,6 +12,10 @@
                 {
                     "date": 1743789178488,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,15 @@\n     padding: 40px 20px;\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n+  }\r\n+  .seccion-creadores {\r\n+    background-color: #fff7ec;\r\n+    padding: 60px 40px 40px;\r\n+    border-radius: 25px;\r\n+    max-width: 900px;\r\n+    width: 100%;\r\n+    position: relative;\r\n+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);\r\n+    border: 3px dashed #ffb179;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1743789366919,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,5 +15,22 @@\n     width: 100%;\r\n     position: relative;\r\n     box-shadow: 0 10px 20px rgba(0,0,0,0.1);\r\n     border: 3px dashed #ffb179;\r\n+  }\r\n+  .seccion-creadores::before {\r\n+    content: \"🐶\";\r\n+    position: absolute;\r\n+    font-size: 2.5rem;\r\n+    top: -25px;\r\n+    left: -25px;\r\n+    transform: rotate(-8deg);\r\n+  }\r\n+  \r\n+  .seccion-creadores::after {\r\n+    content: \"🐱\";\r\n+    position: absolute;\r\n+    font-size: 2.5rem;\r\n+    top: -25px;\r\n+    right: -25px;\r\n+    transform: rotate(8deg);\r\n   }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1743789062057,
