@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Paginas_web/footer_Sobre_Nosotros.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1743788742958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1743788742958,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Creadores de Petlover</title>\r\n    <link rel=\"stylesheet\" href=\"/Css_Paginas/footer_sobre_nosotros.css\">\r\n</head>\r\n<body>\r\n    <section class=\"seccion-creadores\">\r\n        <div class=\"contenedor-texto\">\r\n\r\n        </div>\r\n\r\n    </section>\r\n    \r\n</body>\r\n</html>"
+        }
+    ]
+}

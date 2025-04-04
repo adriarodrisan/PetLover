@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1743756799910,
@@ -36,6 +36,10 @@
                 {
                     "date": 1743759049317,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,9 @@\n         <a href=\"\" target=\"\">Facebook</a> | \r\n         <a href=\"\" target=\"\">Instagram</a> | \r\n         <a href=\"\" target=\"\">Twitter</a>\r\n     </div>\r\n+\r\n+    <div>\r\n+        <p>Dirección: Calle Pet 123, Barcelona, España</p>\r\n+    </div>\r\n </footer>\r\n"
+                },
+                {
+                    "date": 1743786315621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <footer class=\"pie-pagina\">\r\n <div>\r\n <p>© 2025 PetLover | Contacto: <a href=\"mailto:petlovercomtact@gmail.com\">petlovercomtact@gmail.com</a></p>\r\n-<p><a href=\"/sobre-nosotros\">Sobre Nosotros</a> | <a href=\"/terminos-condiciones\">Términos y Condiciones</a> | <a href=\"/politica-privacidad\">Política de Privacidad</a></p>\r\n+<p><a href=\"/Paginas_web/footer_Sobre_Nosotros.html\">Sobre Nosotros</a> | <a href=\"/terminos-condiciones\">Términos y Condiciones</a> | <a href=\"/politica-privacidad\">Política de Privacidad</a></p>\r\n </div>\r\n <div>\r\n         <p>Síguenos en nuestras redes sociales:</p>\r\n         <a href=\"\" target=\"\">Facebook</a> | \r\n"
                 }
             ],
             "date": 1743756799910,
