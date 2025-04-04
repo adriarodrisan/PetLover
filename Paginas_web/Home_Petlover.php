@@ -76,8 +76,6 @@
                 </div>
             </div>
     </section>
-        <footer class="pie-pagina">
-            © 2025 PetLover | Contacto: petlover@gmail.com
-        </footer>
+    <?php include 'footer.php'; ?>
 </body>
 </html>

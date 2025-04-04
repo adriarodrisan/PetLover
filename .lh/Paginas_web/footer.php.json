@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Paginas_web/footer.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1743756799910,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1743756799910,
+            "name": "Commit-0",
+            "content": "<footer class=\"pie-pagina\">\r\n    © 2025 PetLover | Contacto: petlover@gmail.com\r\n</footer>\r\n"
+        }
+    ]
+}
