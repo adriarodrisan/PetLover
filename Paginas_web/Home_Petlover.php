@@ -31,14 +31,14 @@
         <section class="seccion-destacados">
             <div class="tarjeta-mascota">
                 <h4>Max</h4>
-                <img src="../Imagenes_Animales/nerea.png" alt="Perro en adopción">
+                <img src="./Imagenes_Animales/nerea.png" alt="Perro en adopción">
                 <p>Raza: Pastor Belga Malioisse | Fecha de nacimiento: 22/02/2020</p>
                 <button> Conoceme! </button>
             </div>
 <!-- 🐾 Sección de Gatos -->
             <div class="tarjeta-mascota">
                 <h4>Isis</h4>
-                <img src="../Imagenes_Animales/isis.png" alt="Gato en adopción">
+                <img src="./Imagenes_Animales/isis.png" alt="Gato en adopción">
                 <p> Raza: Europea | Fecha de nacimiento: 01/06/2019</p>
                 <button>Conoceme! </button>
             </div>
