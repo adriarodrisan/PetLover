@@ -3,7 +3,7 @@ $rol = $_COOKIE['rol'] ?? null;
 ?>
 <header class="navbar">
     <div class="logo-contenedor">
-        <img id="logo" src="/Imagenes_Animales/logo.png" alt="Logo PetLover">
+        <img id="logo" src="./Imagenes_Animales/logo.png" alt="Logo PetLover">
     </div>
     <div class="menu-centro">
     <ul>
