@@ -18,7 +18,7 @@
         <h2>Encuentra a tu mejor amigo</h2>
         <p>Explora nuestros refugios y Encuentra a tu compañero ideal</p>
         <div class="contenedor-categorias">
-            <a href="perros.html" class="tarjeta-categoria">🐶 <h3>Perros</h3></a>
+            <a href="Perros.html" class="tarjeta-categoria">🐶 <h3>Perros</h3></a>
             <a href="gatos.html" class="tarjeta-categoria">🐱 <h3>Gatos</h3></a>
         </div>
     </section>
