@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1743756799910,
@@ -44,6 +44,10 @@
                 {
                     "date": 1743789773048,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,11 +4,11 @@\n <p><a href=\"/Paginas_web/footer_Sobre_Nosotros.html\">Sobre Nosotros</a> | <a href=\"/terminos-condiciones\">Términos y Condiciones</a> | <a href=\"/politica-privacidad\">Política de Privacidad</a></p>\r\n </div>\r\n <div>\r\n         <p>Síguenos en nuestras redes sociales:</p>\r\n-        <a href=\"\" target=\"\">Facebook</a> | \r\n-        <a href=\"\" target=\"\">Instagram</a> | \r\n-        <a href=\"\" target=\"\">Twitter</a>\r\n+        <a href=\"https://www.facebook.com/profile.php?id=61574684355166\" target=\"\">Facebook</a> | \r\n+        <a href=\"https://www.intagram.com/petlover_protectora/\" target=\"\">Instagram</a> | \r\n+        <a href=\"https://x.com/p_petlover\" target=\"\">X</a>\r\n     </div>\r\n \r\n     <div>\r\n         <p>Dirección: Calle Pet 123, Barcelona, España</p>\r\n"
+                },
+                {
+                    "date": 1744292972619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+<footer class=\"pie-pagina\">\r\n+<div>\r\n+<p>© 2025 PetLover | Contacto: <a href=\"mailto:petlovercomtact@gmail.com\">petlovercomtact@gmail.com</a></p>\r\n+<p><a href=\"/Paginas_web/footer_Sobre_Nosotros.html\">Sobre Nosotros</a> | <a href=\"/terminos-condiciones\">Términos y Condiciones</a> | <a href=\"/politica-privacidad\">Política de Privacidad</a></p>\r\n+</div>\r\n+<div>\r\n+        <p>Síguenos en nuestras redes sociales:</p>\r\n+        <a href=\"https://www.facebook.com/profile.php?id=61574684355166\" target=\"\">Facebook</a> | \r\n+        <a href=\"https://www.intagram.com/petlover_protectora/\" target=\"\">Instagram</a> | \r\n+        <a href=\"https://x.com/p_petlover\" target=\"\">X</a>\r\n+    </div>\r\n+\r\n+    <div>\r\n+        <p>Dirección: Calle Pet 123, Barcelona, España</p>\r\n+    </div>\r\n+</footer>\r\n+           \n\\ No newline at end of file\n"
                 }
             ],
             "date": 1743756799910,
