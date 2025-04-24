@@ -75,8 +75,8 @@ if ($id_adoptante->rowCount() < 1) {
                         <h1>Error 454</h1>
                         <h1>Error con el Nombre</h1>
                         <p>No hay Usuario con este nombre, Intentalo revisar que no te has equivocado o no estas registrado</p>
-                        <a href="/Paginas_web/inicio_Sesion.html"> Ir al registro</a>
-                        <a href="/Paginas_web/Home_Petlover.php"> Ir al inicio</a>
+                        <a href="Inicio_Sesion.html"> Ir al registro</a>
+                        <a href="Home_Petlover.php"> Ir al inicio</a>
                     </div>
                 </body>
             </html>
