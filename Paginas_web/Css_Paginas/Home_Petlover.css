@@ -12,7 +12,7 @@ body{
 }
 header{
     background-color: #FFCC99;
-    padding: 15px;
+    padding: 15px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,6 +38,7 @@ header{
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
+    font-size: 16px;
 }
 .logo-contenedor h1{
     margin: 0;
@@ -46,8 +47,9 @@ header{
     background-color: #FF9966;
     border:none ;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 }
 .boton-autenticacion:hover{
