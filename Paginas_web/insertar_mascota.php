@@ -42,7 +42,7 @@ if ($registrar_animales->execute()){
                 <body class="cuerpo">
                     <div class="alertas">
                         <h1>Registro Del Animal Exitoso</h1>
-                        <a href="/Paginas_web/Home_Petlover.html"> Ir al inicio</a>
+                        <a href="Home_Petlover.php"> Ir al inicio</a>
                     </div>
                 </body>
             </html>

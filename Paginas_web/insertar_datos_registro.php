@@ -87,7 +87,7 @@ echo '<!DOCTYPE html>
                 <body class="cuerpo">
                     <div class="alertas">
                         <h1>Registro Exitoso</h1>
-                        <a href="/Paginas_web/Home_Petlover.php"> Ir al inicio</a>
+                        <a href="Home_Petlover.php"> Ir al inicio</a>
                     </div>
                 </body>
             </html>
