@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetLover home - Adopción de Mascotas </title>
-    <link rel="stylesheet" href="/Paginas_web/Css_Paginas/Home_Petlover.css">
+    <link rel="stylesheet" href="./Css_Paginas/Home_Petlover.css">
 </head>
 <body>
     <header>
