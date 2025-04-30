@@ -10,7 +10,7 @@ $rol = $_COOKIE['rol'] ?? null;
     <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
     <li><a href="#Adopcion">Cómo Adoptar</a></li>
     <li><a href="#Ayudas">Ayudanos</a></li>
-    <li><a href="contacto.html">Contato</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
     <li><a href="contrato_adopcion.html">Contrato Prueba</a></li>
     <?php if ($rol === 'adoptante'): ?>
         <li><a href="mostrar_mascota.php">Ver Mascotas</a></li>
