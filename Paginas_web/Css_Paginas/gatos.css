@@ -70,3 +70,8 @@ nav a {
     padding: 10px;
     margin-top: 20px;
 }
+#foto_logo{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
