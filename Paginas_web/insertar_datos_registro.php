@@ -77,7 +77,8 @@ $registrar_usuarios ->execute();
 if ($registrar_usuarios){
 //if (mysqli_query($conn, $registrar_usuarios)){ 
     setcookie("rol", "adoptante", time() + (86400 * 30), "/"); 
-echo '<!DOCTYPE html>
+    include 'mail_inicio_session.php';
+    echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
                     <meta charset="UTF-8">
