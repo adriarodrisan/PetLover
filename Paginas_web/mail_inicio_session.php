@@ -2,12 +2,11 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-require 'vendor/autoload.php';
-$mail = new PHPMailer(true);
-$correo= trim($_POST['correo']);
-$nombre= trim($_POST['nombre']);
+function enviarCorreosInicioSession($correo,$nombre){
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+    require 'vendor/autoload.php';
+    $mail = new PHPMailer(true);
 try {
     $mail = new PhPMailer();
     $mail->isSMTP();                                           
@@ -26,4 +25,5 @@ try {
     $mail->send();
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
 }
