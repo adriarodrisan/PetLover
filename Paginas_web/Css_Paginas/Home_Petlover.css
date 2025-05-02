@@ -37,11 +37,18 @@ header{
 .btn-session{
     display: flex;
     justify-content: flex-end;
-    margin-left: auto;
+    margin-left: 150px;
     font-size: 16px;
 }
-.logo-contenedor h1{
-    margin: 0;
+.logo-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #FFF3E0;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 100 px;
 }
 .boton-autenticacion{
     background-color: #FF9966;
@@ -161,13 +168,3 @@ header{
     font-weight: bold;
     margin-bottom: 20px; 
 }
-.logo-contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    background-color: #FFF3E0;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
