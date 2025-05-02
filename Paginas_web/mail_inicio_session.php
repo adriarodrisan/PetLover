@@ -19,7 +19,7 @@ try {
     $mail->addAddress('arodriguez@institutmvm.cat', 'Adria');
 
     $mail->isHTML(true);                              
-    $mail->Subject = 'este es una prueba de envio de correos';
+    $mail->Subject = 'pruebas de envio de correos con el inicio de session';
     $mail->Body    = 'pruebas de envio';
     $mail->send();
     echo 'Message has been sent';
