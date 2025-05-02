@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Paginas_web/ayudas.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1746205860486,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1746205860486,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Ayudanos - PetLover </title>\r\n    <link rel=\"stylesheet\" href=\"ayudas.css\">\r\n</head>\r\n<body>\r\n    <header class=\"encabezado\">\r\n        <h1>💛 Ayúdanos a ayudar</h1>\r\n        <p>Tu ayuda puede marcar la diferencia en la vida de muchos animales sin hogar. Cada gesto cuenta.</p>\r\n      </header>    \r\n\r\n    \r\n</body>\r\n</html>"
+        }
+    ]
+}
