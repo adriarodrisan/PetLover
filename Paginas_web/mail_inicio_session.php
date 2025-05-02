@@ -6,6 +6,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 $mail = new PHPMailer(true);
+$correo= trim($_POST['correo']);
+$nombre= trim($_POST['nombre']);
 try {
     $mail = new PhPMailer();
     $mail->isSMTP();                                           
@@ -16,13 +18,12 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;           
     $mail->Port       = 465;                           
     $mail->setFrom('petlovercomtact@gmail.com', 'petlover');
-    $mail->addAddress('arodriguez@institutmvm.cat', 'Adria');
+    $mail->addAddress($correo, $nombre);
 
     $mail->isHTML(true);                              
     $mail->Subject = 'pruebas de envio de correos con el inicio de session';
     $mail->Body    = 'pruebas de envio';
     $mail->send();
-    echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }

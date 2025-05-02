@@ -39,6 +39,7 @@ $registros_adoptante ->execute();
 
         //setcookie("tipo_usuario", "adoptante", time() + (86400 * 30), "/");
         setcookie("rol", "adoptante", time() + (3600), "/");
+        include 'mail_inicio_session.php';
         echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
