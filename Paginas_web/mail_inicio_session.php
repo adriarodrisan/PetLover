@@ -6,7 +6,6 @@ require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 function enviarCorreosInicioSession($correo,$nombre){
-    
     $mail = new PHPMailer(true);
 try {
     $mail = new PhPMailer();
@@ -25,6 +24,6 @@ try {
     $mail->Body    = 'pruebas de envio';
     $mail->send();
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "Mensaje no enviado. Mailer Error: {$mail->ErrorInfo}";
 }
 }
