@@ -6,21 +6,19 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 $mail = new PHPMailer(true);
-
 try {
     $mail = new PhPMailer();
     $mail->isSMTP();                                           
-    $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'petlovercomtact@gmail.com';                     //SMTP username
-    $mail->Password   = 'okzk slcy nsas vkrb';                               //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Host       = 'smtp.gmail.com';                    
+    $mail->SMTPAuth   = true;                                   
+    $mail->Username   = 'petlovercomtact@gmail.com';                     
+    $mail->Password   = 'okzk slcy nsas vkrb';                               
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;           
     $mail->Port       = 465;                           
-    //Recipients
     $mail->setFrom('petlovercomtact@gmail.com', 'petlover');
     $mail->addAddress('arodriguez@institutmvm.cat', 'Adria');
-    //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
+
+    $mail->isHTML(true);                              
     $mail->Subject = 'este es una prueba de envio de correos';
     $mail->Body    = 'pruebas de envio';
     $mail->send();
