@@ -32,6 +32,10 @@ $telefono= trim($_POST['telefono']);
 $correo= trim($_POST['correo']);
 $contrasena= trim($_POST['contrasena']);
 $confirmar_contrasena= trim($_POST['confirmar_contrasena']);
+$requisitos_dni= null ;
+$requisitos_telefono= "/^[" ;
+$requisitos_correo= "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%+-]+\.[a-zA-Z]{2,}$/";
+$requisitos_contrasena= "/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[a-zA-Z\d@$!%*?&]{8,}$/" ;
 //revisar que los campos no sean null
 //echo $dni." ".$correo;
 if(empty($dni) || empty($nombre) || empty($telefono) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){
@@ -43,6 +47,7 @@ if ($contrasena !== $confirmar_contrasena){
     echo "Las cotraseñas no coinciden.";
     exit;
 }
+
 //verificar si el mail esta registrado
 $registros_adoptate = $db->prepare("SELECT * FROM adoptante WHERE Correo = :correo");
 $registros_adoptate ->bindParam(':correo', $correo);
