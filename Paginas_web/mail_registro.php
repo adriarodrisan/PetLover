@@ -5,10 +5,9 @@ error_reporting(E_ALL);
 require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-function  enviarCorreosregistro($correo,$nombre){
-    $mail = new PHPMailer(true);
+function  enviarCorreosregistro($correo,$nombre){ 
 try {
-    $mail = new PhPMailer();
+    $mail = new PHPMailer();
     $mail->isSMTP();                                           
     $mail->Host       = 'smtp.gmail.com';                    
     $mail->SMTPAuth   = true;                                   
