@@ -8,13 +8,9 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img id="foto_logo" src="./Imagenes_Animales/logo/logo.png" alt="Logo PetLover">
-    </div>
-        <nav>
-            <a href="Home_Petlover.php">Pagina de Inicio</a>
-            <a href="Perros.html">Pagina de Perros</a>
-        </nav>
+    <?php
+        include 'navbar.php';
+    ?>
     </header>
     <section class="hero">
         <h2>Gatos en Adopcion  </h2>

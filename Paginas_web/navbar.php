@@ -2,8 +2,9 @@
 $rol = $_COOKIE['rol'] ?? null;
 ?>
 <header class="navbar">
+<link rel="stylesheet" href="./Css_Paginas/Home_Petlover.css">
     <div class="logo-contenedor">
-        <img id="logo" src="./Imagenes_Animales/logo/logo.png" alt="Logo PetLover">
+        <a href="Home_Petlover.php"><img id="logo" src="./Imagenes_Animales/logo/logo.png" alt="Logo PetLover"></a>
     </div>
     <div class="menu-centro">
     <ul>
@@ -24,7 +25,7 @@ $rol = $_COOKIE['rol'] ?? null;
     <?php if ($rol):?>
         <a href="cerrar_sesion.php" class="boton-autenticacion">Cerrar Session</a>
       <?php else: ?>
-        <a href="Inicio_Sesion.html" class="boton-autenticacion">Iniciar Sesión</a>
+        <a href="inicio_sesion.html" class="boton-autenticacion">Iniciar Sesión</a>
         <?php endif; ?>
       </div>
 </header>
