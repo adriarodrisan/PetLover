@@ -67,4 +67,19 @@
     font-weight: bold;
     color: #ff7043;
   }
+  .btn {
+    background-color: #ff9966;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #ff7043;
+  }
+  
   
