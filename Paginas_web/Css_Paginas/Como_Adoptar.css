@@ -36,3 +36,13 @@
   .btn-hero:hover {
     background-color: #ff7043;
   }
+  .bloques-beneficios {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #fff3e0;
+  }
+  
+  .bloques-beneficios h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
