@@ -23,3 +23,16 @@
     font-size: 1.1rem;
     margin-bottom: 20px;
   }
+  .btn-hero {
+    background-color: #ff9966;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn-hero:hover {
+    background-color: #ff7043;
+  }

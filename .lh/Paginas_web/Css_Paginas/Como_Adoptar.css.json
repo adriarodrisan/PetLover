@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1746626893380,
@@ -20,6 +20,10 @@
                 {
                     "date": 1746627108505,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+* {\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+  }\r\n+  body {\r\n+    font-family: 'Arial', sans-serif;\r\n+    background-color: #fff3e0;\r\n+    color: #6d4c41;\r\n+    line-height: 1.6;\r\n+  }\r\n+  .hero-adopcion {\r\n+    background-color: #ffcc99;\r\n+    padding: 60px 20px;\r\n+    text-align: center;\r\n+  }\r\n+  .contenedor-hero h1 {\r\n+    font-size: 2.5rem;\r\n+    margin-bottom: 10px;\r\n+  }\r\n+  \r\n+  .contenedor-hero p {\r\n+    font-size: 1.1rem;\r\n+    margin-bottom: 20px;\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746627235496,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,38 @@\n+* {\r\n+    margin: 0;\r\n+    padding: 0;\r\n+    box-sizing: border-box;\r\n+  }\r\n+  body {\r\n+    font-family: 'Arial', sans-serif;\r\n+    background-color: #fff3e0;\r\n+    color: #6d4c41;\r\n+    line-height: 1.6;\r\n+  }\r\n+  .hero-adopcion {\r\n+    background-color: #ffcc99;\r\n+    padding: 60px 20px;\r\n+    text-align: center;\r\n+  }\r\n+  .contenedor-hero h1 {\r\n+    font-size: 2.5rem;\r\n+    margin-bottom: 10px;\r\n+  }\r\n+  \r\n+  .contenedor-hero p {\r\n+    font-size: 1.1rem;\r\n+    margin-bottom: 20px;\r\n+  }\r\n+  .btn-hero {\r\n+    background-color: #ff9966;\r\n+    color: white;\r\n+    padding: 12px 25px;\r\n+    border-radius: 5px;\r\n+    text-decoration: none;\r\n+    font-weight: bold;\r\n+    transition: background 0.3s;\r\n+  }\r\n+  \r\n+  .btn-hero:hover {\r\n+    background-color: #ff7043;\r\n+  }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1746626893380,
