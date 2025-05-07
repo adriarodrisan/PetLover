@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-function enviarCorreosInicioSession($correo,$nombre){
+function enviarCorreoContrato($correo,$nombre,$nombre_animal){
     $mail = new PHPMailer(true);
 try {
     $mail = new PhPMailer();
@@ -20,8 +20,8 @@ try {
     $mail->addAddress($correo, $nombre);
 
     $mail->isHTML(true);                              
-    $mail->Subject = 'pruebas de envio de correos con el inicio de session';
-    $mail->Body    = 'pruebas de envio';
+    $mail->Subject = 'Contrato de $nombre_animal';
+    $mail->Body    = 'pruebas de envio de contrato';
     $mail->send();
 } catch (Exception $e) {
     echo "Mensaje no enviado. Mailer Error: {$mail->ErrorInfo}";

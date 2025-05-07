@@ -34,7 +34,7 @@ if(empty($nombre) || empty($dni) || empty($direccion) || empty($telefono) || emp
 }
 
 //verificar si el animal esta guardado en la base de datos
-$id_animal = $db->prepare("SELECT ID FROM animal WHERE Nombre = :nombre_animal");
+/*$id_animal = $db->prepare("SELECT ID FROM animal WHERE Nombre = :nombre_animal");
 $id_animal ->bindParam(':nombre_animal', $nombre_animal);
 $id_animal ->execute();
 
@@ -82,7 +82,7 @@ if ($id_adoptante->rowCount() < 1) {
             </html>
             ';
     exit;
-}
+}*/
 //datos insertado
 $registrar_adopcion = $db->prepare("INSERT INTO adopciones (nombre_adoptante, apellido_adoptante, dni, direccion, telefono, correo, nombre_animal, especie, raza, sexo, compromisos) 
                                     VALUES (:nombre, :apellido, :dni, :direccion, :telefono, :correo, :nombre_animal, :especie, :raza, :sexo, :compromisos)");
@@ -102,7 +102,8 @@ $registrar_adopcion ->execute();
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
 if ($registrar_adopcion){
 //if (mysqli_query($conn, $registrar_usuarios)){
-    echo '<!DOCTYPE html>
+    enviarCorreoContrato($correo,$nombre,$nombre_animal);    
+        echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
                     <meta charset="UTF-8">
