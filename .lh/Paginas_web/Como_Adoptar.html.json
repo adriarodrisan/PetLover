@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1746626076636,
@@ -12,6 +12,10 @@
                 {
                     "date": 1746626216434,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,15 @@\n           <p>Descubre cómo puedes cambiar una vida (y la tuya) adoptando con PetLover.</p>\r\n           <a href=\"#pasos\" class=\"btn-hero\">¡Quiero Adoptar!</a>\r\n         </div>\r\n       </section>\r\n+      <section class=\"bloques-beneficios\">\r\n+        <h2>¿Por qué adoptar?</h2>\r\n+        <div class=\"grid-beneficios\">\r\n+          <div class=\"card-beneficio\">🐾 <h3>Salvas una vida</h3><p>Cada adopción es una oportunidad para un nuevo comienzo.</p></div>\r\n+          <div class=\"card-beneficio\">💉 <h3>Vacunados y cuidados</h3><p>Nuestros peludos están revisados por veterinarios.</p></div>\r\n+          <div class=\"card-beneficio\">🏠 <h3>Compañía para siempre</h3><p>No compras un animal, ganas un amigo incondicional.</p></div>\r\n+        </div>\r\n+      </section>\r\n     \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746626322001,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,34 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Cómo Adoptar | PetLover</title>\r\n+    <link rel=\"stylesheet\" href=\"/Paginas_web/Css_Paginas/Como_Adoptar.css\">\r\n+</head>\r\n+<body>\r\n+    <section class=\"hero-adopcion\">\r\n+        <div class=\"contenedor-hero\">\r\n+          <h1>Adoptar es Amar 💛</h1>\r\n+          <p>Descubre cómo puedes cambiar una vida (y la tuya) adoptando con PetLover.</p>\r\n+          <a href=\"#pasos\" class=\"btn-hero\">¡Quiero Adoptar!</a>\r\n+        </div>\r\n+      </section>\r\n+      <section class=\"bloques-beneficios\">\r\n+        <h2>¿Por qué adoptar?</h2>\r\n+        <div class=\"grid-beneficios\">\r\n+          <div class=\"card-beneficio\">🐾 <h3>Salvas una vida</h3><p>Cada adopción es una oportunidad para un nuevo comienzo.</p></div>\r\n+          <div class=\"card-beneficio\">💉 <h3>Vacunados y cuidados</h3><p>Nuestros peludos están revisados por veterinarios.</p></div>\r\n+          <div class=\"card-beneficio\">🏠 <h3>Compañía para siempre</h3><p>No compras un animal, ganas un amigo incondicional.</p></div>\r\n+        </div>\r\n+      </section>\r\n+      <section class=\"seccion-pasos\" id=\"pasos\">\r\n+        <h2>¿Cómo funciona la adopción?</h2>\r\n+        <div class=\"pasos-flex\">\r\n+          <div class=\"paso-item\">\r\n+            <span>1</span>\r\n+            <h3>Explora mascotas</h3>\r\n+            <p>Consulta nuestra lista de gatos y perros en adopción.</p>\r\n+          </div>\r\n+</body>\r\n+</html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1746626076636,
