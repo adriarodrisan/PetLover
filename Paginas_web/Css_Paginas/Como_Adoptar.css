@@ -145,5 +145,17 @@
     font-size: 1rem;
     margin-bottom: 25px;
   }
+  .btn-adoptar {
+    background-color: #ff9966;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
   
+  .btn-adoptar:hover {
+    background-color: #ff7043;
+  }
   

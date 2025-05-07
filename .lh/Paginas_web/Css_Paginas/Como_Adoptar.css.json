@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 16,
             "patches": [
                 {
                     "date": 1746626893380,
@@ -68,6 +68,10 @@
                 {
                     "date": 1746628503435,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -129,6 +129,21 @@\n   .paso-item p {\r\n     font-size: 0.95rem;\r\n     margin-top: 10px;\r\n   }\r\n+  .seccion-cta-final {\r\n+    background-color: #ffcc99;\r\n+    padding: 50px 20px;\r\n+    text-align: center;\r\n+  }\r\n   \r\n+  .seccion-cta-final h2 {\r\n+    font-size: 1.8rem;\r\n+    margin-bottom: 15px;\r\n+  }\r\n+  \r\n+  .seccion-cta-final p {\r\n+    font-size: 1rem;\r\n+    margin-bottom: 25px;\r\n+  }\r\n+  \r\n   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746628581141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,6 +144,18 @@\n   .seccion-cta-final p {\r\n     font-size: 1rem;\r\n     margin-bottom: 25px;\r\n   }\r\n+  .btn-adoptar {\r\n+    background-color: #ff9966;\r\n+    color: white;\r\n+    padding: 12px 28px;\r\n+    text-decoration: none;\r\n+    border-radius: 6px;\r\n+    font-weight: bold;\r\n+    transition: background 0.3s;\r\n+  }\r\n   \r\n+  .btn-adoptar:hover {\r\n+    background-color: #ff7043;\r\n+  }\r\n   \n\\ No newline at end of file\n"
                 }
             ],
             "date": 1746626893380,
