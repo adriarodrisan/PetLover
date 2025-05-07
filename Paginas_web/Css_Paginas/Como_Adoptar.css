@@ -14,3 +14,12 @@
     padding: 60px 20px;
     text-align: center;
   }
+  .contenedor-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contenedor-hero p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
