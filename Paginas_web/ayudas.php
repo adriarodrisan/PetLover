@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayudanos - PetLover </title>
-    <link rel="stylesheet" href="/Paginas_web/Css_Paginas/ayudas.css">
+    <link rel="stylesheet" href="Css_Paginas/ayudas.css">
 </head>
 <body>
     <header class="hero">
