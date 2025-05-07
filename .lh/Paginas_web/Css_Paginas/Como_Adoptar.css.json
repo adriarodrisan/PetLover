@@ -1,0 +1,26 @@
+{
+    "sourceFile": "Paginas_web/Css_Paginas/Como_Adoptar.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1746626893380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1746626915610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,11 @@\n * {\r\n     margin: 0;\r\n     padding: 0;\r\n     box-sizing: border-box;\r\n+  }\r\n+  body {\r\n+    font-family: 'Arial', sans-serif;\r\n+    background-color: #fff3e0;\r\n+    color: #6d4c41;\r\n+    line-height: 1.6;\r\n   }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746626996190,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,5 +7,10 @@\n     font-family: 'Arial', sans-serif;\r\n     background-color: #fff3e0;\r\n     color: #6d4c41;\r\n     line-height: 1.6;\r\n+  }\r\n+  .hero-adopcion {\r\n+    background-color: #ffcc99;\r\n+    padding: 60px 20px;\r\n+    text-align: center;\r\n   }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1746626893380,
+            "name": "Commit-0",
+            "content": "* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n  }"
+        }
+    ]
+}

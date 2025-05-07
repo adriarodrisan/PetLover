@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff3e0;
+    color: #6d4c41;
+    line-height: 1.6;
+  }
+  .hero-adopcion {
+    background-color: #ffcc99;
+    padding: 60px 20px;
+    text-align: center;
+  }
