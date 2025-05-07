@@ -32,6 +32,16 @@
             <p><strong>Entrega:</strong> Calle pet 123, Barcelona</p>
             <p><strong>Horario:</strong> Lunes a Viernes de 10:00 a 18:00h</p>
           </section>
+        
+        <section class="card-ayuda">
+            <h2>🎉 Participa en nuestros eventos solidarios</h2>
+            <p>Únete a nuestras actividades: mercadillos, paseos benéficos, rifas, y más. Cada participación ayuda.</p>
+            <p>Síguenos en redes sociales para conocer los próximos eventos:</p>
+            <a href="https://www.intagram.com/petlover_protectora/" class="btn-redes" target="_blank">Instagram PetLover</a>
+          </section>
+        </main>
+
+    <?php include 'footer.php'; ?>
     
 </body>
 </html>

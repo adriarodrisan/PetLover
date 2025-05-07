@@ -1,0 +1,22 @@
+{
+    "sourceFile": "Paginas_web/Css_Paginas/ayudas.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1746206473311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1746623736727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,17 @@\n-:root {\r\n-    --color-fondo: #fff3e0;\r\n-    --color-principal: #ffcc99;\r\n-    --color-acento: #ff9966;\r\n-    --color-texto: #6d4c41;\r\n-    --color-blanco: #ffffff;\r\n-    --sombra: rgba(0, 0, 0, 0.1);\r\n-  }\r\n-  \r\n+ \r\n   * {\r\n     margin: 0;\r\n     padding: 0;\r\n     box-sizing: border-box;\r\n+  }\r\n+  body {\r\n+    font-family: 'Arial', sans-serif;\r\n+    background-color: #fff3e0;\r\n+    color: #6d4c41;\r\n+  }\r\n+  .hero {\r\n+    background-color: #ffcc99;\r\n+    padding: 60px 20px;\r\n+    text-align: center;\r\n+    border-bottom: 4px solid #ff9966;\r\n   }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1746206473311,
+            "name": "Commit-0",
+            "content": ":root {\r\n    --color-fondo: #fff3e0;\r\n    --color-principal: #ffcc99;\r\n    --color-acento: #ff9966;\r\n    --color-texto: #6d4c41;\r\n    --color-blanco: #ffffff;\r\n    --sombra: rgba(0, 0, 0, 0.1);\r\n  }\r\n  \r\n  * {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n  }"
+        }
+    ]
+}

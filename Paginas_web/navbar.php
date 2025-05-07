@@ -8,8 +8,8 @@ $rol = $_COOKIE['rol'] ?? null;
     <div class="menu-centro">
     <ul>
     <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
-    <li><a href="Como_Adoptar.html">Cómo Adoptar</a></li>
-    <li><a href="#Ayudas">Ayudanos</a></li>
+    <li><a href="Como_Adoptar.php">Cómo Adoptar</a></li>
+    <li><a href="ayudas.php">Ayudanos</a></li>
     <li><a href="contacto.html">Contacto</a></li>
     <!--<li><a href="contrato_adopcion.html">Contrato Prueba</a></li> -->
     <?php if ($rol === 'adoptante'): ?>
