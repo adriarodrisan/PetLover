@@ -25,3 +25,30 @@
     max-width: 700px;
     margin: 0 auto;
   }
+  .ayuda-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .ayuda-item {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    gap: 25px;
+  }
+  
+  .ayuda-icon {
+    font-size: 3rem;
+    background-color: #ffdab9;
+    padding: 20px;
+    border-radius: 50%;
+    color: #6d4c41;
+    flex-shrink: 0;
+  }
