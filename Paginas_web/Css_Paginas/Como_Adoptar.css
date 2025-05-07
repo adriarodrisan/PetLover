@@ -60,4 +60,16 @@
     width: 250px;
     transition: transform 0.3s;
   }
+  .card-beneficio:hover {
+    transform: translateY(-5px);
+  }
   
+  .card-beneficio h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .card-beneficio p {
+    font-size: 0.95rem;
+    margin-top: 10px;
+  }
