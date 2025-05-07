@@ -130,5 +130,20 @@
     font-size: 0.95rem;
     margin-top: 10px;
   }
+  .seccion-cta-final {
+    background-color: #ffcc99;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .seccion-cta-final h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .seccion-cta-final p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
   
   
