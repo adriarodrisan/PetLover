@@ -5,12 +5,9 @@ error_reporting(E_ALL);
 require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-use Dompdf\Dompdf\Dompdf;
-use Dompdf\Dompdf\Options;
+use Dompdf\Dompdf;
 //Configuracion del DOMPDF
-$options = new Options();
-$options->set('isRemoteEnabled', true);
-$dompdf = new Dompdf($options);
+$dompdf = new Dompdf();
 //Contenido del PDF
 $html = '<h1>Este es el PDF</h1> <p>Generado con dompdf</p>';
 $dompdf->loadHtml($html);
