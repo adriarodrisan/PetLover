@@ -21,6 +21,7 @@ try {
     $mail->isHTML(true);                              
     $mail->Subject = 'este es una prueba de envio de correos';
     $mail->Body    = 'pruebas de envio';
+    $mail->addAttachment($output, 'aplication/pdf','Prueba_de_pdf.pdf',false);
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
