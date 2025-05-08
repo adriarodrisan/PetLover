@@ -15,11 +15,12 @@ $rol = $_COOKIE['rol'] ?? null;
     <!--<li><a href="contrato_adopcion.html">Contrato Prueba</a></li> -->
     <?php if ($rol === 'adoptante'): ?>
         <li><a href="mostrar_mascota.php">Ver Mascotas</a></li>
+        <li><a href="contrato_adopcion.html">Formulario de Adopcion</a></li>
       <?php elseif ($rol === 'protectora'): ?>
         <li><a href="insertar_mascota.php">Publicar Mascota</a></li>
       <?php endif; ?>
       </ul>
-    </div>
+    </div>    
 
     <div class="btn-session">
     <?php if ($rol):?>
