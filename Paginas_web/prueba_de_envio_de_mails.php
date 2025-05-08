@@ -30,7 +30,7 @@ try {
     $mail->isHTML(true);                              
     $mail->Subject = 'este es una prueba de envio de correos con pdf';
     $mail->Body    = 'pruebas de envio con pdf';
-    $mail->addAttachment('temp.pdf', 'documento.pdf');
+    $mail->addAttachment($tempFile, 'documento.pdf');
     $mail->send();
     echo 'Mensaje enviado';
     unlink ($tempFile);
