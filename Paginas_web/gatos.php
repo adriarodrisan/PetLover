@@ -51,6 +51,168 @@
             <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
             <button>Saber más</button>
         </div>
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/heros.jng" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/isis.png" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/ivana.jpg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/jeni.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/kira.jpg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/lupita.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/mami.jpg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/nit.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/palomilla.jpg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>       
+         <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/parda.jpg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>       
+         <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/robison.jpg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/telerin.jpg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/tigrsa.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>       
+         <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/yeka.jpg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/ari.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/Chispa.jpg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/sarabi.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/cookie.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>       
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/joy.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/carey.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/ray.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/paulina.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>       
+         <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/falccon.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>       
+         <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/vegeta.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/goku.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/eureka.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>        
+        <div class="cat-card">
+            <img src="./Imagenes_Animales/gatos/enxeneta.jpeg" alt="Gato en adopción">
+            <h4>Luna</h4>
+            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Pequeño</p>
+            <button>Saber más</button>
+        </div>
     </section>
     <footer class="footer">
         © 2025 PetLover | Contacto: petlover@gmail.com
