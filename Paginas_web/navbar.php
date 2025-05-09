@@ -9,17 +9,18 @@ $rol = $_COOKIE['rol'] ?? null;
     <div class="menu-centro">
     <ul>
     <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
-    <li><a href="Como_Adoptar">Cómo Adoptar</a></li>
+    <li><a href="Como_Adoptar.html">Cómo Adoptar</a></li>
     <li><a href="ayudas.php">Ayudanos</a></li>
     <li><a href="contacto.html">Contacto</a></li>
     <!--<li><a href="contrato_adopcion.html">Contrato Prueba</a></li> -->
     <?php if ($rol === 'adoptante'): ?>
         <li><a href="mostrar_mascota.php">Ver Mascotas</a></li>
+        <li><a href="contrato_adopcion.html">Formulario de Adopcion</a></li>
       <?php elseif ($rol === 'protectora'): ?>
         <li><a href="insertar_mascota.php">Publicar Mascota</a></li>
       <?php endif; ?>
       </ul>
-    </div>
+    </div>    
 
     <div class="btn-session">
     <?php if ($rol):?>

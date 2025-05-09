@@ -73,8 +73,7 @@ $registrar_usuarios ->bindParam(':contrasena', $contrasena_hasheada);
 $registrar_usuarios ->execute();
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
 if ($registrar_usuarios){
-    $_SESSION['usuario'] = $nombre;
-    $_SESSION['rol'] = 'protectora';
+setcookie("rol", "protectora", time() + (86400 * 30), "/");
 //if (mysqli_query($conn, $registrar_usuarios)){
     echo '<!DOCTYPE html>
             <html lang="es">
