@@ -132,91 +132,91 @@
          <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/yeka.jpg" alt="Gato en adopción">
             <h4>Yeka</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>        
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/ari.jpeg" alt="Gato en adopción">
             <h4>Ari</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>        
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/Chispa.jpg" alt="Gato en adopción">
             <h4>Chispa</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>        
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/sarabi.jpeg" alt="Gato en adopción">
             <h4>Sarabi</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>        
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/cookie.jpeg" alt="Gato en adopción">
             <h4>Cookie</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Medianno | Sexo: Macho</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Medianno | Sexo: Macho</p>
             <button>Saber más</button>
         </div>       
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/joy.jpeg" alt="Gato en adopción">
             <h4>Joy</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Macho</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Macho</p>
             <button>Saber más</button>
         </div>        
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/carey.jpeg" alt="Gato en adopción">
             <h4>Caray</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>        
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/ray.jpeg" alt="Gato en adopción">
             <h4>Ray</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Macho </p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Macho </p>
             <button>Saber más</button>
         </div>        
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/paulina.jpeg" alt="Gato en adopción">
             <h4>Paulina</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>       
          <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/falccon.jpeg" alt="Gato en adopción">
             <h4>Falcon</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Macho</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Macho</p>
             <button>Saber más</button>
         </div>       
          <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/vegeta.jpeg" alt="Gato en adopción">
             <h4>Vegeta</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Macho</p>
+            <p>Raza: Europe | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Macho</p>
             <button>Saber más</button>
         </div>        
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/goku.jpeg" alt="Gato en adopción">
             <h4>Goku</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Macho</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Macho</p>
             <button>Saber más</button>
         </div>        
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/eureka.jpeg" alt="Gato en adopción">
             <h4>Eureka</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>        
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/enxeneta.jpeg" alt="Gato en adopción">
             <h4>Enxeneta</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/missi.jpeg" alt="Gato en adopción">
             <h4>Missi</h4>
-            <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
     </section>
