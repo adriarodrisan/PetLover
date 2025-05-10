@@ -117,6 +117,7 @@ try {
     $mail->Body    = "pruebas de envio de contrato";
     $mail->addAttachment($tempFile, 'documento.pdf');
     $mail->send();
+    unlink($tempFile);
 } catch (Exception $e) {
     echo "Mensaje no enviado. Mailer Error: {$mail->ErrorInfo}";
 }
