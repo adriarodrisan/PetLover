@@ -42,179 +42,179 @@
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/kira.jpeg" alt="Perro en adopción">
             <h4>Kira</h4>
-            <p>Raza Mestiza| Fecha de nacimiento: 5/2017  |  Tamaño: Mediano </p>
+            <p>Raza: Cattle dog | Fecha de nacimiento: 5/2021  |  Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/greta.jpeg" alt="Perro en adopción">
             <h4>Greta</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento: 02/2019 | Tamaño: Mediano </p>
+            <p>Raza: Mestiza  | Fecha de nacimiento: 01/2018 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
-            <img src="./Imagenes_Animales/perros/Blue.jpeg" alt="Perro en adopción">
-            <h4>Blue</h4>
-            <p>Raza Mestiza| Fecha de nacimiento: 06/2020  |  Tamaño: Mediano </p>
+            <img src="./Imagenes_Animales/perros/nerea.jpeg" alt="Perro en adopción">
+            <h4>Nerea</h4>
+            <p>Raza: Mestiza| Fecha de nacimiento: 06/2020  |  Tamaño: Mediano  | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/lia.jpg" alt="Perro en adopción">
             <h4>Lia</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento: 08/2021 | Tamaño: Mediano </p>
+            <p>Raza:Cruce mastín  | Fecha de nacimiento: 08/2021 | Tamaño: Grado | Sexo: Hembra</p>
             <button>Saber más</button>
         </div><div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/Blue.jpeg" alt="Perro en adopción">
             <h4>Blue</h4>
-            <p>Raza Pitbull| Fecha de nacimiento: 03/2023  |  Tamaño: Mediano </p>
+            <p>Raza Pitbull| Fecha de nacimiento: 03/2023  |  Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/pan.jpg" alt="Perro en adopción">
             <h4>Pan</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento: 01/2023 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento: 01/2023 | Tamaño: Mediano | Sexo: Macho</p>
             <button>Saber más</button>
         </div><div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/dragon.jpeg" alt="Perro en adopción">
             <h4>Dragon</h4>
-            <p>Raza Fila Brasileiro | Fecha de nacimiento: 03/2018 |  Tamaño: Mediano </p>
+            <p>Raza:Mestizo | Fecha de nacimiento: 03/2021 |  Tamaño: Mediano | Sexo: Macho</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/doris.jpeg" alt="Perro en adopción">
             <h4>Doris</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  08/2020 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/paulette.jpg" alt="Perro en adopción">
             <h4>Paulette</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Podenco Maneto  | Fecha de nacimiento:  06/2021 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/bruno.jpeg" alt="Perro en adopción">
             <h4>Bruno</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  02/2022 | Tamaño: Grande | Sexo: Macho </p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/bola.jpeg" alt="Perro en adopción">
             <h4>Bola</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  01/2023 | Tamaño: Mediano | Sexo: Macho </p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/Mattiz.jpg" alt="Perro en adopción">
             <h4>Mattiz</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Cruce sharpei con podenco  | Fecha de nacimiento:  10/2023 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
-            <img src="./Imagenes_Animales/perros/Mattiz.jpg" alt="Perro en adopción">
-            <h4>Mattiz</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <img src="./Imagenes_Animales/perros/damarco.jpeg" alt="Perro en adopción">
+            <h4>Damarco</h4>
+            <p>Raza: Podenco  | Fecha de nacimiento:  11/2023 | Tamaño: Pequeño | Sexo: Macho </p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/marcus.jpeg" alt="Perro en adopción">
             <h4>Marcus</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Pastor aleman  | Fecha de nacimiento:  12/2020 | Tamaño: Grande | Sexo: Macho</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/tanque.jpeg" alt="Perro en adopción">
             <h4>Tanque</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Pachon navarro  | Fecha de nacimiento:  08/2021 | Tamaño: Mediano | Sexo: Macho</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/akana.jpeg" alt="Perro en adopción">
             <h4>Akana</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  05/2023 | Tamaño: Mediano | Sexo: Hembra </p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/luar.jpeg" alt="Perro en adopción">
             <h4>Luar</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Podenco  | Fecha de nacimiento:  07/2021 | Tamaño: Mediano | Sexo: Macho</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/selva.jpeg" alt="Perro en adopción">
             <h4>Selva</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  01/2021 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/heros.jpeg" alt="Perro en adopción">
             <h4>Heros</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  02/2023 | Tamaño: Mediano | Sexo: Macho </p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/Sol.jpeg" alt="Perro en adopción">
             <h4>Sol</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  04/2020 | Tamaño: Mediano | Sexo: Macho</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/serah.jpeg" alt="Perro en adopción">
             <h4>Serah</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: American Staffordshire Terrier  | Fecha de nacimiento:  01/2023 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/Bindi.jpeg" alt="Perro en adopción">
             <h4>Bindi</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo | Fecha de nacimiento:  13/2016 | Tamaño: Mediano   | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/lola.jpg" alt="Perro en adopción">
             <h4>Lola</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  12/2021 | Tamaño: Mediano  | Sexo: Hembra </p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/thor.jpg" alt="Perro en adopción">
             <h4>Thor</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza:Kopov eslovaco | Fecha de nacimiento:  06/2023 | Tamaño: Mediano  | Sexo: Macho</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/marina.jpeg" alt="Perro en adopción">
             <h4>Marina</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  09/2021 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/goliath.jpg" alt="Perro en adopción">
             <h4>Goliath</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Fila Brasileiro  | Fecha de nacimiento:  12/2020 | Tamaño: Grande  | Sexo: Macho </p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/neo.jpeg" alt="Perro en adopción">
             <h4>Neo</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  11/2023 | Tamaño: Grande | Sexo: Macho</p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/duna.jpg" alt="Perro en adopción">
             <h4>Duna</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  16/2021 | Tamaño: Mediano | Sexo: Hembra </p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/tita.jpeg" alt="Perro en adopción">
             <h4>Tita</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2023| Tamaño: Mediano | Sexo: Hembra </p>
             <button>Saber más</button>
         </div>
         <div class="tarjeta-perro">
             <img src="./Imagenes_Animales/perros/nudo.jpg" alt="Perro en adopción">
             <h4>Nudo</h4>
-            <p>Raza: Mestizo  | Fecha de nacimiento:  10/2016 | Tamaño: Mediano </p>
+            <p>Raza: Podenco | Fecha de nacimiento:  07/2024 | Tamaño: Pequeño | Sexo: Macho</p>
             <button>Saber más</button>
         </div>
 
