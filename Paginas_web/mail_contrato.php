@@ -44,7 +44,7 @@ $html = "
     <h1>Contrato de Adopción de Animal</h1>
 
     <p><strong>Entre:</strong></p>
-    <p><strong>$nombre</strong>, con domicilio en $direccion, identificado con $dni, en adelante “el Adoptante”,</p>
+    <p><strong>$nombre $apellido</strong>, con domicilio en $direccion, identificado con $dni, en adelante “el Adoptante”,</p>
     <p><strong>y</strong></p>
     <p><strong>Adrià Rodriguez Sanchez</strong>, con domicilio en Calle Rajolers 14, identificado con 47572321h, en adelante “el Cedente”,</p>
 
@@ -118,7 +118,7 @@ try {
     $mail->isHTML(true);                              
     $mail->Subject = "Contrato de $nombre_animal";
     $mail->Body    = "pruebas de envio de contrato";
-    $mail->addAttachment($tempFile, 'documento.pdf');
+    $mail->addAttachment($tempFile, "Contrato_{$nombre_animal}.pdf");
     $mail->send();
     unlink($tempFile);
 } catch (Exception $e) {
