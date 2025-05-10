@@ -5,6 +5,7 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
 error_reporting(E_ALL);
+require_once 'mail_contrato.php';
 try {
     $db = new PDO('mysql:host=localhost;dbname=protectora', 'petlove', 'mascota');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -34,11 +35,11 @@ if(empty($nombre) || empty($dni) || empty($direccion) || empty($telefono) || emp
 }
 
 //verificar si el animal esta guardado en la base de datos
-/*$id_animal = $db->prepare("SELECT ID FROM animal WHERE Nombre = :nombre_animal");
-$id_animal ->bindParam(':nombre_animal', $nombre_animal);
-$id_animal ->execute();
+$consultaAnimal = $db->prepare("SELECT ID,FechaNacimiento FROM animal WHERE Nombre = :nombre_animal LIMIT 1");
+$consultaAnimal ->bindParam(':nombre_animal', $nombre_animal);
+$consultaAnimal ->execute();
 
-if ($id_animal->rowCount() < 1) {
+if ($consultaAnimal->rowCount() < 1) {
     echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
@@ -58,7 +59,16 @@ if ($id_animal->rowCount() < 1) {
             ';
     exit;
 }
-$id_adoptante = $db->prepare("SELECT ID FROM adoptante WHERE Nombre = :nombre_adoptante");
+$animal = $consultaAnimal->fetch(PDO::FETCH_ASSOC);
+$fechaNacimiento = $animal['FechaNacimiento'];
+function calcularEdad($fechaNacimiento) {
+    $fechaNac = new DateTime($fechaNacimiento);
+    $hoy = new DateTime();
+    $edad = $hoy ->diff($fechaNac);
+    return ($edad->y > 0 ? $edad->y . ' años': '') . ($edad->m > 0 ? ' y ' . $edad->m. ' meses' : '');
+}
+$edad = calcularEdad($fechaNacimiento);
+/*$id_adoptante = $db->prepare("SELECT ID FROM adoptante WHERE Nombre = :nombre_adoptante");
 $id_adoptante ->bindParam(':nombre_adoptante', $nombre_adoptante);
 $id_adoptante ->execute();
 
@@ -83,6 +93,7 @@ if ($id_adoptante->rowCount() < 1) {
             ';
     exit;
 }*/
+
 //datos insertado
 $registrar_adopcion = $db->prepare("INSERT INTO adopciones (nombre_adoptante, apellido_adoptante, dni, direccion, telefono, correo, nombre_animal, especie, raza, sexo, compromisos) 
                                     VALUES (:nombre, :apellido, :dni, :direccion, :telefono, :correo, :nombre_animal, :especie, :raza, :sexo, :compromisos)");
@@ -102,7 +113,7 @@ $registrar_adopcion ->execute();
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
 if ($registrar_adopcion){
 //if (mysqli_query($conn, $registrar_usuarios)){
-    enviarCorreoContrato($correo,$nombre,$apellido,$dni,$direccion,$telefono,$nombre_animal,$especie,$raza,$sexo,$compromisos);    
+    enviarCorreoContrato($correo,$nombre,$apellido,$dni,$direccion,$telefono,$nombre_animal,$especie,$raza,$edad,$sexo,$compromisos);    
         echo '<!DOCTYPE html>
             <html lang="es">
                 <head>

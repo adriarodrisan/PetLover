@@ -6,8 +6,12 @@ require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dompdf\Dompdf;
-function enviarCorreoContrato($correo,$nombre,$apellido,$dni,$direccion,$telefono,$nombre_animal,$especie,$raza,$sexo,$compromisos){
-//Configuracion del DOMPDF
+function enviarCorreoContrato($correo,$nombre,$apellido,$dni,$direccion,$telefono,$nombre_animal,$especie,$raza,$edad,$sexo,$compromisos){
+    $fechaHoy = new DateTime();
+    $dia = $fechaHoy->format('d');
+    $mes = $fechaHoy->format('m');
+    $año = $fechaHoy->format('Y');
+    //Configuracion del DOMPDF
 $dompdf = new Dompdf();
 //Contenido del PDF
 $html = "
@@ -47,17 +51,17 @@ $html = "
     <p><strong>Se acuerda lo siguiente:</strong></p>
 
     <p class='section-title'>PRIMERO: OBJETO DEL CONTRATO</p>
-    <p>El Cedente entrega en adopción y el Adoptante acepta a $nombre_animal, un(a) $especie, $raza, de aproximadamente [edad] años/meses, sexo $sexo, en adelante “el Animal”.</p>
+    <p>El Cedente entrega en adopción y el Adoptante acepta a $nombre_animal, un(a) $especie, $raza, de aproximadamente $edad, sexo $sexo, en adelante “el Animal”.</p>
 
     <p class='section-title'>SEGUNDO: CONDICIONES DE LA ENTREGA</p>
     <ol>
-        <li>El Cedente declara que entrega al Animal en buen estado de salud, salvo las condiciones indicadas: [detallar si hay enfermedades, tratamientos, etc.].</li>
+        <li>El Cedente declara que entrega al Animal en buen estado de salud.</li>
         <li>El Adoptante declara haber sido informado sobre el estado de salud, carácter y necesidades del Animal.</li>
     </ol>
 
     <p class='section-title'>TERCERO: COMPROMISOS DEL ADOPTANTE</p>
     <ol>
-        <li>Brindar al Animal alimentación adecuada, atención veterinaria y un entorno seguro.</li>
+        <li>$compromisos</li>
         <li>No utilizar al Animal para peleas, reproducción comercial, experimentación ni actividades ilegales.</li>
         <li>No abandonar al Animal. En caso de no poder hacerse cargo, deberá comunicarlo al Cedente.</li>
         <li>Permitir al Cedente, previo aviso, realizar visitas o requerir información sobre el estado del Animal.</li>
@@ -68,18 +72,17 @@ $html = "
 
     <p class='section-title'>QUINTO: DATOS DEL ANIMAL</p>
     <ul>
-        <li><strong>Nombre:</strong> ______________________________</li>
-        <li><strong>Especie y raza:</strong> _________________________</li>
-        <li><strong>Edad aproximada:</strong> _______________________</li>
-        <li><strong>Sexo:</strong> _________________________________</li>
-        <li><strong>Vacunas aplicadas:</strong> ______________________</li>
-        <li><strong>Observaciones:</strong> __________________________</li>
+        <li><strong>Nombre:</strong>$nombre_animal</li>
+        <li><strong>Especie y raza:</strong>$especie , $raza</li>
+        <li><strong>Edad aproximada:</strong> $edad</li>
+        <li><strong>Sexo:</strong> $sexo</li>
+        <li><strong>Vacunas aplicadas:</strong> Las necesarias pasa su edad</li>
     </ul>
 
     <p class='section-title'>SEXTO: JURISDICCIÓN</p>
-    <p>Para cualquier controversia derivada del presente contrato, las partes se someten a los tribunales de [Ciudad o Jurisdicción].</p>
+    <p>Para cualquier controversia derivada del presente contrato, las partes se someten a los tribunales de Barcelona.</p>
 
-    <p>Y en prueba de conformidad, firman por duplicado, a un solo efecto, en [Ciudad], a los [día] días del mes de [mes] de [año].</p>
+    <p>Y en prueba de conformidad, firman por duplicado, a un solo efecto, en Barcelona, a los $dia días del mes de $mes de $año.</p>
 <div class='signature'>
 
     <p><strong>Firma del Cedente:</strong></p>
@@ -96,7 +99,7 @@ $html = "
 </html>
 ";
 $dompdf->loadHtml($html);
-$dompdf->setPaper('A4', 'landscape');
+$dompdf->setPaper('A4', 'portrait');
 $dompdf->render();
 $tempFile = tempnam(sys_get_temp_dir(), 'pdf'). '.pdf';
 file_put_contents($tempFile, $dompdf->output());
