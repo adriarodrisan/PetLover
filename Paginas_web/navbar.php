@@ -17,7 +17,7 @@ $rol = $_COOKIE['rol'] ?? null;
         <li><a href="mostrar_mascota.php">Ver Mascotas</a></li>
         <li><a href="contrato_adopcion.html">Formulario de Adopcion</a></li>
       <?php elseif ($rol === 'protectora'): ?>
-        <li><a href="insertar_mascota.php">Publicar Mascota</a></li>
+        <li><a href="Agregar_Mascota.html">Publicar Mascota</a></li>
       <?php endif; ?>
       </ul>
     </div>    
