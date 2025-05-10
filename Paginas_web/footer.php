@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./Css_Paginas/Home_Petlover.css">
 <footer class="pie-pagina">
 <div>
-<p>© 2025 PetLover | Contacto: <a href="mailto:petlovercomtact@gmail.com">petlovercomtact@gmail.com</a></p>
+<p>© 2025 PetLover <!--Contacto: <a href="mailto:petlovercomtact@gmail.com">petlovercomtact@gmail.com</a>--></p>
 <p><a href="footer_Sobre_Nosotros.html">Sobre Nosotros</a> | <a href="terminos_y_condiciones.html">Términos y Condiciones</a> | <a href="politicas_privacidad.html">Política de Privacidad</a></p>
 </div>
 <div>
