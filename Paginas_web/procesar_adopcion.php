@@ -102,7 +102,7 @@ $registrar_adopcion ->execute();
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
 if ($registrar_adopcion){
 //if (mysqli_query($conn, $registrar_usuarios)){
-    enviarCorreoContrato($correo,$nombre,$nombre_animal);    
+    enviarCorreoContrato($correo,$nombre,$apellido,$dni,$direccion,$telefono,$nombre_animal,$especie,$raza,$sexo,$compromisos);    
         echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
