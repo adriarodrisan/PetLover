@@ -170,7 +170,7 @@ header{
 }
 .carrusel-container {
     position: relative;
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     margin: 2rem auto;
     overflow: hidden;
@@ -184,18 +184,31 @@ header{
     transition: transform 0.5s ease;
   }
   
+  .carrusel-slide {
+    position: relative;
+    min-width: 100%;
+    height: 260px;
+  }
   
-  .carrusel img {
+  .carrusel-slide img {
     width: 100%;
-    height: 280px;
-    object-fit: contain;
-    flex-shrink: 0;
-    border-radius: 8px;
-    background-color: #fafafa; 
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
   }
 
-
-  .carrusel-btn {
+  .carrusel-slide .nombre-mascota {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+.carrusel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -209,16 +222,12 @@ header{
     z-index: 2;
     transition: background-color 0.3s ease;
   }
-  
   .carrusel-btn:hover {
     background-color: #e18135;
   }
-  
   .carrusel-btn.prev {
     left: 10px;
   }
-  
   .carrusel-btn.next {
     right: 10px;
   }
-  

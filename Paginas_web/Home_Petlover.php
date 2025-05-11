@@ -24,21 +24,29 @@
     </section>
 <!-- 🐾 Sección de Perros y Gatos Destacados con grandes necesidades! -->
 <!-- 🐾 Sección de Perros -->
-<section class="seccion-destacados">
-  <h2 class="titulo-destacados">🐾 Mascotas Destacadas</h2>
-  <div class="carrusel-container">
-    <button class="carrusel-btn prev" onclick="moverCarrusel(-1)">‹</button>
-    <div class="carrusel" id="carruselDestacados">
-      <img src="./Imagenes_Animales/perros/nerea.jpeg" alt="Mascota destacada">
-      <img src="./Imagenes_Animales/perros/greta.jpeg" alt="Mascota destacada">
-      <img src="./Imagenes_Animales/perros/kira.jpeg" alt="Mascota destacada">
-      <img src="./Imagenes_Animales/gatos/isis.png" alt="Mascota destacada">
-      <img src="./Imagenes_Animales/gatos/lupita.jpeg" alt="Mascota destacada">
-      <img src="./Imagenes_Animales/gatos/jeni.jpeg" alt="Mascota destacada">
+<div class="carrusel-container">
+  <button class="carrusel-btn prev" onclick="moverCarrusel(-1)">‹</button>
+  <div class="carrusel" id="carruselDestacados">
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/perros/nerea.jpeg" alt="Nerea">
+      <div class="nombre-mascota">Nerea</div>
     </div>
-    <button class="carrusel-btn next" onclick="moverCarrusel(1)">›</button>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/perros/greta.jpeg" alt="Greta">
+      <div class="nombre-mascota">Greta</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/perros/kira.jpeg" alt="Kira">
+      <div class="nombre-mascota">Kira</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/gatos/isis.png" alt="Isis">
+      <div class="nombre-mascota">Isis</div>
+    </div>
   </div>
-</section>
+  <button class="carrusel-btn next" onclick="moverCarrusel(1)">›</button>
+</div>
+
     <section class="video-presentacion">
     <h2>🎥 Conoce más sobre PetLover</h2>
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
