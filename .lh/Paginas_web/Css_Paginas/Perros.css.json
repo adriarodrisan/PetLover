@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1746929075686,
@@ -20,6 +20,10 @@
                 {
                     "date": 1746929161306,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,5 +95,11 @@\n     border: 1px solid #aaa;\r\n     border-radius: 6px;\r\n     background-color: #fff;\r\n     transition: all 0.3s ease;\r\n+}\r\n+.filters select:focus,\r\n+.filters button:focus {\r\n+    outline: none;\r\n+    border-color: #d48c47;\r\n+    box-shadow: 0 0 5px #d48c47;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746929170638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,5 +101,16 @@\n .filters button:focus {\r\n     outline: none;\r\n     border-color: #d48c47;\r\n     box-shadow: 0 0 5px #d48c47;\r\n+}\r\n+.filters button {\r\n+    background-color: #ffb56b;\r\n+    color: #fff;\r\n+    font-weight: bold;\r\n+    border: none;\r\n+    cursor: pointer;\r\n+}\r\n+\r\n+.filters button:hover {\r\n+    background-color: #e69b51;\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1746929075686,
