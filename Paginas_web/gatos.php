@@ -270,6 +270,9 @@ const historiasGatos = {
   document.getElementById("fichaHistoria").innerText = historiasGatos[nombre] || "Este animal tiene mucho amor que dar. Ven a conocerlo.";
   document.getElementById("fichaAnimal").style.display = "block";
 }
+function cerrarFicha() {
+  document.getElementById("fichaAnimal").style.display = "none";
+}
 };
 
 </script>
