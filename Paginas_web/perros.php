@@ -18,12 +18,23 @@
     </section>
     <section class="filters">
         <h3>Filtrar por:</h3>
-        <select id="raza">
-            <option value=""> Seleciona una raza</option>
-            <option value="labrador">Labrador</option>
-            <option value="pastor">Pastor Alemán</option>
-            <option value="chihuahua">chihuahua</option>
-        </select>
+        <select id="raza" onchange="filtrarPerros()">
+    <option value="">Selecciona una raza</option>
+    <option value="cattle dog">Cattle dog</option>
+    <option value="mestiza">Mestiza</option>
+    <option value="mestizo">Mestizo</option>
+    <option value="cruce mastín">Cruce mastín</option>
+    <option value="pitbull">Pitbull</option>
+    <option value="cruce sharpei con podenco">Cruce sharpei con podenco</option>
+    <option value="podenco maneto">Podenco Maneto</option>
+    <option value="podenco">Podenco</option>
+    <option value="pastor aleman">Pastor aleman</option>
+    <option value="pachon navarro">Pachon navarro</option>
+    <option value="american staffordshire terrier">American Staffordshire Terrier</option>
+    <option value="kopov eslovaco">Kopov eslovaco</option>
+    <option value="fila brasileiro">Fila Brasileiro</option>
+</select>
+
         <select  id="peso">
             <option value="">Selecciona un peso</option>
             <option value="paqueño">Peuqeño (-10kg)</option>
