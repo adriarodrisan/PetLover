@@ -164,18 +164,9 @@ header{
 }
 .titulo-destacados {
     text-align: center;
-    font-size: 2rem;
-    color: #4a3d35;
-    margin-bottom: 1rem;
-    position: relative;
-  }
-  .titulo-destacados::before,
-.titulo-destacados::after {
-  content: "🐾";
-  margin: 0 0.5rem;
-  font-size: 1.5rem;
-  vertical-align: middle;
-  color: #f7944d;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px; 
 }
 .video-presentacion {
     text-align: center;
@@ -183,15 +174,13 @@ header{
     max-width: 800px;
 }
 .carrusel-container {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 700px;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
   .carrusel {
     display: flex;
     transition: transform 0.5s ease;
@@ -199,24 +188,23 @@ header{
   
   .carrusel img {
     width: 100%;
-  max-width: 700px;
-  height: 400px;
-  object-fit: cover;
-  flex-shrink: 0;
+    max-width: 1000px;
+    flex: 0 0 100%;
+    object-fit: cover;
+    border-radius: 10px;
   }
   .carrusel-btn {
     position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #f7944d;
-  border: none;
-  font-size: 1.8rem;
-  padding: 8px 14px;
-  cursor: pointer;
-  color: #fff;
-  border-radius: 50%;
-  z-index: 2;
-  transition: background-color 0.3s ease;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffb56b;
+    border: none;
+    font-size: 2rem;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 1;
   }
   .carrusel-btn:hover {
     background-color: #e69b51;
@@ -229,11 +217,5 @@ header{
   .carrusel-btn.next {
     right: 10px;
   }
-  .seccion-destacados {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: #fff8e7;
-  }
-  
   
   
