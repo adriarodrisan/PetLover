@@ -206,5 +206,16 @@ header{
     border-radius: 50%;
     z-index: 1;
   }
+  .carrusel-btn:hover {
+    background-color: #e69b51;
+  }
+  
+  .carrusel-btn.prev {
+    left: 10px;
+  }
+  
+  .carrusel-btn.next {
+    right: 10px;
+  }
   
   
