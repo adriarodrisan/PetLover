@@ -138,3 +138,14 @@ nav a {
     flex-wrap: wrap;
     position: relative;
   }
+  .ficha-izquierda img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .ficha-derecha {
+    flex: 1;
+    text-align: left;
+  }
+  

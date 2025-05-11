@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1746929340202,
@@ -12,6 +12,10 @@
                 {
                     "date": 1746932377355,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,5 +114,27 @@\n }\r\n \r\n .filters button:hover {\r\n     background-color: #e69b51;\r\n-}\n\\ No newline at end of file\n+}\r\n+.ficha-modal {\r\n+    display: none;\r\n+    position: fixed;\r\n+    z-index: 9999;\r\n+    top: 0; left: 0;\r\n+    width: 100%; height: 100%;\r\n+    background-color: rgba(0, 0, 0, 0.7);\r\n+    overflow-y: auto;\r\n+  }\r\n+  \r\n+  .ficha-contenido {\r\n+    background-color: #fff;\r\n+    margin: 5% auto;\r\n+    padding: 30px;\r\n+    width: 90%;\r\n+    max-width: 900px;\r\n+    border-radius: 15px;\r\n+    display: flex;\r\n+    gap: 30px;\r\n+    flex-wrap: wrap;\r\n+    position: relative;\r\n+  }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746932551914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,5 +136,16 @@\n     display: flex;\r\n     gap: 30px;\r\n     flex-wrap: wrap;\r\n     position: relative;\r\n-  }\n\\ No newline at end of file\n+  }\r\n+  .ficha-izquierda img {\r\n+    max-width: 300px;\r\n+    width: 100%;\r\n+    border-radius: 10px;\r\n+  }\r\n+  \r\n+  .ficha-derecha {\r\n+    flex: 1;\r\n+    text-align: left;\r\n+  }\r\n+  \n\\ No newline at end of file\n"
                 }
             ],
             "date": 1746929340202,
