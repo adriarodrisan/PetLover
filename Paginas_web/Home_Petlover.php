@@ -24,71 +24,78 @@
     </section>
 <!-- 🐾 Sección de Perros y Gatos Destacados con grandes necesidades! -->
 <!-- 🐾 Sección de Perros -->
+ <h2 class="carrusel-titulo">Gatos en Adopción</h2>
 <div class="carrusel-container">
-  <button class="carrusel-btn prev" onclick="moverCarrusel(-1)">‹</button>
-  <div class="carrusel" id="carruselDestacados">
+  <button class="carrusel-btn prev" onclick="moverCarrusel('gatos', -1)">‹</button>
+  <div class="carrusel" id="carruselGatos">
+
     <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/perros/nerea.jpeg" alt="Nerea">
-      <div class="nombre-mascota">Nerea</div>
-    </div>
-    <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/perros/greta.jpeg" alt="Greta">
-      <div class="nombre-mascota">Greta</div>
-    </div>
-    <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/perros/kira.jpeg" alt="Kira">
-      <div class="nombre-mascota">Kira</div>
-    </div>
-    <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/perros/dragon.jpeg" alt="Dragon">
-      <div class="nombre-mascota">Dragon</div>
-    </div>
-    <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/perros/damarco.jpeg" alt="Damarco">
-      <div class="nombre-mascota">Damarco</div>
-    </div>
-    <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/perros/luar.jpeg" alt="Luar">
-      <div class="nombre-mascota">Luar</div>
-    </div>
-    <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/perros/paulette.jpg" alt="Paulette">
-      <div class="nombre-mascota">Paulette</div>
-    </div>
-    <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/gatos/isis.png" alt="Isis">
-      <div class="nombre-mascota">Isis</div>
-    </div>
-    <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/gatos/lupita.jpeg" alt="Lupita">
-      <div class="nombre-mascota">Lupita</div>
-    </div>
-    <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/gatos/jeni.jpeg" alt="Jeni">
-      <div class="nombre-mascota">Jeni</div>
-    </div>
-    <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/gatos/kira.jpg" alt="Kira (gato)">
-      <div class="nombre-mascota">Kira</div>
-    </div>
-    <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/gatos/ari.jpeg" alt="Ari">
+      <div class="carrusel-img-wrapper"><img src="ari.jpeg" alt="Ari"></div>
       <div class="nombre-mascota">Ari</div>
+      <p class="descripcion-mascota">Curiosa y muy dulce.</p>
     </div>
     <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/gatos/roscon.jpeg" alt="Heros">
-      <div class="nombre-mascota">Heros</div>
+      <div class="carrusel-img-wrapper"><img src="carey.jpeg" alt="Greta"></div>
+      <div class="nombre-mascota">Greta</div>
+      <p class="descripcion-mascota">Mimosa y tranquila.</p>
     </div>
     <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/gatos/nit.jpeg" alt="Nit">
-      <div class="nombre-mascota">Nit</div>
+      <div class="carrusel-img-wrapper"><img src="cat1.png" alt="Jeni"></div>
+      <div class="nombre-mascota">Jeni</div>
+      <p class="descripcion-mascota">Discreta y adorable.</p>
     </div>
     <div class="carrusel-slide">
-      <img src="./Imagenes_Animales/gatos/missi.jpeg" alt="Missi">
+      <div class="carrusel-img-wrapper"><img src="cat2.png" alt="Cookie"></div>
+      <div class="nombre-mascota">Cookie</div>
+      <p class="descripcion-mascota">Muy amorosa y calmada.</p>
+    </div>
+    <div class="carrusel-slide">
+      <div class="carrusel-img-wrapper"><img src="Chispa.jpg" alt="Falcon"></div>
+      <div class="nombre-mascota">Falcon</div>
+      <p class="descripcion-mascota">Leal y silencioso.</p>
+    </div>
+    <div class="carrusel-slide">
+      <div class="carrusel-img-wrapper"><img src="cookie.jpeg" alt="Eureka"></div>
+      <div class="nombre-mascota">Eureka</div>
+      <p class="descripcion-mascota">Curiosa y muy despierta.</p>
+    </div>
+    <div class="carrusel-slide">
+      <div class="carrusel-img-wrapper"><img src="enxeneta.jpeg" alt="Missi"></div>
       <div class="nombre-mascota">Missi</div>
+      <p class="descripcion-mascota">Pequeña y mimosa.</p>
+    </div>
+    <div class="carrusel-slide">
+      <div class="carrusel-img-wrapper"><img src="eureka.jpeg" alt="Nit"></div>
+      <div class="nombre-mascota">Nit</div>
+      <p class="descripcion-mascota">Silenciosa y buena compañera.</p>
+    </div>
+    <div class="carrusel-slide">
+      <div class="carrusel-img-wrapper"><img src="falccon.jpeg" alt="Ray"></div>
+      <div class="nombre-mascota">Ray</div>
+      <p class="descripcion-mascota">Un gato observador y tranquilo.</p>
+    </div>
+    <div class="carrusel-slide">
+      <div class="carrusel-img-wrapper"><img src="goku.jpeg" alt="Roscon"></div>
+      <div class="nombre-mascota">Roscon</div>
+      <p class="descripcion-mascota">Grande y bonachón.</p>
+    </div>
+    <div class="carrusel-slide">
+      <div class="carrusel-img-wrapper"><img src="heros.jpg" alt="Palomilla"></div>
+      <div class="nombre-mascota">Palomilla</div>
+      <p class="descripcion-mascota">Tierna y dormilona.</p>
+    </div>
+    <div class="carrusel-slide">
+      <div class="carrusel-img-wrapper"><img src="isis.png" alt="Vegeta"></div>
+      <div class="nombre-mascota">Vegeta</div>
+      <p class="descripcion-mascota">Un alma noble en busca de hogar.</p>
+    </div>
+      <div class="carrusel-slide">
+      <div class="carrusel-img-wrapper"><img src="ivana.jpg" alt="Vegeta"></div>
+      <div class="nombre-mascota">Vegeta</div>
+      <p class="descripcion-mascota">Un alma noble en busca de hogar.</p>
     </div>
   </div>
-  <button class="carrusel-btn next" onclick="moverCarrusel(1)">›</button>
+  <button class="carrusel-btn next" onclick="moverCarrusel('gatos', 1)">›</button>
 </div>
 
     <section class="video-presentacion">
