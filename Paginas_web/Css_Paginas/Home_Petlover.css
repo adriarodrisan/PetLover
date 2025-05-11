@@ -17,6 +17,10 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.seccion-principal {
+    background-color: #ffdab9;
+    padding: 50px 20px;
+}
 .menu-centro {
     flex: 1;
     display: flex;

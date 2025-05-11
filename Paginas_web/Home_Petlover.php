@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetLover home - Adopción de Mascotas </title>
     <link rel="stylesheet" href="./Css_Paginas/Home_Petlover.css">
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+      <style>
+    @media (min-width: 768px) {
+      .carrusel {
+        gap: 30px;
+        padding: 0 60px;
+      }
+      .carrusel-slide {
+        flex: 0 0 33%;
+      }
+    }
+    @media (max-width: 767px) {
+      .carrusel-slide {
+        flex: 0 0 90%;
+      }
+    }
+  </style>
 </head>
 <body>
     <header>
@@ -97,7 +114,6 @@
   </div>
   <button class="carrusel-btn next" onclick="moverCarrusel('gatos', 1)">›</button>
 </div>
-
     <section class="video-presentacion">
     <h2>🎥 Conoce más sobre PetLover</h2>
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
