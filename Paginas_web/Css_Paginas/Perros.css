@@ -97,3 +97,9 @@ nav a{
     background-color: #fff;
     transition: all 0.3s ease;
 }
+.filters select:focus,
+.filters button:focus {
+    outline: none;
+    border-color: #d48c47;
+    box-shadow: 0 0 5px #d48c47;
+}
