@@ -193,4 +193,18 @@ header{
     object-fit: cover;
     border-radius: 10px;
   }
+  .carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffb56b;
+    border: none;
+    font-size: 2rem;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
   
