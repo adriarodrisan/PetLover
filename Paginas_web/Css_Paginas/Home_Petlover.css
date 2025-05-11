@@ -164,9 +164,18 @@ header{
 }
 .titulo-destacados {
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px; 
+    font-size: 2rem;
+    color: #4a3d35;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .titulo-destacados::before,
+.titulo-destacados::after {
+  content: "🐾";
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  color: #f7944d;
 }
 .video-presentacion {
     text-align: center;
@@ -174,15 +183,15 @@ header{
     max-width: 800px;
 }
 .carrusel-container {
-    position: relative;
-    width: 90%;
-    max-width: 700px;
-    margin: 2rem auto;
-    overflow: hidden;
-    border-radius: 10px;
-    background: #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
   .carrusel {
     display: flex;
     transition: transform 0.5s ease;
@@ -220,5 +229,11 @@ header{
   .carrusel-btn.next {
     right: 10px;
   }
+  .seccion-destacados {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff8e7;
+  }
+  
   
   
