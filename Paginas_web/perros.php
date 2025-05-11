@@ -233,6 +233,22 @@
     <footer class="footer">
         © 2025 PetLover | Contacto: petlover@gmail.com
     </footer>
-    
+    <script>
+function filtrarPerros() {
+    const razaSeleccionada = document.getElementById('raza').value.toLowerCase();
+    const tarjetas = document.querySelectorAll('.tarjeta-perro');
+
+    tarjetas.forEach(tarjeta => {
+        const texto = tarjeta.textContent.toLowerCase();
+
+        if (!razaSeleccionada || texto.includes(razaSeleccionada)) {
+            tarjeta.style.display = "block";
+        } else {
+            tarjeta.style.display = "none";
+        }
+    });
+}
+</script>
+
 </body>
 </html>
