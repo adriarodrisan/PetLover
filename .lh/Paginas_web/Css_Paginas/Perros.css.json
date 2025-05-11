@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1746929075686,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1746929096320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,5 +80,10 @@\n     margin: 20px auto;\r\n     max-width: 900px;\r\n     text-align: center;\r\n     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\r\n+}\r\n+.filters h3 {\r\n+    font-size: 1.4em;\r\n+    margin-bottom: 15px;\r\n+    color: #5a3825;\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1746929075686,
