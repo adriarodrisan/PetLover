@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 23,
+            "activePatchIndex": 24,
             "patches": [
                 {
                     "date": 1746711090846,
@@ -100,6 +100,10 @@
                 {
                     "date": 1746928062071,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -222,8 +222,23 @@\n     </section>\r\n     <footer class=\"footer\">\r\n         © 2025 PetLover | Contacto: petlover@gmail.com\r\n     </footer>\r\n-    \r\n+    <script>\r\n+function filtrarGatos() {\r\n+    const razaSeleccionada = document.querySelector('select[name=\"raza\"]').value.toLowerCase();\r\n+    const tarjetas = document.querySelectorAll('.cat-card');\r\n \r\n+    tarjetas.forEach(tarjeta => {\r\n+        const texto = tarjeta.textContent.toLowerCase();\r\n+        if (!razaSeleccionada || texto.includes(razaSeleccionada)) {\r\n+            tarjeta.style.display = \"block\";\r\n+        } else {\r\n+            tarjeta.style.display = \"none\";\r\n+        }\r\n+    });\r\n+}\r\n+</script>\r\n+\r\n+\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746928228607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,14 +17,15 @@\n         <p>Encuentra el compañero ideal para ti. </p>\r\n     </section>\r\n     <section class=\"filters\"> \r\n         <h3>Filtrar por: </h3>\r\n-        <select name=\"raza\">\r\n-            <option value=\"\">Selecciona una raza </option>\r\n-            <option value=\"siames\">Siamés</option>\r\n-            <option value=\"persa\">Persa</option>\r\n-            <option value=\"mainecoon\">Maine Coon</option>\r\n-        </select>\r\n+        <select name=\"raza\" onchange=\"filtrarGatos()\">\r\n+    <option value=\"\">Selecciona una raza</option>\r\n+    <option value=\"europeo\">Europeo</option>\r\n+    <option value=\"persa\">Persa</option>\r\n+    <option value=\"gato angora\">Gato Angora</option>\r\n+    </select>\r\n+\r\n         <select id=\"peso\">\r\n             <option value=\"\">Selecciona un peso</option>\r\n             <option value=\"pequeno\">Pequeño (-4kg)</option>\r\n             <option value=\"mediano\">Mediano (4-7kg)</option>\r\n"
                 }
             ],
             "date": 1746711090846,

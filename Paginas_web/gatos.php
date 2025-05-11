@@ -18,12 +18,13 @@
     </section>
     <section class="filters"> 
         <h3>Filtrar por: </h3>
-        <select name="raza">
-            <option value="">Selecciona una raza </option>
-            <option value="siames">Siamés</option>
-            <option value="persa">Persa</option>
-            <option value="mainecoon">Maine Coon</option>
-        </select>
+        <select name="raza" onchange="filtrarGatos()">
+    <option value="">Selecciona una raza</option>
+    <option value="europeo">Europeo</option>
+    <option value="persa">Persa</option>
+    <option value="gato angora">Gato Angora</option>
+    </select>
+
         <select id="peso">
             <option value="">Selecciona un peso</option>
             <option value="pequeno">Pequeño (-4kg)</option>
