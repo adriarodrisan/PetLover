@@ -173,3 +173,24 @@ header{
     margin: 40px auto;
     max-width: 800px;
 }
+.carrusel-container {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .carrusel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carrusel img {
+    width: 100%;
+    max-width: 1000px;
+    flex: 0 0 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
