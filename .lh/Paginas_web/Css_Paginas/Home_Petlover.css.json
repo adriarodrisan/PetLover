@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1745600619213,
@@ -40,6 +40,22 @@
                 {
                     "date": 1746929848102,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -205,6 +205,17 @@\n     color: #fff;\r\n     border-radius: 50%;\r\n     z-index: 1;\r\n   }\r\n+  .carrusel-btn:hover {\r\n+    background-color: #e69b51;\r\n+  }\r\n   \r\n+  .carrusel-btn.prev {\r\n+    left: 10px;\r\n+  }\r\n+  \r\n+  .carrusel-btn.next {\r\n+    right: 10px;\r\n+  }\r\n+  \r\n   \n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746930156548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -175,9 +175,9 @@\n }\r\n .carrusel-container {\r\n     position: relative;\r\n     width: 90%;\r\n-    max-width: 1000px;\r\n+    max-width: 700px;\r\n     margin: 0 auto;\r\n     overflow: hidden;\r\n     border-radius: 10px;\r\n   }\r\n"
+                },
+                {
+                    "date": 1746930180586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,11 +176,13 @@\n .carrusel-container {\r\n     position: relative;\r\n     width: 90%;\r\n     max-width: 700px;\r\n-    margin: 0 auto;\r\n+    margin: 2rem auto;\r\n     overflow: hidden;\r\n     border-radius: 10px;\r\n+    background: #fff;\r\n+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);\r\n   }\r\n   .carrusel {\r\n     display: flex;\r\n     transition: transform 0.5s ease;\r\n"
+                },
+                {
+                    "date": 1746930199064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -189,12 +189,12 @@\n   }\r\n   \r\n   .carrusel img {\r\n     width: 100%;\r\n-    max-width: 1000px;\r\n-    flex: 0 0 100%;\r\n-    object-fit: cover;\r\n-    border-radius: 10px;\r\n+  max-width: 700px;\r\n+  height: 400px;\r\n+  object-fit: cover;\r\n+  flex-shrink: 0;\r\n   }\r\n   .carrusel-btn {\r\n     position: absolute;\r\n     top: 50%;\r\n"
+                },
+                {
+                    "date": 1746930217258,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -196,18 +196,19 @@\n   flex-shrink: 0;\r\n   }\r\n   .carrusel-btn {\r\n     position: absolute;\r\n-    top: 50%;\r\n-    transform: translateY(-50%);\r\n-    background-color: #ffb56b;\r\n-    border: none;\r\n-    font-size: 2rem;\r\n-    padding: 5px 15px;\r\n-    cursor: pointer;\r\n-    color: #fff;\r\n-    border-radius: 50%;\r\n-    z-index: 1;\r\n+  top: 50%;\r\n+  transform: translateY(-50%);\r\n+  background-color: #f7944d;\r\n+  border: none;\r\n+  font-size: 1.8rem;\r\n+  padding: 8px 14px;\r\n+  cursor: pointer;\r\n+  color: #fff;\r\n+  border-radius: 50%;\r\n+  z-index: 2;\r\n+  transition: background-color 0.3s ease;\r\n   }\r\n   .carrusel-btn:hover {\r\n     background-color: #e69b51;\r\n   }\r\n"
                 }
             ],
             "date": 1745600619213,
