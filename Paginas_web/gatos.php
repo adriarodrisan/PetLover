@@ -223,6 +223,22 @@
     <footer class="footer">
         © 2025 PetLover | Contacto: petlover@gmail.com
     </footer>
+    <script>
+function filtrarGatos() {
+    const razaSeleccionada = document.querySelector('select[name="raza"]').value.toLowerCase();
+    const tarjetas = document.querySelectorAll('.cat-card');
+
+    tarjetas.forEach(tarjeta => {
+        const texto = tarjeta.textContent.toLowerCase();
+        if (!razaSeleccionada || texto.includes(razaSeleccionada)) {
+            tarjeta.style.display = "block";
+        } else {
+            tarjeta.style.display = "none";
+        }
+    });
+}
+</script>
+
 
 </body>
 </html>
