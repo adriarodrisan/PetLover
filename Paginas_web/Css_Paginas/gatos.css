@@ -161,3 +161,16 @@ nav a {
   .cerrar-ficha:hover {
     color: #000;
   }
+  .btn-adoptar {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  .btn-adoptar:hover {
+    background-color: #e65c30;
+  }

@@ -255,8 +255,16 @@ function filtrarGatos() {
     </div>
   </div>
 </div>
+<script>
+const historiasGatos = {
+  "Milo": "Milo fue encontrado en un parque en una noche lluviosa. A pesar del frío, no perdió su ternura.",
+  "Luna": "Luna fue rescatada siendo una cría. Ahora es una gata tranquila que ama dormir en el regazo.",
+  "Heros": "Siempre curioso y observador, Heros se ha convertido en el alma del refugio.",
+  "Isis": "Con mirada sabia, Isis es ideal para hogares tranquilos. Su ronroneo es pura magia.",
+  // Pruebas
+};
 
-
+</script>
 
 </body>
 </html>
