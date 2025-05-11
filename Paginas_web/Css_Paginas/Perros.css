@@ -87,3 +87,13 @@ nav a{
     margin-bottom: 15px;
     color: #5a3825;
 }
+.filters select,
+.filters button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}

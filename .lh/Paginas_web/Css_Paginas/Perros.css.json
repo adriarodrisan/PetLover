@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1746929075686,
@@ -12,6 +12,10 @@
                 {
                     "date": 1746929096320,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,5 +80,10 @@\n     margin: 20px auto;\r\n     max-width: 900px;\r\n     text-align: center;\r\n     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\r\n+}\r\n+.filters h3 {\r\n+    font-size: 1.4em;\r\n+    margin-bottom: 15px;\r\n+    color: #5a3825;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746929145761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,5 +85,15 @@\n .filters h3 {\r\n     font-size: 1.4em;\r\n     margin-bottom: 15px;\r\n     color: #5a3825;\r\n+}\r\n+.filters select,\r\n+.filters button {\r\n+    margin: 5px;\r\n+    padding: 10px 15px;\r\n+    font-size: 1em;\r\n+    border: 1px solid #aaa;\r\n+    border-radius: 6px;\r\n+    background-color: #fff;\r\n+    transition: all 0.3s ease;\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1746929075686,
