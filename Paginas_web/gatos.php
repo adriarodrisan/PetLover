@@ -240,6 +240,23 @@ function filtrarGatos() {
 }
 </script>
 
+<div id="fichaAnimal" class="ficha-modal">
+  <div class="ficha-contenido">
+    <span class="cerrar-ficha" onclick="cerrarFicha()">&times;</span>
+    <div class="ficha-izquierda">
+      <img id="fichaImagen" src="" alt="Foto del animal">
+    </div>
+    <div class="ficha-derecha">
+      <h2 id="fichaNombre"></h2>
+      <p id="fichaInfo"></p>
+      <h4>Mi historia:</h4>
+      <p id="fichaHistoria" class="historia"></p>
+      <button class="btn-adoptar">❤️ Quiero Adoptar</button>
+    </div>
+  </div>
+</div>
+
+
 
 </body>
 </html>
