@@ -44,6 +44,18 @@
             </div>
         </div>
     </section>
+    <section class="video-presentacion">
+    <h2>🎥 Conoce más sobre PetLover</h2>
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+        <iframe 
+            src="https://www.youtube.com/embed/X9QxvAaf_kY" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen 
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+    </div>
+</section>
 <!-- 🐾 Sección de comentarios de Adoptantes (en preparación) -->
     <section class=" seccion-testimonios">
         <h2>💬comentarios de nuestros Adoptantes </h2>
