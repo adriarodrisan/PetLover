@@ -73,3 +73,12 @@ nav a{
     height: 120px;
     object-fit: contain;
 }
+.filters {
+    background-color: #ffe9c6;
+    padding: 20px 30px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
