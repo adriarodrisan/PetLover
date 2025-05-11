@@ -40,8 +40,52 @@
       <div class="nombre-mascota">Kira</div>
     </div>
     <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/perros/dragon.jpeg" alt="Dragon">
+      <div class="nombre-mascota">Dragon</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/perros/damarco.jpeg" alt="Damarco">
+      <div class="nombre-mascota">Damarco</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/perros/luar.jpeg" alt="Luar">
+      <div class="nombre-mascota">Luar</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/perros/paulette.jpg" alt="Paulette">
+      <div class="nombre-mascota">Paulette</div>
+    </div>
+    <div class="carrusel-slide">
       <img src="./Imagenes_Animales/gatos/isis.png" alt="Isis">
       <div class="nombre-mascota">Isis</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/gatos/lupita.jpeg" alt="Lupita">
+      <div class="nombre-mascota">Lupita</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/gatos/jeni.jpeg" alt="Jeni">
+      <div class="nombre-mascota">Jeni</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/gatos/kira.jpg" alt="Kira (gato)">
+      <div class="nombre-mascota">Kira</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/gatos/ari.jpeg" alt="Ari">
+      <div class="nombre-mascota">Ari</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/gatos/roscon.jpeg" alt="Heros">
+      <div class="nombre-mascota">Heros</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/gatos/nit.jpeg" alt="Nit">
+      <div class="nombre-mascota">Nit</div>
+    </div>
+    <div class="carrusel-slide">
+      <img src="./Imagenes_Animales/gatos/missi.jpeg" alt="Missi">
+      <div class="nombre-mascota">Missi</div>
     </div>
   </div>
   <button class="carrusel-btn next" onclick="moverCarrusel(1)">›</button>
