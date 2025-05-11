@@ -148,4 +148,16 @@ nav a {
     flex: 1;
     text-align: left;
   }
+  .cerrar-ficha {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+  }
   
+  .cerrar-ficha:hover {
+    color: #000;
+  }
