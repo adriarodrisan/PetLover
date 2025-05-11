@@ -263,6 +263,14 @@ const historiasGatos = {
   "Isis": "Con mirada sabia, Isis es ideal para hogares tranquilos. Su ronroneo es pura magia.",
   // Pruebas
 };
+  function mostrarFicha(nombre, imagen, info) {
+  document.getElementById("fichaNombre").innerText = nombre;
+  document.getElementById("fichaImagen").src = imagen;
+  document.getElementById("fichaInfo").innerText = info;
+  document.getElementById("fichaHistoria").innerText = historiasGatos[nombre] || "Este animal tiene mucho amor que dar. Ven a conocerlo.";
+  document.getElementById("fichaAnimal").style.display = "block";
+}
+};
 
 </script>
 
