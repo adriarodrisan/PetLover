@@ -82,6 +82,22 @@
                 </div>
             </div>
     </section>
+    <script>
+let indiceCarrusel = 0;
+
+function moverCarrusel(direccion) {
+  const carrusel = document.getElementById('carruselDestacados');
+  const totalSlides = carrusel.children.length;
+
+  indiceCarrusel += direccion;
+  if (indiceCarrusel < 0) indiceCarrusel = totalSlides - 1;
+  if (indiceCarrusel >= totalSlides) indiceCarrusel = 0;
+
+  const slideWidth = carrusel.children[0].offsetWidth;
+  carrusel.style.transform = `translateX(-${indiceCarrusel * slideWidth}px)`;
+}
+</script>
+
     
 </body>
 <?php include 'footer.php'; ?>
