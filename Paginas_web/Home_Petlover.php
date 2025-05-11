@@ -24,26 +24,21 @@
     </section>
 <!-- 🐾 Sección de Perros y Gatos Destacados con grandes necesidades! -->
 <!-- 🐾 Sección de Perros -->
-    <section class="seccion-destacados">
-        <h2 class="titulo-destacados">🐶🐱 Mascotas Destacadas</h2>
-        <div class="contenedor-destacados">
-        </section>
-        <section class="seccion-destacados">
-            <div class="tarjeta-mascota">
-                <h4>Max</h4>
-                <img src="./Imagenes_Animales/nerea.png" alt="Perro en adopción">
-                <p>Raza: Pastor Belga Malioisse | Fecha de nacimiento: 02/2020</p>
-                <button> Conoceme! </button>
-            </div>
-<!-- 🐾 Sección de Gatos -->
-            <div class="tarjeta-mascota">
-                <h4>Isis</h4>
-                <img src="./Imagenes_Animales/isis.png" alt="Gato en adopción">
-                <p> Raza: Europea | Fecha de nacimiento: 06/2019</p>
-                <button>Conoceme! </button>
-            </div>
-        </div>
-    </section>
+<section class="seccion-destacados">
+  <h2 class="titulo-destacados">🐾 Mascotas Destacadas</h2>
+  <div class="carrusel-container">
+    <button class="carrusel-btn prev" onclick="moverCarrusel(-1)">‹</button>
+    <div class="carrusel" id="carruselDestacados">
+      <img src="./Imagenes_Animales/perros/nerea.jpeg" alt="Mascota destacada">
+      <img src="./Imagenes_Animales/perros/greta.jpeg" alt="Mascota destacada">
+      <img src="./Imagenes_Animales/perros/kira.jpeg" alt="Mascota destacada">
+      <img src="./Imagenes_Animales/gatos/isis.png" alt="Mascota destacada">
+      <img src="./Imagenes_Animales/gatos/lupita.jpeg" alt="Mascota destacada">
+      <img src="./Imagenes_Animales/gatos/jeni.jpeg" alt="Mascota destacada">
+    </div>
+    <button class="carrusel-btn next" onclick="moverCarrusel(1)">›</button>
+  </div>
+</section>
     <section class="video-presentacion">
     <h2>🎥 Conoce más sobre PetLover</h2>
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
