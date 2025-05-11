@@ -273,7 +273,14 @@ const historiasGatos = {
 function cerrarFicha() {
   document.getElementById("fichaAnimal").style.display = "none";
 }
-};
+document.querySelectorAll('.cat-card').forEach(card => {
+  card.querySelector('button').addEventListener('click', () => {
+    const nombre = card.querySelector('h4').innerText;
+    const imagen = card.querySelector('img').src;
+    const info = card.querySelector('p').innerText;
+    mostrarFicha(nombre, imagen, info);
+  });
+});
 
 </script>
 

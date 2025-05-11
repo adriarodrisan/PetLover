@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 30,
+            "activePatchIndex": 31,
             "patches": [
                 {
                     "date": 1746711090846,
@@ -128,6 +128,10 @@
                 {
                     "date": 1746932899056,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -269,8 +269,11 @@\n   document.getElementById(\"fichaInfo\").innerText = info;\r\n   document.getElementById(\"fichaHistoria\").innerText = historiasGatos[nombre] || \"Este animal tiene mucho amor que dar. Ven a conocerlo.\";\r\n   document.getElementById(\"fichaAnimal\").style.display = \"block\";\r\n }\r\n+function cerrarFicha() {\r\n+  document.getElementById(\"fichaAnimal\").style.display = \"none\";\r\n+}\r\n };\r\n \r\n </script>\r\n \r\n"
+                },
+                {
+                    "date": 1746933047037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -272,9 +272,16 @@\n }\r\n function cerrarFicha() {\r\n   document.getElementById(\"fichaAnimal\").style.display = \"none\";\r\n }\r\n-};\r\n+document.querySelectorAll('.cat-card').forEach(card => {\r\n+  card.querySelector('button').addEventListener('click', () => {\r\n+    const nombre = card.querySelector('h4').innerText;\r\n+    const imagen = card.querySelector('img').src;\r\n+    const info = card.querySelector('p').innerText;\r\n+    mostrarFicha(nombre, imagen, info);\r\n+  });\r\n+});\r\n \r\n </script>\r\n \r\n </body>\r\n"
                 }
             ],
             "date": 1746711090846,
