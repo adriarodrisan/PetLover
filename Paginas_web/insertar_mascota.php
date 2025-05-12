@@ -11,14 +11,14 @@ try {
     echo 'Falló la conixion: ' . $e->getMessage(); 
 }
 $chip= trim($_POST['Chip_ID']);
-$nombre= trim($_POST['nombre']);
+$nombre= trim($_POST['Nombre']);
 $especie= trim($_POST['Especie']);
 $raza= trim($_POST['raza']);
 $fecha_nacimiento= trim($_POST['FechaNacimiento']);
 $sexo= trim($_POST['Sexo']);
 $peso= trim($_POST['Peso']);
 $estado= trim($_POST['Estado']);
-$imagen= trim($_POST['Imagen']);
+$imagen= $_FILES['Imagen']['name'];
 if(empty($chip)|| empty($nombre)|| empty($especie)|| empty($raza)|| empty($fecha_nacimiento)|| empty($sexo)|| empty($peso)|| empty($imagen)){
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
     exit;
@@ -30,6 +30,7 @@ if ($datos_animales->rowCount()>0){
     echo "Este animal ya esta registrado porfavor revise el numero de chip que puede estar equivocado.";
     exit;
 }
+$datos_protectora=
 $registrar_animales= $db->query("INSERT INTO Animal (Chip_ID, Nombre, Especie, raza, FechaNacimiento, Sexo, Peso, Estado, ID_refugio, Imagen) VALUES ('$chip','$nombre','$especie','$raza','$fecha_nacimiento','$sexo','$peso','$estado','$protectora','$imagen')");
 if ($registrar_animales->execute()){
     echo '<!DOCTYPE html>
