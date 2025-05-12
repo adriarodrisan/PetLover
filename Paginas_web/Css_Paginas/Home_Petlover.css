@@ -307,3 +307,16 @@ header{
   text-align: center;
   backdrop-filter: blur(4px);
 }
+.hero-title {
+  font-size: 2.6rem;
+  color: #d2691e;
+  margin-bottom: 10px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: #6d4c41;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
