@@ -125,3 +125,50 @@ nav a{
   overflow-y: auto;
   background-color: rgba(0, 0, 0, 0.6);
 }
+.ficha-contenido {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.ficha-izquierda img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.ficha-derecha {
+  flex: 1;
+  text-align: left;
+}
+.cerrar-ficha {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  color: #ff7043;
+  cursor: pointer;
+}
+
+.btn-adoptar {
+  margin-top: 20px;
+  background-color: #ff9966;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-adoptar:hover {
+  background-color: #ff7043;
+}
