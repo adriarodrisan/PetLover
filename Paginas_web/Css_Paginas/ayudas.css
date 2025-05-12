@@ -9,12 +9,18 @@
     background-color: #fff3e0;
     color: #6d4c41;
   }
-  .hero {
-    background-color: #ffcc99;
-    padding: 60px 20px;
-    text-align: center;
-    border-bottom: 4px solid #ff9966;
-  }
+ .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
   .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 15px;
