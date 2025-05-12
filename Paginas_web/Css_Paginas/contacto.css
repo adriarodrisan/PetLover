@@ -56,4 +56,18 @@ textarea {
     resize: vertical;
     min-height: 120px;
 }
+.btn {
+    background-color: #ff9966;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
 
+.btn:hover {
+    background-color: #ff7043;
+}
