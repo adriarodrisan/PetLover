@@ -46,3 +46,14 @@ textarea {
     box-sizing: border-box;
     transition: border-color 0.3s;
 }
+input:focus,
+textarea:focus {
+    border-color: #ff9966;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
