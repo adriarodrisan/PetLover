@@ -30,7 +30,11 @@ if ($datos_animales->rowCount()>0){
     echo "Este animal ya esta registrado porfavor revise el numero de chip que puede estar equivocado.";
     exit;
 }
-$datos_protectora=
+$nombre_protectora = $_COOKIE['nombre'] ?? null;
+$datos_protectora= $db->query("SELECT ID FROM Refugio WHERE  Nombre= '$nombre_protectora'");
+$datos_protectora-> execute();
+$id_protectora = $datos_protectora->fetch(PDO::FETCH_ASSOC);
+$protectora= $id_protectora['ID'];
 $registrar_animales= $db->query("INSERT INTO Animal (Chip_ID, Nombre, Especie, raza, FechaNacimiento, Sexo, Peso, Estado, ID_refugio, Imagen) VALUES ('$chip','$nombre','$especie','$raza','$fecha_nacimiento','$sexo','$peso','$estado','$protectora','$imagen')");
 if ($registrar_animales->execute()){
     echo '<!DOCTYPE html>

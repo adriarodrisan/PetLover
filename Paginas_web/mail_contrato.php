@@ -117,7 +117,7 @@ try {
 
     $mail->isHTML(true);                              
     $mail->Subject = "Contrato de $nombre_animal";
-    $mail->Body    = "pruebas de envio de contrato";
+    $mail->Body    = "Necesitamos que Imprimas este contrato, Lo Firmes y lo escanes para enviarnos-lo para que demos el vistobueno en para el contrato";
     $mail->addAttachment($tempFile, "Contrato_{$nombre_animal}.pdf");
     $mail->send();
     unlink($tempFile);

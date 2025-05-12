@@ -19,7 +19,7 @@ try {
     $mail->addAddress($correo, $nombre);
 
     $mail->isHTML(true);                              
-    $mail->Subject = 'pruebas de envio de correos con el inicio de session';
+    $mail->Subject = "pruebas de envio de correos con el inicio de session";
     $mail->Body    = 'pruebas de envio';
     $mail->send();
 } catch (Exception $e) {
