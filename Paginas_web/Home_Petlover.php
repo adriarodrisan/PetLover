@@ -213,19 +213,23 @@
   </div>
   <button class="carrusel-btn next" onclick="moverCarrusel('perros', 1)">›</button>
 </div>
-
-    <section class="video-presentacion">
-    <h2>🎥 Conoce más sobre PetLover</h2>
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-        <iframe 
-            src="https://www.youtube.com/embed/X9QxvAaf_kY" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen 
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-        </iframe>
+<section class="hero-video-section">
+  <div class="hero-video-card">
+    <h2 class="hero-title">Conoce como funciona nuestro Refugio</h2>
+    <p class="hero-subtitle">Cada día damos esperanza a quienes más lo necesitan. Mira cómo lo hacemos.</p>
+    
+    <div class="hero-video-wrapper">
+      <iframe 
+        src="https://www.youtube.com/embed/X9QxvAaf_kY" 
+        title="Video PetLover"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
     </div>
+  </div>
 </section>
+
 <!-- 🐾 Sección de comentarios de Adoptantes (en preparación) -->
     <section class=" seccion-testimonios">
         <h2>💬comentarios de nuestros Adoptantes </h2>
