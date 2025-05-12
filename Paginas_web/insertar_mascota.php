@@ -24,13 +24,13 @@ if(empty($chip)|| empty($nombre)|| empty($especie)|| empty($raza)|| empty($fecha
     exit;
 }
 //verificar que no hay dos chips iguales
-$datos_animales= $db->query("SELECT * FROM animal WHERE  Chip_ID= '$chip' ");
+$datos_animales= $db->query("SELECT * FROM Animal WHERE  Chip_ID= '$chip' ");
 $datos_animales-> execute();
 if ($datos_animales->rowCount()>0){
     echo "Este animal ya esta registrado porfavor revise el numero de chip que puede estar equivocado.";
     exit;
 }
-$registrar_animales= $db->query("INSERT INTO animal (Chip_ID, Nombre, Especie, raza, FechaNacimiento, Sexo, Peso, Estado, ID_refugio, Imagen) VALUES ('$chip','$nombre','$especie','$raza','$fecha_nacimiento','$sexo','$peso','$estado','$protectora','$imagen')");
+$registrar_animales= $db->query("INSERT INTO Animal (Chip_ID, Nombre, Especie, raza, FechaNacimiento, Sexo, Peso, Estado, ID_refugio, Imagen) VALUES ('$chip','$nombre','$especie','$raza','$fecha_nacimiento','$sexo','$peso','$estado','$protectora','$imagen')");
 if ($registrar_animales->execute()){
     echo '<!DOCTYPE html>
             <html lang="es">
