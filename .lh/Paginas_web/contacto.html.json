@@ -1,0 +1,18 @@
+{
+    "sourceFile": "Paginas_web/contacto.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1747017120640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1747017120640,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"es\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Contacto</title>\r\n    <link rel=\"stylesheet\" href=\"./Css_Paginas/contacto.css\">\r\n      <link href=\"https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap\" rel=\"stylesheet\">\r\n</head>\r\n<body>\r\n    <div>\r\n        <section>\r\n            <p>Si tiene alguna duda haz este formulario y te escribiremos lo antes posible</p>\r\n            <form>\r\n                <div class=\"campo\">\r\n                    <label for=\"nombre\"> Nombre:</label>\r\n                    <input type=\"text\" name=\"nombre\" placeholder=\"Nombre\" required><br/>\r\n                    <label for=\"correo\"> Correo:</label>\r\n                    <input type=\"email\" name=\"correo\" placeholder=\"Correo\" required><br/>\r\n                  <label for=\"mensaje\">Mensaje:</label><br/>\r\n                  <textarea id=\"mensaje\" name=\"mensaje\" rows=\"4\" cols=\"50\" required placeholder=\"Pon aqui la duda que tengas\"></textarea>\r\n                </div>\r\n                <button type=\"submit\" class=\"btn\">Enviar la duda</button>\r\n              </form>\r\n        </section>\r\n    </div>\r\n</body>\r\n</html>"
+        }
+    ]
+}

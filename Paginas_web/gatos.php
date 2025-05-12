@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gatos en Adopción - Petlover</title>
     <link rel="stylesheet" href="./Css_Paginas/gatos.css">
+ <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
 </head>
 <body>
     <header>

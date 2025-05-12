@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 19,
+            "activePatchIndex": 20,
             "patches": [
                 {
                     "date": 1742397788667,
@@ -84,6 +84,10 @@
                 {
                     "date": 1742487247792,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n \r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">❤️</div>\r\n                 <h2>Cuidamos con Amor</h2>\r\n-                <p>Ofrecemos cariño, compañía y atención personalizada a cada uno de nuestros peludos mientras espera una nueva familia.</p>\r\n+                <p>Les proporcionamos cariño, compañía y atención personalizada a cada uno de nuestros peludos mientras espera una nueva familia.</p>\r\n               </div>\r\n               <div class=\"tarjeta\">\r\n                 <div class=\"icono\">🤝</div>\r\n                 <h2>¿Cómo puedes ayudar?</h2>\r\n"
+                },
+                {
+                    "date": 1747017026232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Sobre Nosotros - Petlover </title>\r\n     <link rel=\"stylesheet\" href=\"/Css_Paginas/SobreNosotros.css\">\r\n+     <link href=\"https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap\" rel=\"stylesheet\">\r\n </head>\r\n <body>\r\n     <main class=\"seccion-nosotros\">\r\n         <section class=\"encabezado-nosotros\">\r\n@@ -57,9 +58,9 @@\n             </section>\r\n               <section class=\"cta-nosotros\">\r\n                 <h2>¿Ayudas al cambio?</h2>\r\n                 <p>Tu ayuda puede ayudar una vida. Adopta, difunde o colabora.</p>\r\n-                <a href=\"Home_Petlover.html\" class=\"boton-nosotros\">Ver Mascotas</a>\r\n+                <a href=\"Home_Petlover.php\" class=\"boton-nosotros\">Ver Mascotas</a>\r\n         </section>\r\n </body>\r\n     \r\n </body>\r\n"
                 }
             ],
             "date": 1742397788667,

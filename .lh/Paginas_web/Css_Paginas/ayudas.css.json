@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1746206473311,
@@ -40,6 +40,10 @@
                 {
                     "date": 1747016827348,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,12 @@\n   align-items: center;\r\n   text-align: center;\r\n }\r\n \r\n+.hero-content {\r\n+  max-width: 800px;\r\n+  margin: 0 auto;\r\n+}\r\n   .hero h1 {\r\n     font-size: 2.5rem;\r\n     margin-bottom: 15px;\r\n   }\r\n"
+                },
+                {
+                    "date": 1747017099609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     padding: 0;\r\n     box-sizing: border-box;\r\n   }\r\n   body {\r\n-    font-family: 'Arial', sans-serif;\r\n+    font-family: 'Quicksand', sans-serif;\r\n     background-color: #fff3e0;\r\n     color: #6d4c41;\r\n   }\r\n  .hero {\r\n"
                 }
             ],
             "date": 1746206473311,
