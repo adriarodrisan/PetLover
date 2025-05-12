@@ -27,7 +27,7 @@ if (empty($correo) || empty($contrasena)) {
     echo "Por favor completa todos los campos.";
     exit;
 }
-$registros_adoptante = $db->prepare("SELECT * FROM adoptante WHERE Correo = :correo");
+$registros_adoptante = $db->prepare("SELECT * FROM Adoptante WHERE Correo = :correo");
 $registros_adoptante ->bindParam(':correo', $correo);
 $registros_adoptante ->execute();
 //$sql_adoptante = "SELECT * FROM adoptante WHERE Correo = '$correo'";
@@ -36,11 +36,8 @@ $registros_adoptante ->execute();
    if ($registros_adoptante->rowCount() > 0) {
     $fila = $registros_adoptante->fetch(PDO::FETCH_ASSOC);
     if (password_verify($contrasena, $fila['Contraseña'])) {
-
         //setcookie("tipo_usuario", "adoptante", time() + (86400 * 30), "/");
         setcookie("rol", "adoptante", time() + (3600), "/");
-        include 'mail_inicio_session.php';
-        enviarCorreosInicioSession($correo,$fila['Nombre']);
         echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
@@ -62,7 +59,7 @@ $registros_adoptante ->execute();
         exit;
     }
 }
-$registros_protectora = $db->prepare("SELECT * FROM refugio WHERE Correo = :correo");
+$registros_protectora = $db->prepare("SELECT * FROM Refugio WHERE Correo = :correo");
 $registros_protectora ->bindParam(':correo', $correo);
 $registros_protectora ->execute();
 if ($registros_protectora->rowCount() > 0) {
