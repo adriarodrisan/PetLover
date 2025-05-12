@@ -1,0 +1,22 @@
+body.cuerpo {
+    background-color: #ffe5b4;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.alertas {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    border: 3px solid #ffcc99;
+    animation: fadeIn 0.7s ease-in-out;
+    position: relative;
+}
