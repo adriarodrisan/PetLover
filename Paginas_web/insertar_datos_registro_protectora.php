@@ -31,8 +31,12 @@ $ciudad= trim($_POST['ciudad']);
 $correo= trim($_POST['correo']);
 $contrasena= trim($_POST['contrasena']);
 $confirmar_contrasena= trim($_POST['confirmar_contrasena']);
+$requisitos_correo= "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%+-]+\.[a-zA-Z]{2,}$/";
+$requisitos_contrasena= "/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[a-zA-Z\d@$!%*?&]{8,}$/" ;
 //revisar que los campos no sean null
 //echo $dni." ".$correo;
+$valido_correo= preg_match($requisitos_correo,$correo);
+$valido_contrasena= preg_match($requisitos_contrasena,$contrasena);
 if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){
     echo "Por favor, no dejes ningun hueco vacio en el formulario";
     exit;
@@ -40,6 +44,15 @@ if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || e
 //verificar las contraseñas que sean iguales
 if ($contrasena !== $confirmar_contrasena){
     echo "Las cotraseñas no coinciden.";
+    exit;
+}
+
+if (!$valido_correo){
+    echo "El Correo no es valido.";
+    exit;
+}
+if (!$valido_contrasena){
+    echo "El Contraseña no es valido.";
     exit;
 }
 //verificar si el mail esta registrado
