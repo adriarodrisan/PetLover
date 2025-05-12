@@ -114,6 +114,101 @@
   </div>
   <button class="carrusel-btn next" onclick="moverCarrusel('gatos', 1)">›</button>
 </div>
+
+<!-- Carrusel de Perros -->
+  <h2 class="carrusel-titulo">Perros en Adopción</h2>
+  <div class="carrusel-container">
+    <button class="carrusel-btn prev" onclick="moverCarrusel('perros', -1)">‹</button>
+    <div class="carrusel" id="carruselPerros">
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/akana.jpeg" alt="Chispa"></div>
+        <div class="nombre-mascota">Akana</div>
+        <p class="descripcion-mascota">Activa y cariñosa.</p>
+      </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/Bindi.jpeg" alt="Heros"></div>
+        <div class="nombre-mascota">Bindi</div>
+        <p class="descripcion-mascota">Fiel y leal.</p>
+      </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/Blue.jpeg" alt="Palomilla"></div>
+        <div class="nombre-mascota">Blue</div>
+        <p class="descripcion-mascota">Pequeña y tierna.</p>
+      </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/boki.png" alt="Telerin"></div>
+        <div class="nombre-mascota">Boki</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/bola.jpeg" alt="Telerin"></div>
+        <div class="nombre-mascota">Bola</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/bruno.jpeg" alt="Telerin"></div>
+        <div class="nombre-mascota">Bruno</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/damarco.jpeg" alt="Telerin"></div>
+        <div class="nombre-mascota">Damarco</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/dog1.png" alt="Telerin"></div>
+        <div class="nombre-mascota">Cookie</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/dog2.png" alt="Telerin"></div>
+        <div class="nombre-mascota">Milkiie</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/doris.jpeg" alt="Telerin"></div>
+        <div class="nombre-mascota">Doris</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/dragon.jpeg" alt="Telerin"></div>
+        <div class="nombre-mascota">Dragon</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/duna.jpg" alt="Telerin"></div>
+        <div class="nombre-mascota">Duna</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/goliath.jpg" alt="Telerin"></div>
+        <div class="nombre-mascota">Goliath</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/greta.jpeg" alt="Telerin"></div>
+        <div class="nombre-mascota">Greta</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+      <div class="carrusel-slide">
+        <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/perros/heros.jpeg" alt="Telerin"></div>
+        <div class="nombre-mascota">Heroes</div>
+        <p class="descripcion-mascota">Simpático y juguetón.</p>
+      </div>
+    </div>
+    <button class="carrusel-btn next" onclick="moverCarrusel('perros', 1)">›</button>
+  </div>
     <section class="video-presentacion">
     <h2>🎥 Conoce más sobre PetLover</h2>
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
