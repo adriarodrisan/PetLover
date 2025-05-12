@@ -1,9 +1,9 @@
 {
-    "sourceFile": "Paginas_web/Inicio_Sesion.html",
+    "sourceFile": "Paginas_web/inicio_sesion.html",
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 11,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1740582422934,
@@ -52,6 +52,10 @@
                 {
                     "date": 1741186162015,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n                 <input type=\"password\" id=\"password\" name=\"password\" required>\r\n \r\n                 <button type=\"submit\"> Iniciar Sesión</button>\r\n \r\n-                <p> No tienes cuenta? Selecciona una de nuestras opciones:</p> \r\n+                <p> ¿No tienes cuenta? Selecciona una de nuestras opciones:</p> \r\n                 <div class=\"registro-opciones\">\r\n                     <a href=\"/Paginas_web/registro.html\">\r\n                         <button type=\"button\" class=\"registrar\">Registro Usuario</button>\r\n                     </a>\r\n"
+                },
+                {
+                    "date": 1747017281105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,31 +3,31 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Pet_Lover - registros </title>\r\n-    <link rel=\"stylesheet\" href=\"/Css_Paginas/Inicio_Session.css\">\r\n+    <link rel=\"stylesheet\" href=\"./Css_Paginas/Inicio_Session.css\">\r\n+          <link href=\"https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap\" rel=\"stylesheet\">\r\n </head>\r\n <body>\r\n     <div class=\"fondo\">\r\n-            <form id=\"loginForm\" action=\"\" method=\"POST\">\r\n+            <form id=\"loginForm\" action=\"login.php\" method=\"POST\">\r\n                 <h2>Iniciar Sesión</h2>\r\n                 <label for=\"email\"> Corero Electrónico:</label>\r\n                 <input type=\"email\" id=\"email\" name=\"email\" required>\r\n \r\n                 <label for=\"password\">Contraseña:</label>\r\n                 <input type=\"password\" id=\"password\" name=\"password\" required>\r\n \r\n                 <button type=\"submit\"> Iniciar Sesión</button>\r\n-\r\n+            </form>\r\n                 <p> ¿No tienes cuenta? Selecciona una de nuestras opciones:</p> \r\n                 <div class=\"registro-opciones\">\r\n-                    <a href=\"/Paginas_web/registro.html\">\r\n+                    <a href=\"registro.html\">\r\n                         <button type=\"button\" class=\"registrar\">Registro Usuario</button>\r\n                     </a>\r\n-                    <a href=\"/Paginas_web/registro_protectora.html\">\r\n+                    <a href=\"registro_protectora.html\">\r\n                         <button type=\"button\" class=\"registrar\"> Registro Protectora</button>\r\n                     </a>\r\n                 </div>\r\n-            </form>\r\n     </div>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1740582422934,
