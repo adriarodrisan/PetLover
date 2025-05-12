@@ -249,6 +249,54 @@ function filtrarPerros() {
     });
 }
 </script>
+<div id="fichaAnimal" class="ficha-modal">
+  <div class="ficha-contenido">
+    <span class="cerrar-ficha" onclick="cerrarFicha()">&times;</span>
+    <div class="ficha-izquierda">
+      <img id="fichaImagen" src="" alt="Foto del animal">
+    </div>
+    <div class="ficha-derecha">
+      <h2 id="fichaNombre"></h2>
+      <p id="fichaInfo"></p>
+      <h4>Mi historia:</h4>
+      <p id="fichaHistoria" class="historia"></p>
+      <button class="btn-adoptar">❤️ Quiero Adoptar</button>
+    </div>
+  </div>
+</div>
+<script>
+const historiasPerros = {
+  "Kira": "Kira es un perro único con una historia que toca el corazón. Rescatado de una situación difícil, ha demostrado una increíble capacidad de adaptación y amor. Ahora, busca un hogar donde compartir su lealtad y energía.",
+  "Greta": "Greta es un perro único con una historia que toca el corazón...",
+  "Nerea": "Nerea es un perro único con una historia que toca el corazón...",
+  "Lia": "Lia es un perro único con una historia que toca el corazón...",
+  "Blue": "Blue es un perro único con una historia que toca el corazón...",
+  "Pan": "Pan es un perro único con una historia que toca el corazón...",
+  "Dragon": "Dragon es un perro único con una historia que toca el corazón...",
+  "Doris": "Doris es un perro único con una historia que toca el corazón...",
+  "Paulette": "Paulette es un perro único con una historia que toca el corazón...",
+  "Bruno": "Bruno es un perro único con una historia que toca el corazón...",
+  "Bola": "Bola es un perro único con una historia que toca el corazón...",
+  "Mattiz": "Mattiz es un perro único con una historia que toca el corazón...",
+  "Damarco": "Damarco es un perro único con una historia que toca el corazón...",
+  "Marcus": "Marcus es un perro único con una historia que toca el corazón...",
+  "Tanque": "Tanque es un perro único con una historia que toca el corazón...",
+  "Akana": "Akana es un perro único con una historia que toca el corazón...",
+  "Luar": "Luar es un perro único con una historia que toca el corazón...",
+  "Selva": "Selva es un perro único con una historia que toca el corazón...",
+  "Heros": "Heros es un perro único con una historia que toca el corazón...",
+  "Sol": "Sol es un perro único con una historia que toca el corazón...",
+  "Serah": "Serah es un perro único con una historia que toca el corazón...",
+  "Bindi": "Bindi es un perro único con una historia que toca el corazón...",
+  "Lola": "Lola es un perro único con una historia que toca el corazón...",
+  "Thor": "Thor es un perro único con una historia que toca el corazón...",
+  "Marina": "Marina es un perro único con una historia que toca el corazón...",
+  "Goliath": "Goliath es un perro único con una historia que toca el corazón...",
+  "Neo": "Neo es un perro único con una historia que toca el corazón...",
+  "Duna": "Duna es un perro único con una historia que toca el corazón...",
+  "Tita": "Tita es un perro único con una historia que toca el corazón...",
+  "Nudo": "Nudo es un perro único con una historia que toca el corazón..."
+};
 
 </body>
 </html>
