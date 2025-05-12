@@ -20,3 +20,15 @@ body.cuerpo {
     animation: fadeIn 0.7s ease-in-out;
     position: relative;
 }
+.alertas h1 {
+    color: #6d4c41;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.alertas h1::after {
+    content: ' 🐾';
+    font-size: 1.5rem;
+}
+
