@@ -32,3 +32,23 @@ body.cuerpo {
     font-size: 1.5rem;
 }
 
+.alertas a {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff9966;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.alertas a:hover {
+    background-color: #ff7043;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}

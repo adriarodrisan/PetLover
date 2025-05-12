@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1747060356027,
@@ -12,6 +12,10 @@
                 {
                     "date": 1747060390163,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,5 +18,17 @@\n     width: 90%;\r\n     border: 3px solid #ffcc99;\r\n     animation: fadeIn 0.7s ease-in-out;\r\n     position: relative;\r\n-}\n\\ No newline at end of file\n+}\r\n+.alertas h1 {\r\n+    color: #6d4c41;\r\n+    font-size: 2rem;\r\n+    margin-bottom: 20px;\r\n+    position: relative;\r\n+}\r\n+\r\n+.alertas h1::after {\r\n+    content: ' 🐾';\r\n+    font-size: 1.5rem;\r\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1747060541211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,4 +31,24 @@\n     content: ' 🐾';\r\n     font-size: 1.5rem;\r\n }\r\n \r\n+.alertas a {\r\n+    display: inline-block;\r\n+    margin-top: 20px;\r\n+    background-color: #ff9966;\r\n+    color: #fff;\r\n+    padding: 10px 20px;\r\n+    border-radius: 8px;\r\n+    text-decoration: none;\r\n+    font-weight: bold;\r\n+    transition: background-color 0.3s ease;\r\n+}\r\n+\r\n+.alertas a:hover {\r\n+    background-color: #ff7043;\r\n+}\r\n+\r\n+@keyframes fadeIn {\r\n+    from { opacity: 0; transform: translateY(-30px); }\r\n+    to { opacity: 1; transform: translateY(0); }\r\n+}\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1747060356027,
