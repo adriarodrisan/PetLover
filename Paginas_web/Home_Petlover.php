@@ -157,20 +157,23 @@
                 </div>
             </div>
     </section>
-    <script>
-let indiceCarrusel = 0;
+<script>
+  const carruseles = { gatos: 0, perros: 0 };
 
-function moverCarrusel(direccion) {
-  const carrusel = document.getElementById('carruselDestacados');
-  const totalSlides = carrusel.children.length;
+  function moverCarrusel(tipo, direccion) {
+    const carrusel = document.getElementById(`carrusel${tipo.charAt(0).toUpperCase() + tipo.slice(1)}`);
+    const totalSlides = carrusel.children.length;
+    const visibleSlides = window.innerWidth >= 768 ? 3 : 1;
+    const maxIndex = totalSlides - visibleSlides;
 
-  indiceCarrusel += direccion;
-  if (indiceCarrusel < 0) indiceCarrusel = totalSlides - 1;
-  if (indiceCarrusel >= totalSlides) indiceCarrusel = 0;
+    carruseles[tipo] += direccion;
 
-  const slideWidth = carrusel.children[0].offsetWidth;
-  carrusel.style.transform = `translateX(-${indiceCarrusel * slideWidth}px)`;
-}
+    if (carruseles[tipo] < 0) carruseles[tipo] = 0;
+    if (carruseles[tipo] > maxIndex) carruseles[tipo] = maxIndex;
+
+    const slideWidth = carrusel.children[0].offsetWidth + 30;
+    carrusel.style.transform = `translateX(-${carruseles[tipo] * slideWidth}px)`;
+  }
 </script>
 
     
