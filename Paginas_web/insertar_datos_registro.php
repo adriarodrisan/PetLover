@@ -32,8 +32,8 @@ $telefono= trim($_POST['telefono']);
 $correo= trim($_POST['correo']);
 $contrasena= trim($_POST['contrasena']);
 $confirmar_contrasena= trim($_POST['confirmar_contrasena']);
-$requisitos_dni= null ;
-$requisitos_telefono= "/^[" ;
+$requisitos_dni= "/^\d{8}[A-Za-z]$/";
+$requisitos_telefono= "/^[679]\d{8}$/" ;
 $requisitos_correo= "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%+-]+\.[a-zA-Z]{2,}$/";
 $requisitos_contrasena= "/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[a-zA-Z\d@$!%*?&]{8,}$/" ;
 //revisar que los campos no sean null
@@ -49,7 +49,7 @@ if ($contrasena !== $confirmar_contrasena){
 }
 
 //verificar si el mail esta registrado
-$registros_adoptate = $db->prepare("SELECT * FROM adoptante WHERE Correo = :correo");
+$registros_adoptate = $db->prepare("SELECT * FROM Adoptante WHERE Correo = :correo");
 $registros_adoptate ->bindParam(':correo', $correo);
 $registros_adoptate ->execute();
 //$verificar_correo_usuario = "SELECT * FROM adoptante WHERE Correo = '$correo'";
@@ -59,7 +59,7 @@ if ($registros_adoptate->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
-$registros_protectora = $db->prepare("SELECT * FROM refugio WHERE Correo = :correo");
+$registros_protectora = $db->prepare("SELECT * FROM Refugio WHERE Correo = :correo");
 $registros_protectora ->bindParam(':correo', $correo);
 $registros_protectora ->execute();
 //$verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
@@ -71,7 +71,7 @@ if ($registros_protectora->rowCount() > 0) {
 }
 //hashear pass
 $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
-$registrar_usuarios = $db->prepare("INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES (:dni, :nombre,:telefono,:correo,:contrasena)");
+$registrar_usuarios = $db->prepare("INSERT INTO Adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES (:dni, :nombre,:telefono,:correo,:contrasena)");
 $registrar_usuarios ->bindParam(':dni', $dni);
 $registrar_usuarios ->bindParam(':nombre', $nombre);
 $registrar_usuarios ->bindParam(':correo', $correo);

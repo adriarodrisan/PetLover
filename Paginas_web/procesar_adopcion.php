@@ -95,7 +95,7 @@ if ($id_adoptante->rowCount() < 1) {
 }*/
 
 //datos insertado
-$registrar_adopcion = $db->prepare("INSERT INTO adopciones (nombre_adoptante, apellido_adoptante, dni, direccion, telefono, correo, nombre_animal, especie, raza, sexo, compromisos) 
+$registrar_adopcion = $db->prepare("INSERT INTO Adopciones (nombre_adoptante, apellido_adoptante, dni, direccion, telefono, correo, nombre_animal, especie, raza, sexo, compromisos) 
                                     VALUES (:nombre, :apellido, :dni, :direccion, :telefono, :correo, :nombre_animal, :especie, :raza, :sexo, :compromisos)");
 $registrar_adopcion ->bindParam(':nombre', $nombre);
 $registrar_adopcion ->bindParam(':apellido', $apellido);

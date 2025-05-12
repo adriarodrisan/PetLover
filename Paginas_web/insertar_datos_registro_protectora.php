@@ -43,7 +43,7 @@ if ($contrasena !== $confirmar_contrasena){
     exit;
 }
 //verificar si el mail esta registrado
-$registros_adoptate = $db->prepare("SELECT * FROM adoptante WHERE Correo = :correo");
+$registros_adoptate = $db->prepare("SELECT * FROM Adoptante WHERE Correo = :correo");
 $registros_adoptate ->bindParam(':correo', $correo);
 $registros_adoptate ->execute();
 //$verificar_correo_usuario = "SELECT * FROM adoptante WHERE Correo = '$correo'";
@@ -53,7 +53,7 @@ if ($registros_adoptate->rowCount() > 0) {
     echo "Este correo ya esta registrado, por favor, intelo con otro correo";
     exit;
 }
-$registros_protectora = $db->prepare("SELECT * FROM refugio WHERE Correo = :correo");
+$registros_protectora = $db->prepare("SELECT * FROM Refugio WHERE Correo = :correo");
 $registros_protectora ->bindParam(':correo', $correo);
 $registros_protectora ->execute();
 //$verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
@@ -65,7 +65,7 @@ if ($registros_protectora->rowCount() > 0) {
 }
 //hashear pass
 $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
-$registrar_usuarios = $db->prepare("INSERT INTO refugio (Nombre, Ciudad, Correo, Contraseña) VALUES (:nombre,:ciudad,:correo,:contrasena)");
+$registrar_usuarios = $db->prepare("INSERT INTO Refugio (Nombre, Ciudad, Correo, Contraseña) VALUES (:nombre,:ciudad,:correo,:contrasena)");
 $registrar_usuarios ->bindParam(':nombre', $nombre);
 $registrar_usuarios ->bindParam(':correo', $correo);
 $registrar_usuarios ->bindParam(':ciudad', $ciudad);
