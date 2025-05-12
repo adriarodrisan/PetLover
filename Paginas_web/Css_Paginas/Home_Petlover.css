@@ -349,3 +349,28 @@ header{
 .tarjeta-testimonio:hover {
   transform: translateY(-5px);
 }
+.paso {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  max-width: 280px;
+  flex: 1 1 260px;
+  transition: transform 0.2s ease;
+}
+
+.paso:hover {
+  transform: translateY(-5px);
+}
+
+.paso h3 {
+  font-size: 1.2rem;
+  color: #d2691e;
+  margin-bottom: 10px;
+}
+
+.paso p {
+  font-size: 1rem;
+  color: #6d4c41;
+  margin: 0;
+}
