@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 34,
+            "activePatchIndex": 35,
             "patches": [
                 {
                     "date": 1745600619213,
@@ -144,6 +144,10 @@
                 {
                     "date": 1747012708791,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -289,4 +289,11 @@\n   }\r\n   .carrusel-btn.next {\r\n     right: 10px;\r\n   }\r\n+.hero-video-section {\r\n+  background: linear-gradient(to bottom, #ffe5b4, #fff8f0);\r\n+  padding: 40px 20px 80px; /* top reducido de 60px → 40px */\r\n+  display: flex;\r\n+  justify-content: center;\r\n+  align-items: flex-start;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1747012740443,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -295,5 +295,15 @@\n   padding: 40px 20px 80px; \r\n   display: flex;\r\n   justify-content: center;\r\n   align-items: flex-start;\r\n+}\r\n+.hero-video-card {\r\n+  background: rgba(255, 255, 255, 0.95); \r\n+  border-radius: 20px;\r\n+  padding: 40px;\r\n+  max-width: 1000px;\r\n+  width: 100%;\r\n+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);\r\n+  text-align: center;\r\n+  backdrop-filter: blur(4px);\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1745600619213,
