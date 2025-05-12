@@ -52,3 +52,17 @@ body.cuerpo {
     from { opacity: 0; transform: translateY(-30px); }
     to { opacity: 1; transform: translateY(0); }
 }
+.alertas.error {
+    border: 3px solid #e57373;
+    background-color: #fff0f0;
+}
+
+.alertas.error h1 {
+    color: #d32f2f;
+}
+
+.alertas.error p {
+    color: #6d4c41;
+    font-size: 1rem;
+    margin: 15px 0;
+}

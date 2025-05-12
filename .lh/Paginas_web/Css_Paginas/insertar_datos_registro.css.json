@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1747060356027,
@@ -16,6 +16,10 @@
                 {
                     "date": 1747060541211,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,4 +31,24 @@\n     content: ' 🐾';\r\n     font-size: 1.5rem;\r\n }\r\n \r\n+.alertas a {\r\n+    display: inline-block;\r\n+    margin-top: 20px;\r\n+    background-color: #ff9966;\r\n+    color: #fff;\r\n+    padding: 10px 20px;\r\n+    border-radius: 8px;\r\n+    text-decoration: none;\r\n+    font-weight: bold;\r\n+    transition: background-color 0.3s ease;\r\n+}\r\n+\r\n+.alertas a:hover {\r\n+    background-color: #ff7043;\r\n+}\r\n+\r\n+@keyframes fadeIn {\r\n+    from { opacity: 0; transform: translateY(-30px); }\r\n+    to { opacity: 1; transform: translateY(0); }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1747060964856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,5 +50,19 @@\n \r\n @keyframes fadeIn {\r\n     from { opacity: 0; transform: translateY(-30px); }\r\n     to { opacity: 1; transform: translateY(0); }\r\n-}\n\\ No newline at end of file\n+}\r\n+.alertas.error {\r\n+    border: 3px solid #e57373;\r\n+    background-color: #fff0f0;\r\n+}\r\n+\r\n+.alertas.error h1 {\r\n+    color: #d32f2f;\r\n+}\r\n+\r\n+.alertas.error p {\r\n+    color: #6d4c41;\r\n+    font-size: 1rem;\r\n+    margin: 15px 0;\r\n+}\r\n"
                 }
             ],
             "date": 1747060356027,
