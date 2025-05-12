@@ -47,67 +47,67 @@
   <div class="carrusel" id="carruselGatos">
 
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="ari.jpeg" alt="Ari"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/ari.jpeg" alt="Ari"></div>
       <div class="nombre-mascota">Ari</div>
       <p class="descripcion-mascota">Curiosa y muy dulce.</p>
     </div>
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="carey.jpeg" alt="Greta"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/carey.jpeg" alt="Greta"></div>
       <div class="nombre-mascota">Greta</div>
       <p class="descripcion-mascota">Mimosa y tranquila.</p>
     </div>
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="cat1.png" alt="Jeni"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/cat1.png" alt="Jeni"></div>
       <div class="nombre-mascota">Jeni</div>
       <p class="descripcion-mascota">Discreta y adorable.</p>
     </div>
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="cat2.png" alt="Cookie"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/cat2.png" alt="Cookie"></div>
       <div class="nombre-mascota">Cookie</div>
       <p class="descripcion-mascota">Muy amorosa y calmada.</p>
     </div>
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="Chispa.jpg" alt="Falcon"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/Chispa.jpg" alt="Falcon"></div>
       <div class="nombre-mascota">Falcon</div>
       <p class="descripcion-mascota">Leal y silencioso.</p>
     </div>
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="cookie.jpeg" alt="Eureka"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/cookie.jpeg" alt="Eureka"></div>
       <div class="nombre-mascota">Eureka</div>
       <p class="descripcion-mascota">Curiosa y muy despierta.</p>
     </div>
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="enxeneta.jpeg" alt="Missi"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/enxeneta.jpeg" alt="Missi"></div>
       <div class="nombre-mascota">Missi</div>
       <p class="descripcion-mascota">Pequeña y mimosa.</p>
     </div>
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="eureka.jpeg" alt="Nit"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/eureka.jpeg" alt="Nit"></div>
       <div class="nombre-mascota">Nit</div>
       <p class="descripcion-mascota">Silenciosa y buena compañera.</p>
     </div>
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="falccon.jpeg" alt="Ray"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/falccon.jpeg" alt="Ray"></div>
       <div class="nombre-mascota">Ray</div>
       <p class="descripcion-mascota">Un gato observador y tranquilo.</p>
     </div>
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="goku.jpeg" alt="Roscon"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/goku.jpeg" alt="Roscon"></div>
       <div class="nombre-mascota">Roscon</div>
       <p class="descripcion-mascota">Grande y bonachón.</p>
     </div>
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="heros.jpg" alt="Palomilla"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/heros.jpg" alt="Palomilla"></div>
       <div class="nombre-mascota">Palomilla</div>
       <p class="descripcion-mascota">Tierna y dormilona.</p>
     </div>
     <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="isis.png" alt="Vegeta"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/isis.png" alt="Vegeta"></div>
       <div class="nombre-mascota">Vegeta</div>
       <p class="descripcion-mascota">Un alma noble en busca de hogar.</p>
     </div>
       <div class="carrusel-slide">
-      <div class="carrusel-img-wrapper"><img src="ivana.jpg" alt="Vegeta"></div>
+      <div class="carrusel-img-wrapper"><img src="./Imagenes_Animales/gatos/ivana.jpg" alt="Vegeta"></div>
       <div class="nombre-mascota">Vegeta</div>
       <p class="descripcion-mascota">Un alma noble en busca de hogar.</p>
     </div>
