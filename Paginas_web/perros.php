@@ -47,7 +47,7 @@
             <option value="adulto">Adulto (1-7 años)</option>
             <option value="senior"> Senior (+7 años)</option>
         </select>
-        <button onclick="filtrarPerror()">Buscar</button>
+        <button onclick="filtrarPerros()">Buscar</button>
     </section>
     <section class="lista-perros" id="lista-perros">
         <div class="tarjeta-perro">
