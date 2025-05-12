@@ -231,18 +231,46 @@
 </section>
 
 <!-- 🐾 Sección de comentarios de Adoptantes (en preparación) -->
-    <section class=" seccion-testimonios">
-        <h2>💬comentarios de nuestros Adoptantes </h2>
-        <p>Lo que dicen las personas que han encontrado su mejor amigo en PetLover.</p>
-        <div class="tarjeta-testimonio">
-            <p>"Adopté a Max hace 6 meses y es la mejor decisión que he tomado."</p>
-            <h4>- Sofía G.</h4>
-        </div>
-        <div class="tarjeta-testimonio">
-            <p>"Gracias a PetLover encontré a Luna, mi compañera de vida."</p>
-            <h4>- Carlos P.</h4>
-        </div>
-    </section>  
+<section class="seccion-testimonios">
+  <h2>💬 Comentarios de nuestros Adoptantes</h2>
+  <p>Lo que dicen las personas que han encontrado su mejor amigo en PetLover.</p>
+
+  <div class="contenedor-testimonios">
+    <div class="tarjeta-testimonio">
+      <p>"Adopté a Max hace 6 meses y es la mejor decisión que he tomado."</p>
+      <h4>- Sofía G.</h4>
+    </div>
+    <div class="tarjeta-testimonio">
+      <p>"Gracias a PetLover encontré a Luna, mi compañera de vida."</p>
+      <h4>- Carlos P.</h4>
+    </div>
+    <div class="tarjeta-testimonio">
+      <p>"Me enamoré de Bruno apenas lo vi en la web. Hoy no me imagino la casa sin él."</p>
+      <h4>- Marta L.</h4>
+    </div>
+    <div class="tarjeta-testimonio">
+      <p>"El proceso fue sencillo y claro. Ahora Toby me acompaña a todas partes."</p>
+      <h4>- Andrés M.</h4>
+    </div>
+    <div class="tarjeta-testimonio">
+      <p>"La atención del equipo fue excelente. Adoptamos a Nala y fue amor a primera vista."</p>
+      <h4>- Daniela y Javi</h4>
+    </div>
+    <div class="tarjeta-testimonio">
+      <p>"Mi hija y yo estábamos nerviosas por adoptar, pero PetLover nos acompañó en todo momento."</p>
+      <h4>- Clara S.</h4>
+    </div>
+    <div class="tarjeta-testimonio">
+      <p>"Nunca imaginé cuánto amor recibiríamos de Rocky. ¡Gracias PetLover!"</p>
+      <h4>- Elena V.</h4>
+    </div>
+    <div class="tarjeta-testimonio">
+      <p>"PetLover hizo que el proceso de adopción fuera tan fácil y cálido. Milo es un sol."</p>
+      <h4>- Tomás F.</h4>
+    </div>
+  </div>
+</section>
+ 
         <!-- 📍 Cómo Adoptar -->
     <section class="seccion-adopcion">
         <h2>📍 Cómo Adoptar</h2>
