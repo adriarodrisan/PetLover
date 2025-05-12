@@ -297,6 +297,27 @@ const historiasPerros = {
   "Tita": "Tita es un perro único con una historia que toca el corazón...",
   "Nudo": "Nudo es un perro único con una historia que toca el corazón..."
 };
+function mostrarFicha(nombre, imagen, info) {
+  document.getElementById("fichaNombre").innerText = nombre;
+  document.getElementById("fichaImagen").src = imagen;
+  document.getElementById("fichaInfo").innerText = info;
+  document.getElementById("fichaHistoria").innerText = historiasPerros[nombre] || "Este animal tiene mucho amor que dar. Ven a conocerlo.";
+  document.getElementById("fichaAnimal").style.display = "block";
+}
+
+function cerrarFicha() {
+  document.getElementById("fichaAnimal").style.display = "none";
+}
+
+document.querySelectorAll('.tarjeta-perro').forEach(card => {
+  card.querySelector('button').addEventListener('click', () => {
+    const nombre = card.querySelector('h4').innerText;
+    const imagen = card.querySelector('img').src;
+    const info = card.querySelector('p').innerText;
+    mostrarFicha(nombre, imagen, info);
+  });
+});
+</script>
 
 </body>
 </html>
