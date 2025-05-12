@@ -261,7 +261,32 @@ const historiasGatos = {
   "Luna": "Luna fue rescatada siendo una cría. Ahora es una gata tranquila que ama dormir en el regazo.",
   "Heros": "Siempre curioso y observador, Heros se ha convertido en el alma del refugio.",
   "Isis": "Con mirada sabia, Isis es ideal para hogares tranquilos. Su ronroneo es pura magia.",
-  // Pruebas
+  "Ivana": "Ivana es una exploradora nata, siempre buscando nuevas aventuras en cada rincón.",
+  "Jeni": "Jeni es una dulce compañera que disfruta de las caricias y largas siestas al sol.",
+  "Kira": "Pequeña pero valiente, Kira conquista corazones con su energía y ternura.",
+  "Lupita": "Lupita es juguetona y cariñosa, siempre lista para compartir momentos de alegría.",
+  "Mami": "Mami, con su pelaje suave, es una madre amorosa que busca un hogar lleno de amor.",
+  "Nit": "Nit es un gato tranquilo que disfruta de la compañía humana y de un buen descanso.",
+  "Palomilla": "Palomilla es curiosa y activa, siempre en movimiento y descubriendo cosas nuevas.",
+  "Parda": "Parda es una gata elegante y serena, perfecta para un hogar apacible.",
+  "Robison": "Robison es un aventurero que adora explorar y jugar sin parar.",
+  "Telerin": "Telerin es un gato sociable que busca constantemente la atención y el cariño.",
+  "Tigresa": "Tigresa, con su mirada intensa, es una gata independiente y segura de sí misma.",
+  "Yeka": "Yeka es una gata dulce que disfruta de las caricias y de la tranquilidad del hogar.",
+  "Ari": "Ari es juguetona y curiosa, siempre lista para una nueva aventura.",
+  "Chispa": "Chispa ilumina el día con su energía y alegría contagiosa.",
+  "Sarabi": "Sarabi es una gata noble y protectora, siempre atenta a su entorno.",
+  "Cookie": "Cookie es un gato encantador que adora los mimos y las golosinas.",
+  "Joy": "Joy es un gato alegre que llena de felicidad a quienes lo rodean.",
+  "Caray": "Caray es una gata elegante y cariñosa, ideal para un hogar amoroso.",
+  "Ray": "Ray es un gato activo y juguetón que busca un compañero de juegos.",
+  "Paulina": "Paulina es una gata tranquila que disfruta de la calma y la compañía.",
+  "Falcon": "Falcon es un gato curioso que siempre está explorando su entorno.",
+  "Vegeta": "Vegeta es un gato fuerte y decidido, con un corazón lleno de amor.",
+  "Goku": "Goku es un gato valiente y juguetón, siempre listo para la acción.",
+  "Eureka": "Eureka es una gata inteligente y observadora, siempre descubriendo cosas nuevas.",
+  "Enxeneta": "Enxeneta es una gata ágil y curiosa, amante de las alturas y las aventuras.",
+  "Missi": "Missi es una gata dulce y cariñosa que busca un hogar lleno de amor."
 };
   function mostrarFicha(nombre, imagen, info) {
   document.getElementById("fichaNombre").innerText = nombre;
