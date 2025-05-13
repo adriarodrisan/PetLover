@@ -31,13 +31,23 @@ if ($datos_animales->rowCount()>0){
     echo "Este animal ya esta registrado porfavor revise el numero de chip que puede estar equivocado.";
     exit;
 }
+$consulta_raza = $db->prepare("SELECT ID FROM Raza WHERE Nombre_Raza = :nombre");
+$consulta_raza-> bindParam(':nombre',$raza);
+$consulta_raza-> execute();
+$id_raza= $consulta_raza->fetch(PDO::FETCH_ASSOC);
+$raza= $id_raza['ID'];
+$consulta_especie = $db->prepare("SELECT ID FROM Especie WHERE Nombre_Especie = :nombre");
+$consulta_especie-> bindParam(':nombre',$especie);
+$consulta_especie-> execute();
+$id_especie= $consulta_especie->fetch(PDO::FETCH_ASSOC);
+$especie= $id_especie['ID'];
 $nombre_protectora = $_COOKIE['nombre'] ?? null;
 $datos_protectora= $db->query("SELECT ID FROM Refugio WHERE  Nombre= '$nombre_protectora'");
 $datos_protectora-> execute();
 $id_protectora = $datos_protectora->fetch(PDO::FETCH_ASSOC);
 $protectora= $id_protectora['ID'];
 $insert = $db->prepare("INSERT INTO Animal (Chip_ID, Nombre, Especie, raza, FechaNacimiento, Sexo, Peso, Estado, ID_refugio, Imagen) VALUES (:chip, :nombre, :especie, :raza, :fecha, :sexo, :peso, :estado, :refugio, :imagen)");
-$insert->execute([
+$insert->bindParam([
     ':chip' => $chip,
     ':nombre' => $nombre,
     ':especie' => $especie,
@@ -49,6 +59,7 @@ $insert->execute([
     ':refugio' => $id_protectora,
     ':imagen' => $rutaDestino
 ]);
+    if($insert->execute()){
     echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
