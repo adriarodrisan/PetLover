@@ -24,10 +24,10 @@ if(empty($chip)|| empty($nombre)|| empty($especie)|| empty($raza)|| empty($fecha
     exit;
 }
 //verificar que no hay dos chips iguales
-$datos_animales = $db->prepare("SELECT * FROM Animal WHERE Chip_ID = :chip");
+$datos_animales = $db->prepare("SELECT COUNT(*) FROM Animal WHERE Chip_ID = :chip");
 $datos_animales->bindParam(':chip', $chip);
 $datos_animales-> execute();
-if ($datos_animales->rowCount()>0){
+if ($datos_animales->fetchColumn()>0){
     echo "Este animal ya esta registrado porfavor revise el numero de chip que puede estar equivocado.";
     exit;
 }
