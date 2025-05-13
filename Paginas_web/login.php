@@ -66,6 +66,7 @@ $registros_protectora ->execute();
 if ($registros_protectora->rowCount() > 0) {
     $fila = $registros_protectora->fetch(PDO::FETCH_ASSOC);
     if (password_verify($contrasena, $fila['Contraseña'])) {
+        $nombre= $fila['Nombre'];
         setcookie("rol", "protectora", time() + (3600), "/");
         setcookie("nombre",$nombre, time() + (86400 * 30), "/"); 
         echo '<!DOCTYPE html>

@@ -24,7 +24,8 @@ if(empty($chip)|| empty($nombre)|| empty($especie)|| empty($raza)|| empty($fecha
     exit;
 }
 //verificar que no hay dos chips iguales
-$datos_animales= $db->query("SELECT * FROM Animal WHERE  Chip_ID= '$chip' ");
+$datos_animales = $db->prepare("SELECT * FROM Animal WHERE Chip_ID = :chip");
+$datos_animales->bindParam(':chip', $chip);
 $datos_animales-> execute();
 if ($datos_animales->rowCount()>0){
     echo "Este animal ya esta registrado porfavor revise el numero de chip que puede estar equivocado.";
@@ -35,8 +36,19 @@ $datos_protectora= $db->query("SELECT ID FROM Refugio WHERE  Nombre= '$nombre_pr
 $datos_protectora-> execute();
 $id_protectora = $datos_protectora->fetch(PDO::FETCH_ASSOC);
 $protectora= $id_protectora['ID'];
-$registrar_animales= $db->query("INSERT INTO Animal (Chip_ID, Nombre, Especie, raza, FechaNacimiento, Sexo, Peso, Estado, ID_refugio, Imagen) VALUES ('$chip','$nombre','$especie','$raza','$fecha_nacimiento','$sexo','$peso','$estado','$protectora','$imagen')");
-if ($registrar_animales->execute()){
+$insert = $db->prepare("INSERT INTO Animal (Chip_ID, Nombre, Especie, raza, FechaNacimiento, Sexo, Peso, Estado, ID_refugio, Imagen) VALUES (:chip, :nombre, :especie, :raza, :fecha, :sexo, :peso, :estado, :refugio, :imagen)");
+$insert->execute([
+    ':chip' => $chip,
+    ':nombre' => $nombre,
+    ':especie' => $especie,
+    ':raza' => $raza,
+    ':fecha' => $fecha_nacimiento,
+    ':sexo' => $sexo,
+    ':peso' => $peso,
+    ':estado' => $estado,
+    ':refugio' => $id_protectora,
+    ':imagen' => $rutaDestino
+]);
     echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
@@ -54,6 +66,6 @@ if ($registrar_animales->execute()){
             ';
             exit;
 }else{
-    echo "Error al registrar usuario: ". mysqli_error();
+    echo "Error al registrar usuario: ". db->errorInfo()[2];
 }
 ?>
