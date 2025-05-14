@@ -19,8 +19,8 @@ try {
     $mail->addAddress($correo, $nombre);
 
     $mail->isHTML(true);                              
-    $mail->Subject = "pruebas de envio de correos con el inicio de session";
-    $mail->Body    = 'pruebas de envio';
+    $mail->Subject = "Gracias por registrarte $nombre";
+    $mail->Body    = 'Gracias por colaborar con nuestra causa y valores frente a los Animales que necessita un hogar';
     $mail->send();
 } catch (Exception $e) {
     echo "Mensaje no enviado. Mailer Error: {$mail->ErrorInfo}";
