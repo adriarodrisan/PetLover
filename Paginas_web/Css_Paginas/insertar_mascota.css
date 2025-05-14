@@ -1,0 +1,21 @@
+body.cuerpo {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFE5B4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.alertas {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    max-width: 500px;
+    width: 90%;
+}
+
