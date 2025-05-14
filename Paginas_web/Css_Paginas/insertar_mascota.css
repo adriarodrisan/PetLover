@@ -18,4 +18,24 @@ body.cuerpo {
     max-width: 500px;
     width: 90%;
 }
+.alertas h1 {
+    color: #6D4C41;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.alertas a {
+    text-decoration: none;
+    background-color: #FF9966;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.alertas a:hover {
+    background-color: #FF7043;
+}
+
 
