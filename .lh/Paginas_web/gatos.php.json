@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 35,
+            "activePatchIndex": 39,
             "patches": [
                 {
                     "date": 1746711090846,
@@ -148,6 +148,22 @@
                 {
                     "date": 1747233141381,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -260,9 +260,9 @@\n <script>\r\n const historiasGatos = {\r\n   \"Milo\": \"Milo fue encontrado en un parque en una noche lluviosa. A pesar del frío, no perdió su ternura.\",\r\n   \"Luna\": \"Luna fue rescatada siendo una cría. Ahora es una gata tranquila que ama dormir en el regazo.\",\r\n-  \"Heros\": \"Siempre curioso y observador, Heros se ha convertido en el alma del refugio.\",\r\n+  \"Roscon\": \"Siempre curioso y observador, Roscon se ha convertido en el alma del refugio.\",\r\n   \"Isis\": \"Con mirada sabia, Isis es ideal para hogares tranquilos. Su ronroneo es pura magia.\",\r\n   \"Ivana\": \"Ivana es una exploradora nata, siempre buscando nuevas aventuras en cada rincón.\",\r\n   \"Jeni\": \"Jeni es una dulce compañera que disfruta de las caricias y largas siestas al sol.\",\r\n   \"Kira\": \"Pequeña pero valiente, Kira conquista corazones con su energía y ternura.\",\r\n"
+                },
+                {
+                    "date": 1747233360057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n             <button>Saber más</button>\r\n         </div>\r\n         <div class=\"cat-card\">\r\n             <img src=\"./Imagenes_Animales/gatos/marioli.jpeg\" alt=\"Gato en adopción\">\r\n-            <h4>Luna</h4>\r\n+            <h4>Marioli</h4>\r\n             <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>\r\n             <button>Saber más</button>\r\n         </div>\r\n         <div class=\"cat-card\">\r\n@@ -259,9 +259,9 @@\n </div>\r\n <script>\r\n const historiasGatos = {\r\n   \"Milo\": \"Milo fue encontrado en un parque en una noche lluviosa. A pesar del frío, no perdió su ternura.\",\r\n-  \"Luna\": \"Luna fue rescatada siendo una cría. Ahora es una gata tranquila que ama dormir en el regazo.\",\r\n+  \"Marioli\": \"Marioli fue rescatada siendo una cría. Ahora es una gata tranquila que ama dormir en el regazo.\",\r\n   \"Roscon\": \"Siempre curioso y observador, Roscon se ha convertido en el alma del refugio.\",\r\n   \"Isis\": \"Con mirada sabia, Isis es ideal para hogares tranquilos. Su ronroneo es pura magia.\",\r\n   \"Ivana\": \"Ivana es una exploradora nata, siempre buscando nuevas aventuras en cada rincón.\",\r\n   \"Jeni\": \"Jeni es una dulce compañera que disfruta de las caricias y largas siestas al sol.\",\r\n"
+                },
+                {
+                    "date": 1747233620832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n         </div>\r\n         <div class=\"cat-card\">\r\n             <img src=\"./Imagenes_Animales/gatos/kira.jpg\" alt=\"Gato en adopción\">\r\n             <h4>Kira</h4>\r\n-            <p>Raza: Europeo | Fecha de nacimiento: 07/2025 | Tamaño: Pequeño | Sexo: Hembra</p>\r\n+            <p>Raza: Europeo | Fecha de nacimiento: 04/2025 | Tamaño: Pequeño | Sexo: Hembra</p>\r\n             <button>Saber más</button>\r\n         </div>\r\n         <div class=\"cat-card\">\r\n             <img src=\"./Imagenes_Animales/gatos/lupita.jpeg\" alt=\"Gato en adopción\">\r\n"
+                },
+                {
+                    "date": 1747233706106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n     </section>\r\n     <section class=\"cat-list\" id=\"cat-list\">\r\n         <div class=\"cat-card\">\r\n             <img src=\"./Imagenes_Animales/gatos/thom.jpg\" alt=\"Gato en adopción\">\r\n-            <h4>Milo</h4>\r\n+            <h4>Thom</h4>\r\n             <p>Raza: Europeo | Fecha de nacimiento: 02/2024 | Tamaño: Mediano | Sexo: Macho</p>\r\n             <button>Saber más</button>\r\n         </div>\r\n         <div class=\"cat-card\">\r\n"
+                },
+                {
+                    "date": 1747233721027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -258,9 +258,9 @@\n   </div>\r\n </div>\r\n <script>\r\n const historiasGatos = {\r\n-  \"Milo\": \"Milo fue encontrado en un parque en una noche lluviosa. A pesar del frío, no perdió su ternura.\",\r\n+  \"Thom\": \"Thom fue encontrado en un parque en una noche lluviosa. A pesar del frío, no perdió su ternura.\",\r\n   \"Marioli\": \"Marioli fue rescatada siendo una cría. Ahora es una gata tranquila que ama dormir en el regazo.\",\r\n   \"Roscon\": \"Siempre curioso y observador, Roscon se ha convertido en el alma del refugio.\",\r\n   \"Isis\": \"Con mirada sabia, Isis es ideal para hogares tranquilos. Su ronroneo es pura magia.\",\r\n   \"Ivana\": \"Ivana es una exploradora nata, siempre buscando nuevas aventuras en cada rincón.\",\r\n"
                 }
             ],
             "date": 1746711090846,

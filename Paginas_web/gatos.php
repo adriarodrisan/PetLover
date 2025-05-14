@@ -44,13 +44,13 @@
     <section class="cat-list" id="cat-list">
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/thom.jpg" alt="Gato en adopción">
-            <h4>Milo</h4>
+            <h4>Thom</h4>
             <p>Raza: Europeo | Fecha de nacimiento: 02/2024 | Tamaño: Mediano | Sexo: Macho</p>
             <button>Saber más</button>
         </div>
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/marioli.jpeg" alt="Gato en adopción">
-            <h4>Luna</h4>
+            <h4>Marioli</h4>
             <p>Raza: Europeo | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
@@ -81,7 +81,7 @@
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/kira.jpg" alt="Gato en adopción">
             <h4>Kira</h4>
-            <p>Raza: Europeo | Fecha de nacimiento: 07/2025 | Tamaño: Pequeño | Sexo: Hembra</p>
+            <p>Raza: Europeo | Fecha de nacimiento: 04/2025 | Tamaño: Pequeño | Sexo: Hembra</p>
             <button>Saber más</button>
         </div>
         <div class="cat-card">
@@ -259,8 +259,8 @@ function filtrarGatos() {
 </div>
 <script>
 const historiasGatos = {
-  "Milo": "Milo fue encontrado en un parque en una noche lluviosa. A pesar del frío, no perdió su ternura.",
-  "Luna": "Luna fue rescatada siendo una cría. Ahora es una gata tranquila que ama dormir en el regazo.",
+  "Thom": "Thom fue encontrado en un parque en una noche lluviosa. A pesar del frío, no perdió su ternura.",
+  "Marioli": "Marioli fue rescatada siendo una cría. Ahora es una gata tranquila que ama dormir en el regazo.",
   "Roscon": "Siempre curioso y observador, Roscon se ha convertido en el alma del refugio.",
   "Isis": "Con mirada sabia, Isis es ideal para hogares tranquilos. Su ronroneo es pura magia.",
   "Ivana": "Ivana es una exploradora nata, siempre buscando nuevas aventuras en cada rincón.",
