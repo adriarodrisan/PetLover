@@ -50,7 +50,7 @@ $protectora= $id_protectora['ID'];
 $rutaDestino = 'uploads/' . basename($_FILES['Imagen']['name']);
 move_uploaded_file($_FILES['Imagen']['tmp_name'], $rutaDestino);
 $insert = $db->prepare("INSERT INTO Animal (Chip_ID, Nombre, Especie, raza, FechaNacimiento, Sexo, Peso, Estado, ID_refugio, Imagen) VALUES (:chip, :nombre, :especie, :raza, :fecha, :sexo, :peso, :estado, :refugio, :imagen)");
-$insert->bindParam([
+if($insert->execute([
     ':chip' => $chip,
     ':nombre' => $nombre,
     ':especie' => $especie,
@@ -59,17 +59,16 @@ $insert->bindParam([
     ':sexo' => $sexo,
     ':peso' => $peso,
     ':estado' => $estado,
-    ':refugio' => $id_protectora,
+    ':refugio' => $protectora,
     ':imagen' => $rutaDestino
-]);
-    if($insert->execute()){
+    ])
+    ){
     echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>Registro Del Animal Exitoso</title>
-                    
                 </head>
                 <body class="cuerpo">
                     <div class="alertas">
