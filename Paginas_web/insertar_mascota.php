@@ -42,10 +42,13 @@ $consulta_especie-> execute();
 $id_especie= $consulta_especie->fetch(PDO::FETCH_ASSOC);
 $especie= $id_especie['ID'];
 $nombre_protectora = $_COOKIE['nombre'] ?? null;
-$datos_protectora= $db->query("SELECT ID FROM Refugio WHERE  Nombre= '$nombre_protectora'");
+$datos_protectora= $db->prepare("SELECT ID FROM Refugio WHERE  Nombre= :nombre");
+$datos_protectora-> bindParam(':nombre',$nombre_protectora);
 $datos_protectora-> execute();
 $id_protectora = $datos_protectora->fetch(PDO::FETCH_ASSOC);
 $protectora= $id_protectora['ID'];
+$rutaDestino = 'uploads/' . basename($_FILES['Imagen']['name']);
+move_uploaded_file($_FILES['Imagen']['tmp_name'], $rutaDestino);
 $insert = $db->prepare("INSERT INTO Animal (Chip_ID, Nombre, Especie, raza, FechaNacimiento, Sexo, Peso, Estado, ID_refugio, Imagen) VALUES (:chip, :nombre, :especie, :raza, :fecha, :sexo, :peso, :estado, :refugio, :imagen)");
 $insert->bindParam([
     ':chip' => $chip,
