@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 33,
+            "activePatchIndex": 35,
             "patches": [
                 {
                     "date": 1746711090846,
@@ -140,6 +140,14 @@
                 {
                     "date": 1747017157269,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,11 @@\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Gatos en Adopción - Petlover</title>\r\n     <link rel=\"stylesheet\" href=\"./Css_Paginas/gatos.css\">\r\n+ <link href=\"https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap\" rel=\"stylesheet\">\r\n </head>\r\n+</head>\r\n <body>\r\n     <header>\r\n     <?php\r\n         include 'navbar.php';\r\n"
+                },
+                {
+                    "date": 1747233125851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n             <button>Saber más</button>\r\n         </div>\r\n         <div class=\"cat-card\">\r\n             <img src=\"./Imagenes_Animales/gatos/roscon.jpeg\" alt=\"Gato en adopción\">\r\n-            <h4>Heros</h4>\r\n+            <h4>Roscon</h4>\r\n             <p>Raza: Europeo | Fecha de nacimiento: 03/2021 | Tamaño: Mediano | Sexo: Macho </p>\r\n             <button>Saber más</button>\r\n         </div>\r\n         <div class=\"cat-card\">\r\n"
+                },
+                {
+                    "date": 1747233141381,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -260,9 +260,9 @@\n <script>\r\n const historiasGatos = {\r\n   \"Milo\": \"Milo fue encontrado en un parque en una noche lluviosa. A pesar del frío, no perdió su ternura.\",\r\n   \"Luna\": \"Luna fue rescatada siendo una cría. Ahora es una gata tranquila que ama dormir en el regazo.\",\r\n-  \"Heros\": \"Siempre curioso y observador, Heros se ha convertido en el alma del refugio.\",\r\n+  \"Roscon\": \"Siempre curioso y observador, Roscon se ha convertido en el alma del refugio.\",\r\n   \"Isis\": \"Con mirada sabia, Isis es ideal para hogares tranquilos. Su ronroneo es pura magia.\",\r\n   \"Ivana\": \"Ivana es una exploradora nata, siempre buscando nuevas aventuras en cada rincón.\",\r\n   \"Jeni\": \"Jeni es una dulce compañera que disfruta de las caricias y largas siestas al sol.\",\r\n   \"Kira\": \"Pequeña pero valiente, Kira conquista corazones con su energía y ternura.\",\r\n"
                 }
             ],
             "date": 1746711090846,

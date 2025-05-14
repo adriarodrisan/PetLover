@@ -56,7 +56,7 @@
         </div>
         <div class="cat-card">
             <img src="./Imagenes_Animales/gatos/roscon.jpeg" alt="Gato en adopción">
-            <h4>Heros</h4>
+            <h4>Roscon</h4>
             <p>Raza: Europeo | Fecha de nacimiento: 03/2021 | Tamaño: Mediano | Sexo: Macho </p>
             <button>Saber más</button>
         </div>
@@ -261,7 +261,7 @@ function filtrarGatos() {
 const historiasGatos = {
   "Milo": "Milo fue encontrado en un parque en una noche lluviosa. A pesar del frío, no perdió su ternura.",
   "Luna": "Luna fue rescatada siendo una cría. Ahora es una gata tranquila que ama dormir en el regazo.",
-  "Heros": "Siempre curioso y observador, Heros se ha convertido en el alma del refugio.",
+  "Roscon": "Siempre curioso y observador, Roscon se ha convertido en el alma del refugio.",
   "Isis": "Con mirada sabia, Isis es ideal para hogares tranquilos. Su ronroneo es pura magia.",
   "Ivana": "Ivana es una exploradora nata, siempre buscando nuevas aventuras en cada rincón.",
   "Jeni": "Jeni es una dulce compañera que disfruta de las caricias y largas siestas al sol.",

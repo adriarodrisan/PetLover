@@ -69,6 +69,7 @@ $insert->bindParam([
                     <meta charset="UTF-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                     <title>Registro Del Animal Exitoso</title>
+                    
                 </head>
                 <body class="cuerpo">
                     <div class="alertas">
