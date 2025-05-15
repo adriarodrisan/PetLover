@@ -4,79 +4,64 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
 error_reporting(E_ALL);
+// Conexión a la base de datos usando PDO
 try {
     $db = new PDO('mysql:host=localhost;dbname=protectora', 'petlove', 'mascota');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}catch (PDOException $e){
-    echo 'Falló la conixion: ' . $e->getMessage(); 
+} catch (PDOException $e) {
+    // Conexión a la base de datos usando PDO
+    echo 'Falló la conexión: ' . $e->getMessage();
 }
-/*$servername = 'localhost'; // este sera el nombre de nuestro servidor
-$database = 'protectora'; // nombre bd
-$username = 'petlove'; // Usuario bd
-$password = 'mascota'; // pass base de datos
-// creamos conexion
-//if (function_exists('mysqli_connect')){
-//    echo "mysqli yes";
-//}
-//echo "intentamos conexion" . $servername . $database.$username.$password;
-$conn = new mysqli($servername, $username, $password, $database);
-//verificamos la conexion
-//echo "este no se muestra";
-if ($conn->connect_errno){
-    echo 'fallo al conectar';
-    die("Conexion fallida: ". $conn->connect_error);
-}*/
-$nombre= trim($_POST['nombre']);
-$ciudad= trim($_POST['ciudad']);
-$correo= trim($_POST['correo']);
-$contrasena= trim($_POST['contrasena']);
-$confirmar_contrasena= trim($_POST['confirmar_contrasena']);
-$requisitos_correo= "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%+-]+\.[a-zA-Z]{2,}$/";
-$requisitos_contrasena= "/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[a-zA-Z\d@$!%*?&]{8,}$/" ;
-//revisar que los campos no sean null
-//echo $dni." ".$correo;
-$valido_correo= preg_match($requisitos_correo,$correo);
-$valido_contrasena= preg_match($requisitos_contrasena,$contrasena);
-if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){
+// Recolección y limpieza de los datos enviados por POST
+$nombre = trim($_POST['nombre']);
+$ciudad = trim($_POST['ciudad']);
+$correo = trim($_POST['correo']);
+$contrasena = trim($_POST['contrasena']);
+$confirmar_contrasena = trim($_POST['confirmar_contrasena']);
+// Expresiones regulares para validar correo y contraseña segura
+$requisitos_correo = "/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9._%+-]+\.[a-zA-Z]{2,}$/";
+$requisitos_contrasena = "/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[a-zA-Z\d@$!%*?&]{8,}$/";
+// Verifica que ningún campo esté vacío
+$valido_correo = preg_match($requisitos_correo, $correo);
+$valido_contrasena = preg_match($requisitos_contrasena, $contrasena);
+if (empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)) {
     echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
     <div class='error'>Por favor, no dejes ningun hueco vacio en el formulario<div class='error'>";
     exit;
 }
-//verificar las contraseñas que sean iguales
-if ($contrasena !== $confirmar_contrasena){
+// Verifica que las contraseñas coincidan
+if ($contrasena !== $confirmar_contrasena) {
     echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
-    <div class='error'>Las cotraseñas no coinciden.</div>";
+    <div class='error'>Las contraseñas no coinciden.</div>";
     exit;
 }
-
-if (!$valido_correo){
+// Valida el formato del correo
+if (!$valido_correo) {
     echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
-    <div class='error'>El Correo no es valido.</div>";
+    <div class='error'>El correo no es válido.</div>";
     exit;
 }
-if (!$valido_contrasena){
+// Valida la fortaleza de la contraseña
+if (!$valido_contrasena) {
     echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
-    <div class='error'>El Contraseña no es valido.</div>";
+    <div class='error'>La Contraseña no es valido.</div>";
     exit;
 }
-//verificar si el mail esta registrado
+// Verifica si el correo ya está registrado como Adoptante
 $registros_adoptate = $db->prepare("SELECT * FROM Adoptante WHERE Correo = :correo");
-$registros_adoptate ->bindParam(':correo', $correo);
-$registros_adoptate ->execute();
-//$verificar_correo_usuario = "SELECT * FROM adoptante WHERE Correo = '$correo'";
-//$correo_verificado_usuario = mysqli_query($conn, $verificar_correo_usuario);
-//if (mysqli_num_rows($correo_verificado_usuario)>0){
+$registros_adoptate->bindParam(':correo', $correo);
+$registros_adoptate->execute();
+// Hashea la contraseña antes de almacenarla
 if ($registros_adoptate->rowCount() > 0) {
     echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
-    <div class='error'>Este correo ya esta registrado, por favor, intelo con otro correo</div>";
+    <div class='error'>Este correo ya esta registrado, por favor, inténtalo con otro correo</div>";
     exit;
 }
+// Inserta el nuevo usuario en la tabla Refugio
 $registros_protectora = $db->prepare("SELECT * FROM Refugio WHERE Correo = :correo");
-$registros_protectora ->bindParam(':correo', $correo);
-$registros_protectora ->execute();
-//$verificar_correo_protectora = "SELECT * FROM refugio WHERE Correo = '$correo'";
-//$correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
-//if (mysqli_num_rows($correo_verificado_protectora)>0){
+$registros_protectora->bindParam(':correo', $correo);
+$registros_protectora->execute();
+
 if ($registros_protectora->rowCount() > 0) {
     echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
     <div class='error'>Este correo ya esta registrado, por favor, intelo con otro correo</div>";
@@ -85,18 +70,19 @@ if ($registros_protectora->rowCount() > 0) {
 //hashear pass
 $contrasena_hasheada = password_hash($contrasena, PASSWORD_DEFAULT);
 $registrar_usuarios = $db->prepare("INSERT INTO Refugio (Nombre, Ciudad, Correo, Contraseña) VALUES (:nombre,:ciudad,:correo,:contrasena)");
-$registrar_usuarios ->bindParam(':nombre', $nombre);
-$registrar_usuarios ->bindParam(':correo', $correo);
-$registrar_usuarios ->bindParam(':ciudad', $ciudad);
-$registrar_usuarios ->bindParam(':contrasena', $contrasena_hasheada);
-$registrar_usuarios ->execute();
-//$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
-if ($registrar_usuarios){
-setcookie("rol", "protectora", time() + (3600), "/");
-setcookie("nombre",$nombre, time() + (3600), "/");
-include 'mail_registro.php';
-enviarCorreosregistro($correo,$nombre);
-//if (mysqli_query($conn, $registrar_usuarios)){
+$registrar_usuarios->bindParam(':nombre', $nombre);
+$registrar_usuarios->bindParam(':correo', $correo);
+$registrar_usuarios->bindParam(':ciudad', $ciudad);
+$registrar_usuarios->bindParam(':contrasena', $contrasena_hasheada);
+$registrar_usuarios->execute();
+// Si el registro fue exitoso:
+if ($registrar_usuarios) {
+    setcookie("rol", "protectora", time() + (3600), "/");
+    setcookie("nombre", $nombre, time() + (3600), "/");
+    // Envía correo de bienvenida
+    include 'mail_registro.php';
+    enviarCorreosregistro($correo, $nombre);
+    // Muestra página de confirmación
     echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
@@ -113,9 +99,9 @@ enviarCorreosregistro($correo,$nombre);
                 </body>
             </html>
             ';
-            exit;
-}else{
-   echo "Error al registrar usuario: ". $db->errorInfo()[2];
-   exit;
+    exit;
+} else {
+    // Si algo falla en la inserción
+    echo "Error al registrar usuario: " . $db->errorInfo()[2];
+    exit;
 }
-?>
