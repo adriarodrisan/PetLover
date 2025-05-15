@@ -48,6 +48,24 @@ $html = "
         border-left: 5px solid #ff9966;
         border-radius: 4px;
     }
+        p {
+        font-size: 14.5px;
+        margin: 10px 0;
+    }
+
+    ol {
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+    li {
+        margin-bottom: 6px;
+    }
+
+    ul {
+        padding-left: 20px;
+        list-style: none;
+    }
 <body>
 
     <h1>Contrato de Adopción de Animal</h1>
