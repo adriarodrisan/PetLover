@@ -88,9 +88,11 @@ if ($registros_protectora->rowCount() > 0) {
             ';
             exit;
     } else {
-        echo "Contraseña incorrecta.";
+        echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Contraseña incorrecta.</div>";
         exit;
     }
 }
-echo "Correo no encontrado.";
+echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Correo no encontrado.</div>";
 ?>
