@@ -3,18 +3,21 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 require 'vendor/autoload.php';
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dompdf\Dompdf;
-function enviarCorreoContrato($correo,$nombre,$apellido,$dni,$direccion,$telefono,$nombre_animal,$especie,$raza,$edad,$sexo,$compromisos){
+
+function enviarCorreoContrato($correo, $nombre, $apellido, $dni, $direccion, $telefono, $nombre_animal, $especie, $raza, $edad, $sexo, $compromisos)
+{
     $fechaHoy = new DateTime();
     $dia = $fechaHoy->format('d');
     $mes = $fechaHoy->format('m');
     $año = $fechaHoy->format('Y');
     //Configuracion del DOMPDF
-$dompdf = new Dompdf();
-//Contenido del PDF
-$html = "
+    $dompdf = new Dompdf();
+    //Contenido del PDF
+    $html = "
 <!DOCTYPE html>
 <html lang='es'>
 <head>
@@ -66,7 +69,8 @@ $html = "
         padding-left: 20px;
         list-style: none;
     }
-    ul li::before {
+         ul li::before {
+
         color: #ff7043;
         font-size: 1rem;
         margin-right: 6px;
@@ -96,6 +100,7 @@ $html = "
         text-align: center;
         margin-top: 40px;
     }
+</style>
 <body>
 
     <h1>Contrato de Adopción de Animal</h1>
@@ -155,30 +160,30 @@ $html = "
 </body>
 </html>
 ";
-$dompdf->loadHtml($html);
-$dompdf->setPaper('A4', 'portrait');
-$dompdf->render();
-$tempFile = tempnam(sys_get_temp_dir(), 'pdf'). '.pdf';
-file_put_contents($tempFile, $dompdf->output());
+    $dompdf->loadHtml($html);
+    $dompdf->setPaper('A4', 'portrait');
+    $dompdf->render();
+    $tempFile = tempnam(sys_get_temp_dir(), 'pdf') . '.pdf';
+    file_put_contents($tempFile, $dompdf->output());
     $mail = new PHPMailer(true);
-try {
-    $mail->isSMTP();                                           
-    $mail->Host       = 'smtp.gmail.com';                    
-    $mail->SMTPAuth   = true;                                   
-    $mail->Username   = 'petlovercomtact@gmail.com';                     
-    $mail->Password   = 'okzk slcy nsas vkrb';                               
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;           
-    $mail->Port       = 465;                           
-    $mail->setFrom('petlovercomtact@gmail.com', 'petlover');
-    $mail->addAddress($correo, $nombre);
+    try {
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'petlovercomtact@gmail.com';
+        $mail->Password   = 'okzk slcy nsas vkrb';
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+        $mail->Port       = 465;
+        $mail->setFrom('petlovercomtact@gmail.com', 'petlover');
+        $mail->addAddress($correo, $nombre);
 
-    $mail->isHTML(true);                              
-    $mail->Subject = "Contrato de $nombre_animal";
-    $mail->Body    = "Necesitamos que Imprimas este contrato, Lo Firmes y lo escanes para enviarnos-lo para que demos el vistobueno en para el contrato";
-    $mail->addAttachment($tempFile, "Contrato_{$nombre_animal}.pdf");
-    $mail->send();
-    unlink($tempFile);
-} catch (Exception $e) {
-    echo "Mensaje no enviado. Mailer Error: {$mail->ErrorInfo}";
-}
+        $mail->isHTML(true);
+        $mail->Subject = "Contrato de $nombre_animal";
+        $mail->Body    = "Necesitamos que Imprimas este contrato, Lo Firmes y lo escanes para enviarnos-lo para que demos el vistobueno en para el contrato";
+        $mail->addAttachment($tempFile, "Contrato_{$nombre_animal}.pdf");
+        $mail->send();
+        unlink($tempFile);
+    } catch (Exception $e) {
+        echo "Mensaje no enviado. Mailer Error: {$mail->ErrorInfo}";
+    }
 }
