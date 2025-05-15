@@ -20,6 +20,27 @@ body {
   width: 90%;
   animation: entrada 0.6s ease-out;
 }
+.alertas h1 {
+  font-size: 1.8rem;
+  color: #6d4c41;
+  margin-bottom: 20px;
+}
+
+
+.alertas a {
+  display: inline-block;
+  background-color: #ff9966;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.alertas a:hover {
+  background-color: #ff7043;
+}
 
 
 

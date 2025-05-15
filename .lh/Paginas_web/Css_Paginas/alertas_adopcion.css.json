@@ -3,11 +3,19 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1747316588364,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1747316606543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,46 @@\n+\r\n+body {\r\n+  font-family: 'Arial', sans-serif;\r\n+  background-color: #ffe5b4;\r\n+  display: flex;\r\n+  justify-content: center;\r\n+  align-items: center;\r\n+  min-height: 100vh;\r\n+  margin: 0;\r\n+}\r\n+\r\n+\r\n+.alertas {\r\n+  background-color: #ffffff;\r\n+  padding: 40px 30px;\r\n+  border-radius: 12px;\r\n+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);\r\n+  text-align: center;\r\n+  max-width: 500px;\r\n+  width: 90%;\r\n+  animation: entrada 0.6s ease-out;\r\n+}\r\n+.alertas h1 {\r\n+  font-size: 1.8rem;\r\n+  color: #6d4c41;\r\n+  margin-bottom: 20px;\r\n+}\r\n+\r\n+\r\n+.alertas a {\r\n+  display: inline-block;\r\n+  background-color: #ff9966;\r\n+  color: white;\r\n+  padding: 12px 25px;\r\n+  border-radius: 6px;\r\n+  text-decoration: none;\r\n+  font-weight: bold;\r\n+  transition: background-color 0.3s ease;\r\n+}\r\n+\r\n+.alertas a:hover {\r\n+  background-color: #ff7043;\r\n+}\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1747316681770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,46 @@\n+\r\n+body {\r\n+  font-family: 'Arial', sans-serif;\r\n+  background-color: #ffe5b4;\r\n+  display: flex;\r\n+  justify-content: center;\r\n+  align-items: center;\r\n+  min-height: 100vh;\r\n+  margin: 0;\r\n+}\r\n+\r\n+\r\n+.alertas {\r\n+  background-color: #ffffff;\r\n+  padding: 40px 30px;\r\n+  border-radius: 12px;\r\n+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);\r\n+  text-align: center;\r\n+  max-width: 500px;\r\n+  width: 90%;\r\n+  animation: entrada 0.6s ease-out;\r\n+}\r\n+.alertas h1 {\r\n+  font-size: 1.8rem;\r\n+  color: #6d4c41;\r\n+  margin-bottom: 20px;\r\n+}\r\n+\r\n+\r\n+.alertas a {\r\n+  display: inline-block;\r\n+  background-color: #ff9966;\r\n+  color: white;\r\n+  padding: 12px 25px;\r\n+  border-radius: 6px;\r\n+  text-decoration: none;\r\n+  font-weight: bold;\r\n+  transition: background-color 0.3s ease;\r\n+}\r\n+\r\n+.alertas a:hover {\r\n+  background-color: #ff7043;\r\n+}\r\n+\r\n+\r\n+\r\n"
                 }
             ],
             "date": 1747316588364,
