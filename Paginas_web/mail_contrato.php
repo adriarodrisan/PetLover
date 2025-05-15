@@ -22,23 +22,32 @@ $html = "
     <title>Contrato de Adopción de Animal</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-        }
-        h1 {
-            text-align: center;
-            text-transform: uppercase;
-        }
-        .section-title {
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .signature {
-            margin-top: 40px;
-        }
-    </style>
-</head>
+        font-family: 'Quicksand', sans-serif;
+        background-color: #fff8f0;
+        margin: 40px;
+        line-height: 1.6;
+        color: #6d4c41;
+    }
+
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        color: #d2691e;
+        border-bottom: 2px dashed #ff9966;
+        padding-bottom: 10px;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+
+    .section-title {
+        font-weight: bold;
+        margin-top: 24px;
+        color: #8d6e63;
+        background-color: #ffe5b4;
+        padding: 6px 10px;
+        border-left: 5px solid #ff9966;
+        border-radius: 4px;
+    }
 <body>
 
     <h1>Contrato de Adopción de Animal</h1>
