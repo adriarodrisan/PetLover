@@ -7,7 +7,6 @@ $password = 'mascota'; // pass base de datos
 // creamos conexion
 $conn = new mysqli($servername, $database, $username, $password);
 //verificamos la conexion
-if ($conn->connect_error){
-    die("Conexion fallida: ". $conn->connect_error);
+if ($conn->connect_error) {
+    die("Conexion fallida: " . $conn->connect_error);
 }
-?>

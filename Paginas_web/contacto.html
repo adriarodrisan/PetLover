@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="./Css_Paginas/contacto.css">
-      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="./Css_Paginas/contacto.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div>
-        <section>
-            <p>Si tiene alguna duda haz este formulario y te escribiremos lo antes posible</p>
-            <form action="mail_contacto.php" method="post">
-                <div class="campo">
-                    <label for="nombre"> Nombre:</label>
-                    <input type="text" name="nombre" placeholder="Nombre" required><br/>
-                    <label for="correo"> Correo:</label>
-                    <input type="email" name="correo" placeholder="Correo" required><br/>
-                  <label for="mensaje">Mensaje:</label><br/>
-                  <textarea id="mensaje" name="mensaje" rows="4" cols="50" required placeholder="Pon aqui la duda que tengas"></textarea>
-                </div>
-                <button type="submit" class="btn">Enviar la duda</button>
-              </form>
-        </section>
-    </div>
+  <div>
+    <section>
+      <p>Si tienes alguna duda, completa este formulario y te responderemos lo antes posible!</p>
+      <!-- Formulario de contacto que envía los datos a mail_contacto.php -->
+      <form action="mail_contacto.php" method="post">
+        <!-- Campos del formulario: nombre, correo, mensaje -->
+        <div class="campo">
+          <label for="nombre"> Nombre:</label>
+          <input type="text" name="nombre" placeholder="Tu Nombre" required><br />
+          <label for="correo"> Correo:</label>
+          <input type="email" name="correo" placeholder="ejemplo@correo.com" required><br />
+          <label for="mensaje">Mensaje:</label><br />
+          <textarea id="mensaje" name="mensaje" rows="4" cols="50" required
+            placeholder="Escribe aquí tu duda o comentario..."></textarea>
+        </div>
+        <!-- Formulario de contacto que envía los datos a mail_contacto.php -->
+        <button type="submit" class="btn">Enviar mensaje 🐾</button>
+      </form>
+    </section>
+  </div>
 </body>
+
 </html>
