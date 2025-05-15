@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayudanos - PetLover </title>
+    <title>Ayúdanos - PetLover </title>
     <link rel="stylesheet" href="Css_Paginas/ayudas.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -15,6 +15,7 @@
     </div>
     </header>    
     <section class="ayuda-section">
+        <!-- Opción para donar -->
       <div class="ayuda-item">
         <div class="ayuda-icon">💰</div>
         <div class="ayuda-texto">
@@ -23,7 +24,7 @@
           <p class="bizum">📱 Número: <strong>661653761</strong></p>
         </div>
       </div>
-    
+    <!-- Opción para traer productos -->
       <div class="ayuda-item">
         <div class="ayuda-icon">🧸</div>
         <div class="ayuda-texto">
@@ -32,7 +33,7 @@
           <p><strong>C/ Refugio Animal 24, Barcelona</strong></p>
         </div>
       </div>
-
+  <!-- Opción de voluntariado -->
       <div class="ayuda-item">
         <div class="ayuda-icon">🙌</div>
         <div class="ayuda-texto">

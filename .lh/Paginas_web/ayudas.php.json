@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1746623766212,
@@ -20,6 +20,14 @@
                 {
                     "date": 1747017205592,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Ayudanos - PetLover </title>\r\n     <link rel=\"stylesheet\" href=\"Css_Paginas/ayudas.css\">\r\n-      <link href=\"https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap\" rel=\"stylesheet\">\r\n+    <link href=\"https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap\" rel=\"stylesheet\">\r\n </head>\r\n <body>\r\n     <header class=\"hero\">\r\n       <div class=\"hero-content\">\r\n"
+                },
+                {
+                    "date": 1747329493855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <!DOCTYPE html>\r\n-<html lang=\"en\">\r\n+<html lang=\"es\">\r\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Ayudanos - PetLover </title>\r\n+    <title>Ayúdanos - PetLover </title>\r\n     <link rel=\"stylesheet\" href=\"Css_Paginas/ayudas.css\">\r\n     <link href=\"https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap\" rel=\"stylesheet\">\r\n </head>\r\n <body>\r\n"
+                },
+                {
+                    "date": 1747329635398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,26 +14,27 @@\n       <p>Tu colaboración es vital para seguir dando hogar, alimento y amor a quienes más lo necesitan.</p>\r\n     </div>\r\n     </header>    \r\n     <section class=\"ayuda-section\">\r\n+        <!-- Opción para donar -->\r\n       <div class=\"ayuda-item\">\r\n         <div class=\"ayuda-icon\">💰</div>\r\n         <div class=\"ayuda-texto\">\r\n           <h2>Haz una donación</h2>\r\n           <p>Con tu ayuda cubrimos alimentación, atención veterinaria y esterilizaciones. Aporta vía Bizum al:</p>\r\n           <p class=\"bizum\">📱 Número: <strong>661653761</strong></p>\r\n         </div>\r\n       </div>\r\n-    \r\n+    <!-- Opción para traer productos -->\r\n       <div class=\"ayuda-item\">\r\n         <div class=\"ayuda-icon\">🧸</div>\r\n         <div class=\"ayuda-texto\">\r\n           <h2>Trae alimentos o productos</h2>\r\n           <p>Recibimos mantas, comida, productos de limpieza y más. Puedes dejarlo en nuestro refugio en:</p>\r\n           <p><strong>C/ Refugio Animal 24, Barcelona</strong></p>\r\n         </div>\r\n       </div>\r\n-\r\n+  <!-- Opción de voluntariado -->\r\n       <div class=\"ayuda-item\">\r\n         <div class=\"ayuda-icon\">🙌</div>\r\n         <div class=\"ayuda-texto\">\r\n           <h2>Colabora como voluntario</h2>\r\n"
                 }
             ],
             "date": 1746623766212,
