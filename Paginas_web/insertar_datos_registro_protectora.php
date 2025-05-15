@@ -92,8 +92,8 @@ $registrar_usuarios ->bindParam(':contrasena', $contrasena_hasheada);
 $registrar_usuarios ->execute();
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
 if ($registrar_usuarios){
-setcookie("rol", "protectora", time() + (86400 * 30), "/");
-setcookie("nombre",$nombre, time() + (86400 * 30), "/");
+setcookie("rol", "protectora", time() + (3600), "/");
+setcookie("nombre",$nombre, time() + (3600), "/");
 include 'mail_registro.php';
 enviarCorreosregistro($correo,$nombre);
 //if (mysqli_query($conn, $registrar_usuarios)){
