@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Mascota</title>
     <link rel="stylesheet" href="./Css_Paginas/Agregar_mascota.css">
 </head>
+
 <body>
     <div class="formulario-contenedor">
-        <h2>Agregar una nueva Mascota</h2>  
+        <h2>Agregar una nueva Mascota</h2>
+        <!-- Formulario para insertar datos de una nueva mascota -->
         <form action="insertar_mascota.php" method="POST" enctype="multipart/form-data" class="formulario-g">
             <div class="campo">
+                <!-- Campo para el ID del chip -->
                 <label for="Chip_ID">ID del Chip: </label>
-                <input type="text" name="Chip_ID" id="Chip_ID" placeholder="Numero de Chip" required>
+                <input type="text" name="Chip_ID" id="Chip_ID" placeholder="Número de Chip" required>
             </div>
+            <!-- Campo para el nombre de la mascota -->
             <div class="campo">
                 <label for="Nombre">Nombre: </label>
                 <input type="text" name="Nombre" id="Nombre" placeholder="Nombre del Animal" required>
             </div>
+            <!-- Selección de especie -->
             <div class="campo">
                 <label for="Especie"> Especie: </label>
                 <select name="Especie" id="Especie" required>
                     <option value="">Selecciona...</option>
                     <option value="Perro">Perro</option>
                     <option value="Gato">Gato</option>
-                </select>   
+                </select>
             </div>
+            <!-- Campo para raza -->
             <div class="campo">
                 <label for="raza">Raza: </label>
                 <input type="text" name="raza" id="raza" placeholder="Raza del Animal" required>
             </div>
+            <!-- Campo para fecha de nacimiento -->
             <div class="campo">
                 <label for="FechaNacimiento"> Fecha de Nacimiento:</label>
                 <input type="date" name="FechaNacimiento" id="FechaNacimiento" required>
             </div>
+            <!-- Selección de sexo -->
             <div class="campo">
                 <label for="Sexo">Sexo:</label>
                 <select name="Sexo" id="Sexo" required>
@@ -42,26 +51,31 @@
                     <option value="Hembra">Hembra</option>
                 </select>
             </div>
+            <!-- Campo para peso -->
             <div class="campo">
                 <label for="Peso">Peso(kg):</label>
                 <input type="number" step="0,01" name="Peso" id="Peso" required>
             </div>
+            <!-- Selección de estado de disponibilidad -->
             <div class="campo">
                 <label for="Estado">Estado: </label>
                 <select name="Estado" id="Estado" required>
-                    <option value="">Seleciona...</option>
+                    <option value="">Selecciona...</option>
                     <option value="Disponible">Disponible</option>
                     <option value="Reservado">Reservado</option>
                 </select>
             </div>
+            <!-- Campo para cargar imagen de la mascota -->
             <div class="campo campo-imagen">
-                <label for="Imagen">Sube una Imagen:</label> 
-                <input type="file" name="Imagen" id="Imagen" accept="image/*" required >
+                <label for="Imagen">Sube una Imagen:</label>
+                <input type="file" name="Imagen" id="Imagen" accept="image/*" required>
             </div>
+            <!-- Botón para enviar el formulario -->
             <div class="boton-contenedor">
                 <button type="submit">Guardar Mascota</button>
             </div>
-        </form>      
+        </form>
     </div>
 </body>
+
 </html>
