@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 13,
+            "activePatchIndex": 14,
             "patches": [
                 {
                     "date": 1743584046400,
@@ -60,6 +60,10 @@
                 {
                     "date": 1747316532476,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n     exit;\r\n }\r\n \r\n //verificar si el animal esta guardado en la base de datos\r\n-$consultaAnimal = $db->prepare(\"SELECT ID,FechaNacimiento FROM animal WHERE Nombre = :nombre_animal LIMIT 1\");\r\n+$consultaAnimal = $db->prepare(\"SELECT ID,FechaNacimiento FROM Animal WHERE Nombre = :nombre_animal LIMIT 1\");\r\n $consultaAnimal ->bindParam(':nombre_animal', $nombre_animal);\r\n $consultaAnimal ->execute();\r\n \r\n if ($consultaAnimal->rowCount() < 1) {\r\n@@ -77,8 +77,9 @@\n             <html lang=\"es\">\r\n                 <head>\r\n                     <meta charset=\"UTF-8\">\r\n                     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+                    <link rel=\"stylesheet\" href=\"./Css_Paginas/alertas_adopcion.css\">\r\n                     <title>Error 454</title>\r\n                 </head>\r\n                 <body>\r\n                     <div class=\"alertas\">\r\n"
+                },
+                {
+                    "date": 1747316886531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,8 +119,9 @@\n             <html lang=\"es\">\r\n                 <head>\r\n                     <meta charset=\"UTF-8\">\r\n                     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+                     <link rel=\"stylesheet\" href=\"./Css_Paginas/alertas_adopcion.css\">\r\n                     <title>Registro Exitoso!</title>\r\n                 </head>\r\n                 <body>\r\n                     <div class=\"alertas\">\r\n"
                 }
             ],
             "date": 1743584046400,

@@ -3,11 +3,19 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1747233148991,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1747316899674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,28 +49,27 @@\n $protectora= $id_protectora['ID'];\r\n $rutaDestino = 'uploads/' . basename($_FILES['Imagen']['name']);\r\n move_uploaded_file($_FILES['Imagen']['tmp_name'], $rutaDestino);\r\n $insert = $db->prepare(\"INSERT INTO Animal (Chip_ID, Nombre, Especie, raza, FechaNacimiento, Sexo, Peso, Estado, ID_refugio, Imagen) VALUES (:chip, :nombre, :especie, :raza, :fecha, :sexo, :peso, :estado, :refugio, :imagen)\");\r\n-$insert->bindParam([\r\n+if($insert->execute([\r\n     ':chip' => $chip,\r\n     ':nombre' => $nombre,\r\n     ':especie' => $especie,\r\n     ':raza' => $raza,\r\n     ':fecha' => $fecha_nacimiento,\r\n     ':sexo' => $sexo,\r\n     ':peso' => $peso,\r\n     ':estado' => $estado,\r\n-    ':refugio' => $id_protectora,\r\n+    ':refugio' => $protectora,\r\n     ':imagen' => $rutaDestino\r\n-]);\r\n-    if($insert->execute()){\r\n+    ])\r\n+    ){\r\n     echo '<!DOCTYPE html>\r\n             <html lang=\"es\">\r\n                 <head>\r\n                     <meta charset=\"UTF-8\">\r\n                     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n                     <title>Registro Del Animal Exitoso</title>\r\n-                    \r\n                 </head>\r\n                 <body class=\"cuerpo\">\r\n                     <div class=\"alertas\">\r\n                         <h1>Registro Del Animal Exitoso</h1>\r\n"
+                },
+                {
+                    "date": 1747316908724,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,8 +67,9 @@\n             <html lang=\"es\">\r\n                 <head>\r\n                     <meta charset=\"UTF-8\">\r\n                     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+                    <link rel=\"stylesheet\" href=\"./Css_Paginas/insertar_mascota.css\">\r\n                     <title>Registro Del Animal Exitoso</title>\r\n                 </head>\r\n                 <body class=\"cuerpo\">\r\n                     <div class=\"alertas\">\r\n"
                 }
             ],
             "date": 1747233148991,
