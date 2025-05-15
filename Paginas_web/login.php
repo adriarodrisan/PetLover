@@ -70,7 +70,7 @@ if ($registros_protectora->rowCount() > 0) {
     if (password_verify($contrasena, $fila['Contraseña'])) {
         $nombre= $fila['Nombre'];
         setcookie("rol", "protectora", time() + (3600), "/");
-        setcookie("nombre",$nombre, time() + (86400 * 30), "/"); 
+        setcookie("nombre",$nombre, time() + (3600), "/"); 
         echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
