@@ -127,7 +127,7 @@
             <button>Saber más</button>
         </div>        
         <div class="cat-card">
-            <img src="./Imagenes_Animales/gatos/tigrsa.jpeg" alt="Gato en adopción">
+            <img src="./Imagenes_Animales/gatos/Tigresa.jpg" alt="Gato en adopción">
             <h4>Tigresa</h4>
             <p>Raza: Persa | Fecha de nacimiento: 08/2022 | Tamaño: Mediano | Sexo: Hembra</p>
             <button>Saber más</button>
