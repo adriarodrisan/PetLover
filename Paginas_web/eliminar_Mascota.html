@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Mascota</title>
+    <link rel="stylesheet" href="./Css_Paginas/Agregar_mascota.css">
+</head>
+
+<body>
+    <div class="formulario-contenedor">
+        <h2>Agregar una nueva Mascota</h2>
+        <!-- Formulario para insertar datos de una nueva mascota -->
+        <form action="eliminar_animal.php" method="POST" enctype="multipart/form-data" class="formulario-g">
+            <div class="campo">
+                <!-- Campo para el ID del chip -->
+                <label for="Chip_ID">ID del Chip: </label>
+                <input type="text" name="Chip_ID" id="Chip_ID" placeholder="Número de Chip" required>
+            </div>
+            <!-- Botón para enviar el formulario -->
+            <div class="boton-contenedor">
+                <button type="submit">Guardar Mascota</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
