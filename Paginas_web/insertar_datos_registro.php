@@ -75,7 +75,8 @@ $registros_adoptate ->execute();
 //$correo_verificado_usuario = mysqli_query($conn, $verificar_correo_usuario);
 //if (mysqli_num_rows($correo_verificado_usuario)>0){
 if ($registros_adoptate->rowCount() > 0) {
-    echo "Este correo ya esta registrado, por favor, intelo con otro correo";
+    echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Este correo ya esta registrado, por favor, intelo con otro correo</div>";
     exit;
 }
 $registros_protectora = $db->prepare("SELECT * FROM Refugio WHERE Correo = :correo");
@@ -85,7 +86,8 @@ $registros_protectora ->execute();
 //$correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
 //if (mysqli_num_rows($correo_verificado_protectora)>0){
 if ($registros_protectora->rowCount() > 0) {
-    echo "Este correo ya esta registrado, por favor, intelo con otro correo";
+    echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Este correo ya esta registrado, por favor, intelo con otro correo</div>";
     exit;
 }
 //hashear pass

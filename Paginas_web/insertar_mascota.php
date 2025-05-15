@@ -20,7 +20,8 @@ $peso= trim($_POST['Peso']);
 $estado= trim($_POST['Estado']);
 $imagen= $_FILES['Imagen']['name'];
 if(empty($chip)|| empty($nombre)|| empty($especie)|| empty($raza)|| empty($fecha_nacimiento)|| empty($sexo)|| empty($peso)|| empty($imagen)){
-    echo "Por favor, no dejes ningun hueco vacio en el formulario";
+    echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Por favor, no dejes ningun hueco vacio en el formulario</div>";
     exit;
 }
 //verificar que no hay dos chips iguales
@@ -28,7 +29,8 @@ $datos_animales = $db->prepare("SELECT COUNT(*) FROM Animal WHERE Chip_ID = :chi
 $datos_animales->bindParam(':chip', $chip);
 $datos_animales-> execute();
 if ($datos_animales->fetchColumn()>0){
-    echo "Este animal ya esta registrado porfavor revise el numero de chip que puede estar equivocado.";
+    echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Este animal ya esta registrado porfavor revise el numero de chip que puede estar equivocado.<div>";
     exit;
 }
 $consulta_raza = $db->prepare("SELECT ID FROM Raza WHERE Nombre_Raza = :nombre");

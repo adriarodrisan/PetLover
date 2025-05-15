@@ -38,21 +38,25 @@ $requisitos_contrasena= "/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])[a-zA-Z\
 $valido_correo= preg_match($requisitos_correo,$correo);
 $valido_contrasena= preg_match($requisitos_contrasena,$contrasena);
 if(empty($nombre) || empty($ciudad) || empty($correo) || empty($contrasena) || empty($confirmar_contrasena)){
-    echo "Por favor, no dejes ningun hueco vacio en el formulario";
+    echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Por favor, no dejes ningun hueco vacio en el formulario<div class='error'>";
     exit;
 }
 //verificar las contraseñas que sean iguales
 if ($contrasena !== $confirmar_contrasena){
-    echo "Las cotraseñas no coinciden.";
+    echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Las cotraseñas no coinciden.</div>";
     exit;
 }
 
 if (!$valido_correo){
-    echo "El Correo no es valido.";
+    echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>El Correo no es valido.</div>";
     exit;
 }
 if (!$valido_contrasena){
-    echo "El Contraseña no es valido.";
+    echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>El Contraseña no es valido.</div>";
     exit;
 }
 //verificar si el mail esta registrado
@@ -63,7 +67,8 @@ $registros_adoptate ->execute();
 //$correo_verificado_usuario = mysqli_query($conn, $verificar_correo_usuario);
 //if (mysqli_num_rows($correo_verificado_usuario)>0){
 if ($registros_adoptate->rowCount() > 0) {
-    echo "Este correo ya esta registrado, por favor, intelo con otro correo";
+    echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Este correo ya esta registrado, por favor, intelo con otro correo</div>";
     exit;
 }
 $registros_protectora = $db->prepare("SELECT * FROM Refugio WHERE Correo = :correo");
@@ -73,7 +78,8 @@ $registros_protectora ->execute();
 //$correo_verificado_protectora = mysqli_query($conn, $verificar_correo_protectora);
 //if (mysqli_num_rows($correo_verificado_protectora)>0){
 if ($registros_protectora->rowCount() > 0) {
-    echo "Este correo ya esta registrado, por favor, intelo con otro correo";
+    echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Este correo ya esta registrado, por favor, intelo con otro correo</div>";
     exit;
 }
 //hashear pass

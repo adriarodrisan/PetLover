@@ -24,7 +24,8 @@ if ($conn->connect_errno){
 $correo = trim($_POST['email']);
 $contrasena = trim($_POST['password']);
 if (empty($correo) || empty($contrasena)) {
-    echo "Por favor completa todos los campos.";
+    echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Por favor completa todos los campos.</div>";
     exit;
 }
 $registros_adoptante = $db->prepare("SELECT * FROM Adoptante WHERE Correo = :correo");
@@ -56,7 +57,8 @@ $registros_adoptante ->execute();
             ';
             exit;
     } else {
-        echo "Contraseña incorrecta.";
+        echo "<link rel='stylesheet' href='./Css_Paginas/Errores.css'>
+    <div class='error'>Contraseña incorrecta.</div";
         exit;
     }
 }
