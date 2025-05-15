@@ -66,6 +66,36 @@ $html = "
         padding-left: 20px;
         list-style: none;
     }
+    ul li::before {
+        color: #ff7043;
+        font-size: 1rem;
+        margin-right: 6px;
+    }
+
+    .signature {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 2px dashed #ffcc99;
+    }
+
+    .signature div {
+        border: 2px dashed #ffb385;
+        width: 280px;
+        height: 80px;
+        margin: 12px 0;
+        border-radius: 10px;
+    }
+
+    strong {
+        color: #6d4c41;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        color: #a1887f;
+        text-align: center;
+        margin-top: 40px;
+    }
 <body>
 
     <h1>Contrato de Adopción de Animal</h1>

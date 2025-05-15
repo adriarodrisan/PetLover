@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1747348222080,
@@ -12,6 +12,10 @@
                 {
                     "date": 1747348281023,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,26 @@\n         padding: 6px 10px;\r\n         border-left: 5px solid #ff9966;\r\n         border-radius: 4px;\r\n     }\r\n+        p {\r\n+        font-size: 14.5px;\r\n+        margin: 10px 0;\r\n+    }\r\n+\r\n+    ol {\r\n+        padding-left: 20px;\r\n+        margin-top: 10px;\r\n+    }\r\n+\r\n+    li {\r\n+        margin-bottom: 6px;\r\n+    }\r\n+\r\n+    ul {\r\n+        padding-left: 20px;\r\n+        list-style: none;\r\n+    }\r\n <body>\r\n \r\n     <h1>Contrato de Adopción de Animal</h1>\r\n \r\n"
+                },
+                {
+                    "date": 1747348337900,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,8 +65,38 @@\n     ul {\r\n         padding-left: 20px;\r\n         list-style: none;\r\n     }\r\n+    ul li::before {\r\n+        color: #ff7043;\r\n+        font-size: 1rem;\r\n+        margin-right: 6px;\r\n+    }\r\n+\r\n+    .signature {\r\n+        margin-top: 40px;\r\n+        padding-top: 20px;\r\n+        border-top: 2px dashed #ffcc99;\r\n+    }\r\n+\r\n+    .signature div {\r\n+        border: 2px dashed #ffb385;\r\n+        width: 280px;\r\n+        height: 80px;\r\n+        margin: 12px 0;\r\n+        border-radius: 10px;\r\n+    }\r\n+\r\n+    strong {\r\n+        color: #6d4c41;\r\n+    }\r\n+\r\n+    .footer-text {\r\n+        font-size: 12px;\r\n+        color: #a1887f;\r\n+        text-align: center;\r\n+        margin-top: 40px;\r\n+    }\r\n <body>\r\n \r\n     <h1>Contrato de Adopción de Animal</h1>\r\n \r\n"
                 }
             ],
             "date": 1747348222080,
