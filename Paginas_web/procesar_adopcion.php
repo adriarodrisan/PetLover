@@ -35,7 +35,7 @@ if(empty($nombre) || empty($dni) || empty($direccion) || empty($telefono) || emp
 }
 
 //verificar si el animal esta guardado en la base de datos
-$consultaAnimal = $db->prepare("SELECT ID,FechaNacimiento FROM animal WHERE Nombre = :nombre_animal LIMIT 1");
+$consultaAnimal = $db->prepare("SELECT ID,FechaNacimiento FROM Animal WHERE Nombre = :nombre_animal LIMIT 1");
 $consultaAnimal ->bindParam(':nombre_animal', $nombre_animal);
 $consultaAnimal ->execute();
 
