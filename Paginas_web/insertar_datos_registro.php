@@ -102,8 +102,8 @@ $registrar_usuarios ->execute();
 //$registrar_usuarios = "INSERT INTO adoptante (DNI, Nombre, Telefono, Correo, Contraseña) VALUES ('$dni', '$nombre','$telefono','$correo','$contrasena_hasheada');";
 if ($registrar_usuarios){
 //if (mysqli_query($conn, $registrar_usuarios)){ 
-    setcookie("rol", "adoptante", time() + (86400 * 30), "/");
-    setcookie("nombre",$nombre, time() + (86400 * 30), "/"); 
+    setcookie("rol", "adoptante", time() + (3600), "/");
+    setcookie("nombre",$nombre, time() + (3600), "/"); 
     include 'mail_registro.php';
     enviarCorreosregistro($correo,$nombre);
     echo '<!DOCTYPE html>

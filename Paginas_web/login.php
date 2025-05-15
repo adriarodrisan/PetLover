@@ -39,7 +39,7 @@ $registros_adoptante ->execute();
     if (password_verify($contrasena, $fila['Contraseña'])) {
         //setcookie("tipo_usuario", "adoptante", time() + (86400 * 30), "/");
         setcookie("rol", "adoptante", time() + (3600), "/");
-        setcookie("nombre",$nombre, time() + (86400 * 30), "/"); 
+        setcookie("nombre",$nombre, time() + (3600), "/"); 
         echo '<!DOCTYPE html>
             <html lang="es">
                 <head>
