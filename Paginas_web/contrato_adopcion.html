@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de adopcion - Petlover</title>
+    <title>Formulario de adopción - Petlover</title>
     <link rel="stylesheet" href="./Css_Paginas/contrato_adopcion.css">
 </head>
 <body>
     <div class="Formulario-adopcion">
         <h1>Formulario de Adopción</h1>
+         <!-- Formulario que envía datos a procesar_adopcion.php -->
         <form action="procesar_adopcion.php" method="POST">
+          <!-- Sección: Datos del adoptante -->
             <fieldset>
                 <legend>Datos del Adoptante</legend>
                 <label>Nombre: <input type="text" name="nombre" required placeholder="Pepito"></label>
@@ -20,12 +22,13 @@
                 <label>Correo Electrónico: <input type="email" name="correo" required placeholder="pelpitocanasto@gmail.com"></label>
                 </fieldset>
             <fieldset>
-                <legend> Informacion del Animal </legend>
+              <!-- Sección: Información del animal -->
+                <legend> Información del Animal </legend>
                 <label>Nombre del animal<input type="text" name="nombre_animal" placeholder="Toby"></label>
                 <!--<label>Nº Microchip: <input type="text" name="chip"></label>-->
                 <label>Especie:
                     <select name="especie">
-                      <option value="" selected disabled>Elige la Especie</option>
+                      <option value="" selected disabled>Elige la especie</option>
                       <option value="perro">Perro</option>
                       <option value="gato">Gato</option>
                     </select>
@@ -38,6 +41,7 @@
                       <option value="hembra">Hembra</option>
                     </select>
             </fieldset>
+            <!-- Sección: Información del animal -->
             <fieldset>
                 <legend>Compromisos del Adoptante</legend>
                 <label><input type="checkbox" required> Acepto que el animal será solo de compañía</label>
@@ -49,6 +53,7 @@
                 <label><input type="checkbox" required> Enviaré fotos periódicas para seguimiento</label>
                 <label><input type="checkbox" required> Acepto el pago del donativo por adopción</label>
               </fieldset>
+              <!-- Sección: Información del animal -->
               <label><input type="checkbox" required> He leído y acepto el contrato de adopción completo.</label>
               <button type="submit">Enviar Solicitud</button>
             </form>
