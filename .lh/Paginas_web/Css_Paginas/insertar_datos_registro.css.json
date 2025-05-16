@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1747060356027,
@@ -20,6 +20,10 @@
                 {
                     "date": 1747060964856,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,5 +50,19 @@\n \r\n @keyframes fadeIn {\r\n     from { opacity: 0; transform: translateY(-30px); }\r\n     to { opacity: 1; transform: translateY(0); }\r\n-}\n\\ No newline at end of file\n+}\r\n+.alertas.error {\r\n+    border: 3px solid #e57373;\r\n+    background-color: #fff0f0;\r\n+}\r\n+\r\n+.alertas.error h1 {\r\n+    color: #d32f2f;\r\n+}\r\n+\r\n+.alertas.error p {\r\n+    color: #6d4c41;\r\n+    font-size: 1rem;\r\n+    margin: 15px 0;\r\n+}\r\n"
+                },
+                {
+                    "date": 1747418266751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n body.cuerpo {\r\n     background-color: #ffe5b4;\r\n-    font-family: 'Arial', sans-serif;\r\n+    font-family: 'Quicksand', sans-serif;\r\n     display: flex;\r\n     justify-content: center;\r\n     align-items: center;\r\n     min-height: 100vh;\r\n"
                 }
             ],
             "date": 1747060356027,
