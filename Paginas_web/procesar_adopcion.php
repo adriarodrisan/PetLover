@@ -1,5 +1,5 @@
 <?php
-//ESTE FORMULARIO ESTARÁ METIDO DENTRO DE LAS IMAGENES AL DARLE MAS INFORMACION. (Talvez tambien metemos un campo donde explicamos info de cada animal)
+//ESTE FORMULARIO ESTARÁ METIDO DENTRO DE LAS IMAGENES AL DARLE MAS INFORMACIÓN. (Tal vez tambien metemos un campo donde explicamos info de cada animal)
 ini_set('display_errors', 1);
 
 ini_set('display_startup_errors', 1);
@@ -10,7 +10,7 @@ try {
     $db = new PDO('mysql:host=localhost;dbname=protectora', 'petlove', 'mascota');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }catch (PDOException $e){
-    echo 'Falló la conixion: ' . $e->getMessage(); 
+    echo 'Falló la conoxión: ' . $e->getMessage(); 
 }
 //persona
 $nombre= trim($_POST['nombre']);
@@ -52,7 +52,7 @@ if ($consultaAnimal->rowCount() < 1) {
                     <div class="alertas">
                         <h1>Error 453</h1>
                         <h1>Error con el animal</h1>
-                        <p>No hay Animal con este nombre, Intentalo revisar que no te has equivocado</p>
+                        <p>No hay  un animal con este nombre, Intenta revisar que no te has equivocado</p>
                         <a href="/Paginas_web/Home_Petlover.php"> Ir al inicio</a>
                     </div>
                 </body>
@@ -127,7 +127,7 @@ if ($registrar_adopcion){
                 <body>
                     <div class="alertas">
                         <h1>Adopción registrada exitosamente</h1>
-                        <a href="Home_Petlover.php"> Ir al inicio</a>
+                        <a href="Home_Petlover.php">Ir al inicio</a>
                     </div>
                 </body>
             </html>

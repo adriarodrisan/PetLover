@@ -5,7 +5,9 @@ error_reporting(E_ALL);
 require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+//datos del registro
 function  enviarCorreosregistro($correo,$nombre){ 
+    //mail de registro
 try {
     $mail = new PHPMailer();
     $mail->isSMTP();                                           

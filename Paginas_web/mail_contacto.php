@@ -8,6 +8,7 @@ use PHPMailer\PHPMailer\Exception;
 $correo = trim($_POST['correo']);
 $nombre = trim($_POST['nombre']);
 $mensaje = trim($_POST['mensaje']);
+//correo 1 para el cliente
 try {
     $mail = new PHPMailer();
     $mail->isSMTP();                                           
@@ -27,6 +28,7 @@ try {
 } catch (Exception $e) {
     echo "Mensaje no enviado. Mailer Error: {$mail->ErrorInfo}";
 }
+//correo 2 para el administrador
 try {
     $mail = new PHPMailer();
     $mail->isSMTP();                                           
