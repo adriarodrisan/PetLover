@@ -7,9 +7,10 @@ require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use Dompdf\Dompdf;
-
+//recibir los campos que se necessitan para el pdf
 function enviarCorreoContrato($correo, $nombre, $apellido, $dni, $direccion, $telefono, $nombre_animal, $especie, $raza, $edad, $sexo, $compromisos)
 {
+    //poniendo la fecha exacta de la impresion del pdf
     $fechaHoy = new DateTime();
     $dia = $fechaHoy->format('d');
     $mes = $fechaHoy->format('m');
@@ -165,6 +166,7 @@ function enviarCorreoContrato($correo, $nombre, $apellido, $dni, $direccion, $te
     $dompdf->render();
     $tempFile = tempnam(sys_get_temp_dir(), 'pdf') . '.pdf';
     file_put_contents($tempFile, $dompdf->output());
+    //correo de envio del pdf
     $mail = new PHPMailer(true);
     try {
         $mail->isSMTP();
